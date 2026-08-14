@@ -1,0 +1,32 @@
+DATENQUALITÄT
+Rückläufe insgesamt: 15
+Hauptanalyse n: 14
+Mögliche Einzelratings: 756
+Vorhandene Einzelratings: 751
+Fehlende Einzelratings: 5 (0.66 %)
+Kriterien verständlich: Ja=12, Teilweise=2
+Antworten unter 3 Minuten: 6
+Sensitivitätsstichprobe >= 3 Minuten: 8
+
+TABELLE 24 – MITTELWERTE 0–12
+Onboarding-Lernpfad: Multi-Agent=9.50; Einzelagent=5.86; Regelbasiert=5.20
+Kursanpassung nach Testergebnissen: Multi-Agent=10.00; Einzelagent=6.71; Regelbasiert=5.71
+Compliance-Pflichtschulung: Multi-Agent=9.51; Einzelagent=5.14; Regelbasiert=6.14
+Gesamt: Multi-Agent=9.67; Einzelagent=5.90; Regelbasiert=5.69
+
+TABELLE 25 – TEILNEHMERBEZOGENE GESAMTWERTE
+Multi-Agent-Prototyp: Median=10.33; Q1–Q3=9.21–10.67; Mittelwert=9.68
+Zentralisierter Einzelagent: Median=5.50; Q1–Q3=5.00–6.50; Mittelwert=5.90
+Regelbasierter Ansatz: Median=5.50; Q1–Q3=4.75–7.17; Mittelwert=5.71
+
+INFERENZSTATISTIK
+Friedman χ²(2)=12.75; p=0.0017
+Kendall W=0.455
+Multi-Agent gegen Einzelagent: WSR=3.0; Holm-p=0.0071; r_rb=0.934
+Multi-Agent gegen regelbasiert: WSR=2.0; Holm-p=0.0071; r_rb=0.956
+Einzelagent gegen regelbasiert: WSR=30.0; Holm-p=0.480; r_rb=0.231
+
+SENSITIVITÄTSANALYSE (>= 3 Minuten, Multi-Agent)
+Onboarding-Lernpfad: 10.25
+Kursanpassung nach Testergebnissen: 10.63
+Compliance-Pflichtschulung: 9.65
