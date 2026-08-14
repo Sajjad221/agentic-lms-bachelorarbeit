@@ -1,0 +1,811 @@
+﻿participant_id,included_main_analysis,scenario_id,scenario,variant,approach,criterion,criterion_label,score
+P01,false,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P01,false,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,1
+P01,false,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P01,false,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,1
+P01,false,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,1
+P01,false,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,1
+P01,false,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P01,false,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P01,false,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P01,false,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P01,false,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P01,false,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P01,false,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P01,false,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,1
+P01,false,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",0
+P01,false,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,0
+P01,false,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P01,false,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,0
+P01,false,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P01,false,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,1
+P01,false,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P01,false,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,2
+P01,false,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,2
+P01,false,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P01,false,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P01,false,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,0
+P01,false,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P01,false,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,1
+P01,false,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,1
+P01,false,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,0
+P01,false,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P01,false,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P01,false,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P01,false,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,1
+P01,false,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,1
+P01,false,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P01,false,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P01,false,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,1
+P01,false,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P01,false,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,0
+P01,false,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,1
+P01,false,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,1
+P01,false,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P01,false,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,1
+P01,false,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P01,false,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,2
+P01,false,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P01,false,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,2
+P01,false,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P01,false,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,0
+P01,false,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P01,false,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,2
+P01,false,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,2
+P01,false,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,2
+P02,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,
+P02,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,1
+P02,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P02,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,1
+P02,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,1
+P02,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,1
+P02,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P02,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,1
+P02,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P02,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,0
+P02,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P02,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,1
+P02,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P02,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,1
+P02,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P02,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,2
+P02,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,2
+P02,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P02,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P02,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,1
+P02,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P02,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,2
+P02,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P02,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,2
+P02,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P02,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,2
+P02,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P02,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,2
+P02,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,2
+P02,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,2
+P02,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P02,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,1
+P02,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P02,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P02,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P02,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P02,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P02,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,1
+P02,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P02,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P02,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P02,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P02,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P02,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,1
+P02,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P02,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,1
+P02,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,2
+P02,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,2
+P02,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P02,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,2
+P02,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P02,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,1
+P02,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,0
+P02,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,2
+P03,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P03,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,2
+P03,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P03,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,1
+P03,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,1
+P03,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,2
+P03,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P03,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,1
+P03,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P03,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P03,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,0
+P03,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,1
+P03,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P03,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,2
+P03,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P03,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,0
+P03,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P03,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,2
+P03,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P03,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,2
+P03,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P03,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,1
+P03,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,0
+P03,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P03,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P03,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,1
+P03,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P03,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,2
+P03,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,2
+P03,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,1
+P03,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P03,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P03,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P03,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P03,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,0
+P03,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P03,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,
+P03,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,
+P03,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P03,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P03,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,1
+P03,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P03,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P03,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,1
+P03,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",0
+P03,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,1
+P03,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,0
+P03,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P03,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P03,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,1
+P03,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",0
+P03,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,0
+P03,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,0
+P03,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,1
+P04,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P04,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,1
+P04,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",0
+P04,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,2
+P04,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,0
+P04,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,1
+P04,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P04,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,1
+P04,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",0
+P04,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,1
+P04,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P04,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,0
+P04,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P04,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,0
+P04,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P04,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,0
+P04,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P04,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,2
+P04,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P04,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,1
+P04,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P04,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,1
+P04,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P04,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P04,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P04,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,1
+P04,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P04,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,1
+P04,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,1
+P04,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,1
+P04,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P04,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,1
+P04,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P04,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,1
+P04,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,1
+P04,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,1
+P04,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P04,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,1
+P04,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P04,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,1
+P04,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,1
+P04,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,1
+P04,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P04,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,1
+P04,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P04,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,1
+P04,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P04,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P04,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P04,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,1
+P04,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P04,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,1
+P04,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,1
+P04,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,1
+P05,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P05,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,0
+P05,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P05,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,1
+P05,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,0
+P05,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,0
+P05,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P05,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P05,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P05,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P05,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P05,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P05,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P05,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,2
+P05,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P05,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,0
+P05,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,0
+P05,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P05,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P05,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,1
+P05,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P05,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,0
+P05,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P05,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P05,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P05,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,2
+P05,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",0
+P05,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,0
+P05,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,2
+P05,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,1
+P05,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P05,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P05,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P05,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,1
+P05,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P05,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P05,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P05,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P05,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P05,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P05,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P05,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P05,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P05,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,0
+P05,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P05,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,0
+P05,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,0
+P05,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P05,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P05,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,2
+P05,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P05,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,0
+P05,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,2
+P05,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,2
+P06,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P06,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,
+P06,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P06,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,0
+P06,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,2
+P06,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,1
+P06,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P06,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P06,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",0
+P06,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,1
+P06,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,1
+P06,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,0
+P06,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P06,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,1
+P06,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P06,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,2
+P06,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P06,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,2
+P06,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P06,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,0
+P06,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P06,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,1
+P06,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,0
+P06,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,2
+P06,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P06,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,1
+P06,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P06,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,2
+P06,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,0
+P06,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,1
+P06,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P06,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,1
+P06,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P06,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,1
+P06,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,1
+P06,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,1
+P06,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P06,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,1
+P06,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P06,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,1
+P06,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P06,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,1
+P06,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P06,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,1
+P06,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P06,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,2
+P06,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P06,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P06,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P06,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,1
+P06,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P06,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,2
+P06,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,1
+P06,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,1
+P07,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P07,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,1
+P07,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",0
+P07,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,0
+P07,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,0
+P07,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,1
+P07,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P07,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P07,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P07,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P07,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,1
+P07,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P07,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P07,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,2
+P07,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P07,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,0
+P07,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P07,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P07,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P07,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,2
+P07,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P07,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,2
+P07,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,2
+P07,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,2
+P07,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P07,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,2
+P07,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P07,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,2
+P07,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,2
+P07,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,2
+P07,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P07,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P07,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P07,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,1
+P07,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,0
+P07,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P07,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P07,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P07,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P07,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P07,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P07,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P07,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P07,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,2
+P07,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P07,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,2
+P07,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P07,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P07,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P07,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,2
+P07,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P07,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,1
+P07,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,2
+P07,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,
+P08,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P08,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,1
+P08,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P08,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,0
+P08,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,0
+P08,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,1
+P08,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P08,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P08,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P08,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P08,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P08,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,1
+P08,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P08,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,1
+P08,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P08,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,1
+P08,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P08,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P08,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P08,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,1
+P08,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P08,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,2
+P08,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P08,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,0
+P08,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P08,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,0
+P08,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",0
+P08,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,1
+P08,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,1
+P08,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,0
+P08,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P08,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P08,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P08,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P08,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P08,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P08,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P08,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P08,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P08,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,1
+P08,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P08,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P08,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P08,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,2
+P08,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",0
+P08,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,0
+P08,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P08,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P08,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P08,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,2
+P08,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P08,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,2
+P08,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,0
+P08,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,2
+P09,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P09,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,1
+P09,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P09,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,1
+P09,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,1
+P09,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,1
+P09,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P09,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P09,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P09,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P09,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P09,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P09,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P09,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,0
+P09,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P09,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,1
+P09,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,0
+P09,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,2
+P09,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P09,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,1
+P09,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",0
+P09,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,1
+P09,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P09,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,2
+P09,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P09,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,0
+P09,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P09,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,1
+P09,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,0
+P09,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,0
+P09,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P09,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P09,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P09,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P09,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P09,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P09,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P09,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P09,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P09,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P09,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P09,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,1
+P09,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P09,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,0
+P09,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P09,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,2
+P09,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,2
+P09,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P09,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P09,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,0
+P09,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",0
+P09,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,2
+P09,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,2
+P09,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,2
+P10,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P10,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,1
+P10,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",0
+P10,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,0
+P10,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,1
+P10,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,1
+P10,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P10,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P10,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P10,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P10,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P10,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P10,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P10,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,0
+P10,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P10,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,2
+P10,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,2
+P10,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P10,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P10,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,1
+P10,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P10,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,2
+P10,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P10,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,0
+P10,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P10,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,0
+P10,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P10,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,2
+P10,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,1
+P10,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,2
+P10,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P10,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P10,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P10,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P10,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P10,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P10,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P10,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P10,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P10,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P10,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P10,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,1
+P10,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P10,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,0
+P10,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",0
+P10,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,1
+P10,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P10,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,2
+P10,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P10,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,2
+P10,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",0
+P10,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,0
+P10,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,1
+P10,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,1
+P11,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P11,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,0
+P11,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P11,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,1
+P11,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,2
+P11,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,1
+P11,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P11,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P11,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P11,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P11,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P11,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P11,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P11,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,1
+P11,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P11,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,1
+P11,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,0
+P11,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,0
+P11,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P11,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,1
+P11,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P11,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,1
+P11,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P11,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P11,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P11,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,0
+P11,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P11,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,2
+P11,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,2
+P11,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,2
+P11,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P11,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P11,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P11,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P11,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P11,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P11,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P11,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P11,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P11,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,1
+P11,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,0
+P11,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P11,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P11,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,1
+P11,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",0
+P11,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,0
+P11,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P11,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P11,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P11,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,2
+P11,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P11,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,1
+P11,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,0
+P11,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,0
+P12,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P12,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,1
+P12,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P12,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,0
+P12,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,1
+P12,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,1
+P12,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P12,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P12,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P12,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,1
+P12,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P12,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P12,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P12,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,2
+P12,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P12,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,0
+P12,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,0
+P12,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P12,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P12,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,0
+P12,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P12,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,1
+P12,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,2
+P12,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P12,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P12,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,1
+P12,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P12,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,0
+P12,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,1
+P12,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,1
+P12,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P12,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,1
+P12,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P12,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P12,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P12,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,1
+P12,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P12,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P12,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P12,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P12,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,0
+P12,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P12,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P12,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,2
+P12,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",0
+P12,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,0
+P12,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,0
+P12,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P12,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P12,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,1
+P12,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",0
+P12,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,1
+P12,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,2
+P12,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,2
+P13,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P13,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,1
+P13,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P13,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,0
+P13,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,1
+P13,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,1
+P13,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P13,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P13,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P13,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,1
+P13,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,1
+P13,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,1
+P13,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P13,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,0
+P13,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P13,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,0
+P13,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P13,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P13,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P13,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,0
+P13,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P13,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,1
+P13,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,0
+P13,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P13,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P13,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,1
+P13,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",0
+P13,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,0
+P13,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,1
+P13,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,0
+P13,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P13,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,1
+P13,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P13,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P13,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,1
+P13,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P13,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P13,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P13,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P13,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,1
+P13,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,1
+P13,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P13,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P13,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,1
+P13,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P13,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,0
+P13,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P13,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P13,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P13,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,1
+P13,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",0
+P13,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,0
+P13,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,0
+P13,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,0
+P14,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P14,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,1
+P14,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",0
+P14,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,0
+P14,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,2
+P14,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,1
+P14,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P14,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P14,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P14,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,1
+P14,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P14,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P14,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P14,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,2
+P14,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P14,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,1
+P14,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,0
+P14,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,0
+P14,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P14,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,2
+P14,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P14,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,0
+P14,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P14,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,2
+P14,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P14,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,0
+P14,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",0
+P14,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,1
+P14,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,1
+P14,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,1
+P14,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P14,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P14,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P14,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P14,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,1
+P14,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,1
+P14,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P14,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P14,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P14,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P14,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P14,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,1
+P14,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P14,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,1
+P14,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P14,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,1
+P14,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,0
+P14,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,0
+P14,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P14,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,0
+P14,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P14,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,0
+P14,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,0
+P14,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,0
+P15,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P15,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,2
+P15,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P15,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,1
+P15,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,1
+P15,true,UC1,Onboarding-Lernpfad,A,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,2
+P15,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P15,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P15,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P15,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P15,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P15,true,UC1,Onboarding-Lernpfad,B,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P15,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P15,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,1
+P15,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P15,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,1
+P15,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P15,true,UC1,Onboarding-Lernpfad,C,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P15,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P15,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,2
+P15,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P15,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,2
+P15,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,1
+P15,true,UC2,Kursanpassung nach Testergebnissen,A,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,1
+P15,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,1
+P15,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,0
+P15,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P15,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,1
+P15,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,1
+P15,true,UC2,Kursanpassung nach Testergebnissen,B,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,0
+P15,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P15,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P15,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P15,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,1
+P15,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,2
+P15,true,UC2,Kursanpassung nach Testergebnissen,C,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P15,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P15,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,professional_quality,Fachliche Sinnhaftigkeit,2
+P15,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,privacy_roles_rights,"Datenschutz, Rollen und Rechte",1
+P15,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,uncertainty_handling,Umgang mit Unsicherheit,2
+P15,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,human_in_the_loop,Human-in-the-loop,1
+P15,true,UC3,Compliance-Pflichtschulung,A,Multi-Agent-Prototyp,traceability,Nachvollziehbarkeit,2
+P15,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,task_decomposition,Strukturierung / Aufgabenzerlegung,0
+P15,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,professional_quality,Fachliche Sinnhaftigkeit,0
+P15,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,privacy_roles_rights,"Datenschutz, Rollen und Rechte",0
+P15,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,uncertainty_handling,Umgang mit Unsicherheit,0
+P15,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,human_in_the_loop,Human-in-the-loop,0
+P15,true,UC3,Compliance-Pflichtschulung,B,Zentralisierter Einzelagent,traceability,Nachvollziehbarkeit,0
+P15,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,task_decomposition,Strukturierung / Aufgabenzerlegung,2
+P15,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,professional_quality,Fachliche Sinnhaftigkeit,1
+P15,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,privacy_roles_rights,"Datenschutz, Rollen und Rechte",2
+P15,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,uncertainty_handling,Umgang mit Unsicherheit,1
+P15,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,human_in_the_loop,Human-in-the-loop,1
+P15,true,UC3,Compliance-Pflichtschulung,C,Regelbasierter Ansatz,traceability,Nachvollziehbarkeit,2
