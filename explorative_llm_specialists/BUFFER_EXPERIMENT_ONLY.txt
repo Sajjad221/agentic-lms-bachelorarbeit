@@ -1,0 +1,4 @@
+EXPERIMENTELLER LLM-MULTI-AGENT-PUFFER v3.2
+
+Nicht Teil des eingefrorenen finalen v4-Holdout-Artefakts der Bachelorarbeit.
+Keine Ergebnisse dieses Puffers duerfen rueckwirkend als Ergebnisse des offiziellen Holdouts ausgegeben werden.

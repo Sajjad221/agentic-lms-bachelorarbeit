@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Wenn Sie dieses Repository im Kontext der Bachelorarbeit referenzieren, zitieren Sie bitte die Bachelorarbeit und geben Sie die Repository-URL mit Abrufdatum an."
+title: "Agentenbasierter LMS-Prototyp zur Bachelorarbeit"
+type: software
+authors:
+  - family-names: "Rezai"
+    given-names: "Mohammad"
+year: 2026
+repository-code: "https://github.com/Sajjad221/agentic-lms-bachelorarbeit"
+url: "https://github.com/Sajjad221/agentic-lms-bachelorarbeit"

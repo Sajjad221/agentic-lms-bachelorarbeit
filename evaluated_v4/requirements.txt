@@ -1,0 +1,2 @@
+# Keine externen Python-Pakete erforderlich.
+# Die lokale Ollama-API wird über urllib aus der Standardbibliothek angesprochen.

@@ -1,0 +1,15 @@
+# Integritaetscheck v2 -> v3
+
+Die folgenden Kern-/v4-Dateien wurden beim Erstellen des v3-Puffers nicht veraendert. Die SHA-256-Werte stimmen weiterhin mit v2 ueberein.
+
+- action_plan.py: ea4063abad70c4d9e0fb997db57585b8434ea34b13c5f90fc9c578ce57114974
+- ollama_client.py: 43a2918113d4abad9646093f9304a83a2f82d5f11d59e3e51f3725e810ae515e
+- llm_orchestrator.py: 2b8761a023584de2d0ef398c82c734a74bcde8c478ba1b5966ab09c6deae456d
+- lms_backend.py: 6f55970e43919dace7599bcc4e3b6607175fe034725705615631f91ac83ae3f2
+- experiment_cases.py: bd8bd92d84e49f14b0b7c31692bede30aa7e8c482e8e7633ca7800f1fc2ac00e
+- run_llm_experiment.py: e6517889320116d98a8bef3155e33560c8ed7a22d3bb20d347c1dccc6ecf1c46
+- agents.py: d39a9b1f39c723360136d82e29062e5ea6a3df41f10e778cce9f5f37917a02ff
+- orchestrator.py: d62e86559b6e0d54005334500cff2263150ad84dd2b18393b368d7b835e21ba5
+- evaluation.py: 694a58198423aa4d9d1721896b3afb9c68c10a867d303e879664b0fd735df8c3
+- baselines.py: fe4a27d823d162f7ff8bf1da6c4ee082e63f88862a1a3f3f7967265d04b8c022
+- llm_single_agent.py: a8a09d544ce5b3517cfbff277a1f397e5cdac60008422dc39ee2436f160d3f97

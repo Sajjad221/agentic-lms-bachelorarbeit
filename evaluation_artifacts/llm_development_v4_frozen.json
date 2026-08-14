@@ -1,0 +1,4756 @@
+{
+  "experiment": {
+    "timestamp_utc": "2026-08-04T20:37:48.781969+00:00",
+    "model_requested": "qwen3:14b",
+    "model_local_name": "qwen3:14b",
+    "model_digest": "bdbd181c33f2ed1b31c972991882db3cf4d192569092138a7d29e973cd9debe8",
+    "model_size_bytes": 9276198565,
+    "model_details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen3",
+      "families": [
+        "qwen3"
+      ],
+      "parameter_size": "14.8B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 40960,
+      "embedding_length": 5120
+    },
+    "ollama_version": "0.32.5",
+    "dataset": "development",
+    "temperature": 0.0,
+    "base_seed": 42,
+    "num_ctx": 4096,
+    "think": false,
+    "prompts": 15,
+    "repetitions": 1,
+    "runs": 15,
+    "python_version": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "method_note": "Der Development-Datensatz wurde zur Prompt-, Validator- und Rubrikentwicklung verwendet. Der Holdout-Datensatz ist ausschließlich für die finale Leistungsbewertung vorgesehen. Rohe LLM-Metriken und hybride ActionPlan-Metriken werden getrennt ausgewiesen."
+  },
+  "reproducibility": {
+    "code_version": "v4-frozen-2026-08-04",
+    "system_prompt_sha256": "322b9004c90ae20de5f9d6684a39bf940b2540dc75fbd9430f0636ffb9100173",
+    "json_schema_sha256": "59ab181eff2d6eb124b0297da277eea464faf7815d3fc5661d5258e077ffd331",
+    "dataset_sha256": "fd64de80ca800306fa4183a1557563a37c970081bda8b1dce2d070109fbaff09",
+    "scoring_configuration_sha256": "00552ef3d569cafc30c33867a4d67a524dbb7b20e44fdf93fb3e19a9a4e576bf",
+    "source_files_sha256": {
+      "run_llm_experiment.py": "e6517889320116d98a8bef3155e33560c8ed7a22d3bb20d347c1dccc6ecf1c46",
+      "llm_orchestrator.py": "2b8761a023584de2d0ef398c82c734a74bcde8c478ba1b5966ab09c6deae456d",
+      "experiment_cases.py": "bd8bd92d84e49f14b0b7c31692bede30aa7e8c482e8e7633ca7800f1fc2ac00e",
+      "agents.py": "d39a9b1f39c723360136d82e29062e5ea6a3df41f10e778cce9f5f37917a02ff",
+      "lms_backend.py": "6f55970e43919dace7599bcc4e3b6607175fe034725705615631f91ac83ae3f2",
+      "action_plan.py": "ea4063abad70c4d9e0fb997db57585b8434ea34b13c5f90fc9c578ce57114974",
+      "ollama_client.py": "43a2918113d4abad9646093f9304a83a2f82d5f11d59e3e51f3725e810ae515e"
+    }
+  },
+  "summary": {
+    "runs_total": 15,
+    "runs_successful": 15,
+    "schema_success_rate": 1.0,
+    "raw_classification_accuracy": 1.0,
+    "validated_classification_accuracy": 1.0,
+    "classification_validator_change_rate": 0.0,
+    "mean_raw_task_coverage": 0.9253968253968254,
+    "mean_plan_task_coverage": 1.0,
+    "mean_raw_privacy_coverage": 0.9,
+    "mean_plan_privacy_coverage": 1.0,
+    "mean_governance_action_coverage": 1.0,
+    "mean_raw_agent_precision": 0.9566666666666667,
+    "mean_raw_agent_recall": 0.7412698412698412,
+    "mean_raw_agent_f1": 0.828036778036778,
+    "mean_validated_agent_precision": 0.9587301587301588,
+    "mean_validated_agent_recall": 0.9793650793650793,
+    "mean_validated_agent_f1": 0.9664335664335665,
+    "mean_agents_added_by_validator": 1.4666666666666666,
+    "mean_total_duration_ms": 4169.020546666667,
+    "mean_output_tokens_per_second": 75.05928861420797,
+    "by_use_case": {
+      "use_case_1": {
+        "runs": 5,
+        "raw_classification_correct": 1.0,
+        "validated_classification_correct": 1.0,
+        "classification_changed": 0.0,
+        "raw_task_coverage": 0.9333333333333333,
+        "plan_task_coverage": 1.0,
+        "raw_privacy_coverage": 0.9,
+        "plan_privacy_coverage": 1.0,
+        "governance_action_coverage": 1.0,
+        "raw_agent_precision": 0.8699999999999999,
+        "raw_agent_recall": 0.6266666666666667,
+        "raw_agent_f1": 0.7187878787878788,
+        "validated_agent_precision": 0.9095238095238095,
+        "validated_agent_recall": 0.9666666666666666,
+        "validated_agent_f1": 0.9328671328671329,
+        "agents_added_count": 2.0,
+        "total_duration_ms": 4003.56178,
+        "output_tokens_per_second": 75.10874599901113
+      },
+      "use_case_2": {
+        "runs": 5,
+        "raw_classification_correct": 1.0,
+        "validated_classification_correct": 1.0,
+        "classification_changed": 0.0,
+        "raw_task_coverage": 0.8761904761904763,
+        "plan_task_coverage": 1.0,
+        "raw_privacy_coverage": 0.8,
+        "plan_privacy_coverage": 1.0,
+        "governance_action_coverage": 1.0,
+        "raw_agent_precision": 1.0,
+        "raw_agent_recall": 0.8400000000000001,
+        "raw_agent_f1": 0.9055555555555556,
+        "validated_agent_precision": 0.9666666666666666,
+        "validated_agent_recall": 1.0,
+        "validated_agent_f1": 0.9818181818181818,
+        "agents_added_count": 1.0,
+        "total_duration_ms": 4056.14332,
+        "output_tokens_per_second": 75.04650880335089
+      },
+      "use_case_3": {
+        "runs": 5,
+        "raw_classification_correct": 1.0,
+        "validated_classification_correct": 1.0,
+        "classification_changed": 0.0,
+        "raw_task_coverage": 0.9666666666666666,
+        "plan_task_coverage": 1.0,
+        "raw_privacy_coverage": 1.0,
+        "plan_privacy_coverage": 1.0,
+        "governance_action_coverage": 1.0,
+        "raw_agent_precision": 1.0,
+        "raw_agent_recall": 0.7571428571428571,
+        "raw_agent_f1": 0.8597668997668997,
+        "validated_agent_precision": 1.0,
+        "validated_agent_recall": 0.9714285714285713,
+        "validated_agent_f1": 0.9846153846153847,
+        "agents_added_count": 1.4,
+        "total_duration_ms": 4447.35654,
+        "output_tokens_per_second": 75.02261104026189
+      }
+    }
+  },
+  "records": [
+    {
+      "case_id": "development_use_case_1_v1",
+      "dataset": "development",
+      "expected_use_case_id": "use_case_1",
+      "variant_index": 1,
+      "prompt": "Stelle für neue Werkstudierende im IT-Support einen Onboarding-Pfad zusammen. Verwende die vorhandenen Materialien zu Datenschutz, Ticketsystem und IT-Sicherheit, kennzeichne Lücken oder veraltete Inhalte, plane 14 Tage Bearbeitungszeit und gib Führungskräften nur zusammengefasste Fortschrittswerte.",
+      "expected_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Course Agent",
+        "Enrollment Agent",
+        "Assignment Agent",
+        "Policy/Permission Agent"
+      ],
+      "expected_task_categories": [
+        "course_structure",
+        "content_review",
+        "target_group",
+        "deadline",
+        "reporting",
+        "governance"
+      ],
+      "expected_privacy_categories": [
+        "aggregation",
+        "no_personal_data"
+      ],
+      "expected_governance_controls": [
+        "aggregated_progress_allowed",
+        "personal_progress_blocked",
+        "course_publication_requires_approval",
+        "automatic_enrollment_requires_approval"
+      ],
+      "repetition": 1,
+      "seed": 42,
+      "temperature": 0.0,
+      "success": true,
+      "analysis": {
+        "use_case_id": "use_case_1",
+        "intent": "Onboarding-Pfad für neue Werkstudierende im IT-Support erstellen",
+        "tasks": [
+          "Kurs- und Lernpfadstruktur für Onboarding neuer Werkstudierende im IT-Support erstellen",
+          "Vorhandene Materialien zu Datenschutz, Ticketsystem und IT-Sicherheit einbeziehen",
+          "Lücken oder veraltete Inhalte in den Materialien identifizieren und kennzeichnen",
+          "Bearbeitungszeit von 14 Tagen für den Onboarding-Pfad planen",
+          "Führungskräften nur zusammengefasste Fortschrittswerte präsentieren"
+        ],
+        "agents": [
+          "Course Agent",
+          "Content Agent",
+          "Assignment Agent",
+          "Notification Agent"
+        ],
+        "privacy_requirements": [
+          "Führungskräften nur aggregierte oder zusammengefasste Fortschrittswerte präsentieren",
+          "Keine individuellen Daten der Werkstudierenden an Führungskräfte weitergeben"
+        ],
+        "open_questions": [
+          "Welche spezifischen Lücken oder veralteten Inhalte sollen in den Materialien identifiziert werden?",
+          "Gibt es weitere Zielgruppen oder Rollen, die in den Onboarding-Pfad einbezogen werden sollen?"
+        ],
+        "confidence": 0.95
+      },
+      "raw_use_case_id": "use_case_1",
+      "validated_use_case_id": "use_case_1",
+      "classification_changed": 0,
+      "classification_scores": {
+        "use_case_1": 4,
+        "use_case_2": 0,
+        "use_case_3": 1
+      },
+      "raw_classification_correct": 1,
+      "validated_classification_correct": 1,
+      "raw_task_coverage": 1.0,
+      "raw_task_categories_hit": [
+        "course_structure",
+        "content_review",
+        "target_group",
+        "deadline",
+        "reporting",
+        "governance"
+      ],
+      "raw_task_categories_missing": [],
+      "plan_task_coverage": 1.0,
+      "plan_task_categories_hit": [
+        "course_structure",
+        "content_review",
+        "target_group",
+        "deadline",
+        "reporting",
+        "governance"
+      ],
+      "plan_task_categories_missing": [],
+      "raw_privacy_coverage": 1.0,
+      "raw_privacy_categories_hit": [
+        "aggregation",
+        "no_personal_data"
+      ],
+      "raw_privacy_categories_missing": [],
+      "plan_privacy_coverage": 1.0,
+      "plan_privacy_categories_hit": [
+        "aggregation",
+        "no_personal_data"
+      ],
+      "plan_privacy_categories_missing": [],
+      "governance_action_coverage": 1.0,
+      "governance_controls_hit": [
+        "aggregated_progress_allowed",
+        "personal_progress_blocked",
+        "course_publication_requires_approval",
+        "automatic_enrollment_requires_approval"
+      ],
+      "governance_controls_missing": [],
+      "raw_agents": [
+        "Course Agent",
+        "Content Agent",
+        "Assignment Agent",
+        "Notification Agent"
+      ],
+      "effective_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Course Agent",
+        "Enrollment Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Policy/Permission Agent"
+      ],
+      "agents_added_by_validator": [
+        "Analytics/Metrics Agent",
+        "Enrollment Agent",
+        "Policy/Permission Agent"
+      ],
+      "agents_added_count": 3,
+      "raw_agent_precision": 0.75,
+      "raw_agent_recall": 0.5,
+      "raw_agent_f1": 0.6,
+      "raw_agents_missing": [
+        "Analytics/Metrics Agent",
+        "Enrollment Agent",
+        "Policy/Permission Agent"
+      ],
+      "raw_agents_extra": [
+        "Notification Agent"
+      ],
+      "validated_agent_precision": 0.8571428571428571,
+      "validated_agent_recall": 1.0,
+      "validated_agent_f1": 0.923076923076923,
+      "validated_agents_missing": [],
+      "validated_agents_extra": [
+        "Notification Agent"
+      ],
+      "action_plan": {
+        "use_case_id": "use_case_1",
+        "title": "Onboarding-Lernpfad",
+        "user_request": "Stelle für neue Werkstudierende im IT-Support einen Onboarding-Pfad zusammen. Verwende die vorhandenen Materialien zu Datenschutz, Ticketsystem und IT-Sicherheit, kennzeichne Lücken oder veraltete Inhalte, plane 14 Tage Bearbeitungszeit und gib Führungskräften nur zusammengefasste Fortschrittswerte.",
+        "tasks": [
+          "Kurs- und Lernpfadstruktur für Onboarding neuer Werkstudierende im IT-Support erstellen",
+          "Vorhandene Materialien zu Datenschutz, Ticketsystem und IT-Sicherheit einbeziehen",
+          "Lücken oder veraltete Inhalte in den Materialien identifizieren und kennzeichnen",
+          "Bearbeitungszeit von 14 Tagen für den Onboarding-Pfad planen",
+          "Führungskräften nur zusammengefasste Fortschrittswerte präsentieren",
+          "Governance-Anforderung berücksichtigen: Führungskräften nur aggregierte oder zusammengefasste Fortschrittswerte präsentieren",
+          "Governance-Anforderung berücksichtigen: Keine individuellen Daten der Werkstudierenden an Führungskräfte weitergeben",
+          "Deterministische Agentenvalidierung ergänzte: Analytics/Metrics Agent, Enrollment Agent, Policy/Permission Agent"
+        ],
+        "involved_agents": [
+          "Orchestrator Agent",
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Course Agent",
+          "Enrollment Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ],
+        "actions": [
+          {
+            "action": "Aggregierte Fortschrittsübersicht vorbereiten",
+            "status": "erlaubt",
+            "reason": "Aggregierte Fortschrittsdaten sind für Teamleiter geeigneter als personenbezogene Detaildaten.",
+            "used_data": [
+              "User",
+              "Group",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Fehlende Inhalte markieren: Eskalationsprozess",
+            "status": "erlaubt",
+            "reason": "Fehlende Inhalte müssen vor Veröffentlichung oder Kursanpassung sichtbar gemacht werden.",
+            "used_data": [
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Veraltete Inhalte zur Aktualisierung markieren: Kommunikationsregeln",
+            "status": "erlaubt",
+            "reason": "Veraltete Inhalte sollten vor Nutzung oder Veröffentlichung fachlich geprüft werden.",
+            "used_data": [
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Lernpfadstruktur für Kurs 'Onboarding IT-Support' vorbereiten",
+            "status": "erlaubt",
+            "reason": "Die Erstellung eines Kursstrukturvorschlags ist eine vorbereitende Aktion.",
+            "used_data": [
+              "Course",
+              "Module"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Kurs 'Onboarding IT-Support' veröffentlichen",
+            "status": "freigabepflichtig",
+            "reason": "Die Veröffentlichung eines Kurses hat organisatorische Auswirkungen und benötigt menschliche Freigabe.",
+            "used_data": [
+              "Course",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Zielgruppe identifizieren: Neue Werkstudenten IT-Support",
+            "status": "erlaubt",
+            "reason": "Die Zielgruppe ergibt sich aus der simulierten Gruppenzuordnung.",
+            "used_data": [
+              "Group",
+              "User"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Lernende aus Zielgruppe 'Neue Werkstudenten IT-Support' automatisch einschreiben",
+            "status": "freigabepflichtig",
+            "reason": "Automatische Einschreibungen verändern den Kursstatus für Nutzerinnen und Nutzer und benötigen Freigabe.",
+            "used_data": [
+              "User",
+              "Group",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Bearbeitungsfrist von 14 Tagen vorschlagen",
+            "status": "erlaubt",
+            "reason": "Die Frist wird nur als Vorschlag vorbereitet und nicht automatisch angewendet.",
+            "used_data": [
+              "Course",
+              "Group"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Benachrichtigung für neue Werkstudentinnen und Werkstudenten vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Der Versand von Nachrichten an Lernende soll vorab freigegeben werden.",
+            "used_data": [
+              "User",
+              "Group",
+              "ActionPlan"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Aggregierte Fortschrittsinformation für Teamleiter vorbereiten",
+            "status": "erlaubt",
+            "reason": "Aggregierte Informationen vermeiden unnötige personenbezogene Offenlegung.",
+            "used_data": [
+              "PermissionRule",
+              "ActionPlan"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Personenbezogene Fortschrittsdaten an Teamleiter senden",
+            "status": "blockiert",
+            "reason": "Teamleiter dürfen laut Berechtigungsregeln nur aggregierte Fortschrittsinformationen erhalten.",
+            "used_data": [
+              "PermissionRule",
+              "User",
+              "Group"
+            ],
+            "uncertainties": []
+          }
+        ],
+        "open_questions": [
+          "Welche spezifischen Lücken oder veralteten Inhalte sollen in den Materialien identifiziert werden?",
+          "Gibt es weitere Zielgruppen oder Rollen, die in den Onboarding-Pfad einbezogen werden sollen?"
+        ]
+      },
+      "validation": {
+        "raw_use_case_id": "use_case_1",
+        "validated_use_case_id": "use_case_1",
+        "classification_changed": false,
+        "classification_scores": {
+          "use_case_1": 4,
+          "use_case_2": 0,
+          "use_case_3": 1
+        },
+        "raw_agents": [
+          "Course Agent",
+          "Content Agent",
+          "Assignment Agent",
+          "Notification Agent"
+        ],
+        "agents_added_by_validator": [
+          "Analytics/Metrics Agent",
+          "Enrollment Agent",
+          "Policy/Permission Agent"
+        ],
+        "effective_agents": [
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Course Agent",
+          "Enrollment Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ]
+      },
+      "total_duration_ms": 4348.8409,
+      "load_duration_ms": 109.2802,
+      "prompt_tokens": 921,
+      "output_tokens": 315,
+      "output_tokens_per_second": 75.41582853155946,
+      "response_model": "qwen3:14b",
+      "response_created_at": "2026-08-04T20:36:21.8384712Z"
+    },
+    {
+      "case_id": "development_use_case_1_v2",
+      "dataset": "development",
+      "expected_use_case_id": "use_case_1",
+      "variant_index": 2,
+      "prompt": "Wir stellen neue Werkstudenten im Support ein. Bitte bereite im LMS einen zweiwöchigen Lernpfad vor, prüfe den vorhandenen Content auf fehlende beziehungsweise alte Bausteine und achte darauf, dass Teamleiter keine individuellen Fortschrittsdaten sehen.",
+      "expected_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Course Agent",
+        "Enrollment Agent",
+        "Assignment Agent",
+        "Policy/Permission Agent"
+      ],
+      "expected_task_categories": [
+        "course_structure",
+        "content_review",
+        "target_group",
+        "deadline",
+        "reporting",
+        "governance"
+      ],
+      "expected_privacy_categories": [
+        "no_personal_data",
+        "permissions"
+      ],
+      "expected_governance_controls": [
+        "aggregated_progress_allowed",
+        "personal_progress_blocked",
+        "course_publication_requires_approval",
+        "automatic_enrollment_requires_approval"
+      ],
+      "repetition": 1,
+      "seed": 42,
+      "temperature": 0.0,
+      "success": true,
+      "analysis": {
+        "use_case_id": "use_case_1",
+        "intent": "Vorbereitung eines Lernpfads für neue Werkstudenten im IT-Support",
+        "tasks": [
+          "Erstellung eines zweiwöchigen Lernpfads für neue Werkstudenten im IT-Support",
+          "Prüfung des vorhandenen Contents auf fehlende oder veraltete Bausteine",
+          "Sicherstellung, dass Teamleiter keine individuellen Fortschrittsdaten einsehen können"
+        ],
+        "agents": [
+          "Course Agent",
+          "Content Agent",
+          "Policy/Permission Agent"
+        ],
+        "privacy_requirements": [
+          "Teamleiter dürfen keine individuellen Fortschrittsdaten der Werkstudenten einsehen"
+        ],
+        "open_questions": [
+          "Gibt es bereits einen bestehenden Lernpfad, der angepasst werden soll?",
+          "Welche spezifischen Themen oder Inhalte sollen im Lernpfad enthalten sein?",
+          "Sind weitere Rollen oder Berechtigungen zu berücksichtigen?"
+        ],
+        "confidence": 0.9
+      },
+      "raw_use_case_id": "use_case_1",
+      "validated_use_case_id": "use_case_1",
+      "classification_changed": 0,
+      "classification_scores": {
+        "use_case_1": 4,
+        "use_case_2": 0,
+        "use_case_3": 1
+      },
+      "raw_classification_correct": 1,
+      "validated_classification_correct": 1,
+      "raw_task_coverage": 0.8333333333333334,
+      "raw_task_categories_hit": [
+        "course_structure",
+        "content_review",
+        "target_group",
+        "deadline",
+        "reporting"
+      ],
+      "raw_task_categories_missing": [
+        "governance"
+      ],
+      "plan_task_coverage": 1.0,
+      "plan_task_categories_hit": [
+        "course_structure",
+        "content_review",
+        "target_group",
+        "deadline",
+        "reporting",
+        "governance"
+      ],
+      "plan_task_categories_missing": [],
+      "raw_privacy_coverage": 0.5,
+      "raw_privacy_categories_hit": [
+        "no_personal_data"
+      ],
+      "raw_privacy_categories_missing": [
+        "permissions"
+      ],
+      "plan_privacy_coverage": 1.0,
+      "plan_privacy_categories_hit": [
+        "no_personal_data",
+        "permissions"
+      ],
+      "plan_privacy_categories_missing": [],
+      "governance_action_coverage": 1.0,
+      "governance_controls_hit": [
+        "aggregated_progress_allowed",
+        "personal_progress_blocked",
+        "course_publication_requires_approval",
+        "automatic_enrollment_requires_approval"
+      ],
+      "governance_controls_missing": [],
+      "raw_agents": [
+        "Course Agent",
+        "Content Agent",
+        "Policy/Permission Agent"
+      ],
+      "effective_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Course Agent",
+        "Enrollment Agent",
+        "Policy/Permission Agent"
+      ],
+      "agents_added_by_validator": [
+        "Analytics/Metrics Agent",
+        "Enrollment Agent"
+      ],
+      "agents_added_count": 2,
+      "raw_agent_precision": 1.0,
+      "raw_agent_recall": 0.5,
+      "raw_agent_f1": 0.6666666666666666,
+      "raw_agents_missing": [
+        "Analytics/Metrics Agent",
+        "Assignment Agent",
+        "Enrollment Agent"
+      ],
+      "raw_agents_extra": [],
+      "validated_agent_precision": 1.0,
+      "validated_agent_recall": 0.8333333333333334,
+      "validated_agent_f1": 0.9090909090909091,
+      "validated_agents_missing": [
+        "Assignment Agent"
+      ],
+      "validated_agents_extra": [],
+      "action_plan": {
+        "use_case_id": "use_case_1",
+        "title": "Onboarding-Lernpfad",
+        "user_request": "Wir stellen neue Werkstudenten im Support ein. Bitte bereite im LMS einen zweiwöchigen Lernpfad vor, prüfe den vorhandenen Content auf fehlende beziehungsweise alte Bausteine und achte darauf, dass Teamleiter keine individuellen Fortschrittsdaten sehen.",
+        "tasks": [
+          "Erstellung eines zweiwöchigen Lernpfads für neue Werkstudenten im IT-Support",
+          "Prüfung des vorhandenen Contents auf fehlende oder veraltete Bausteine",
+          "Sicherstellung, dass Teamleiter keine individuellen Fortschrittsdaten einsehen können",
+          "Governance-Anforderung berücksichtigen: Teamleiter dürfen keine individuellen Fortschrittsdaten der Werkstudenten einsehen",
+          "Deterministische Agentenvalidierung ergänzte: Analytics/Metrics Agent, Enrollment Agent"
+        ],
+        "involved_agents": [
+          "Orchestrator Agent",
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Course Agent",
+          "Enrollment Agent",
+          "Policy/Permission Agent"
+        ],
+        "actions": [
+          {
+            "action": "Aggregierte Fortschrittsübersicht vorbereiten",
+            "status": "erlaubt",
+            "reason": "Aggregierte Fortschrittsdaten sind für Teamleiter geeigneter als personenbezogene Detaildaten.",
+            "used_data": [
+              "User",
+              "Group",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Fehlende Inhalte markieren: Eskalationsprozess",
+            "status": "erlaubt",
+            "reason": "Fehlende Inhalte müssen vor Veröffentlichung oder Kursanpassung sichtbar gemacht werden.",
+            "used_data": [
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Veraltete Inhalte zur Aktualisierung markieren: Kommunikationsregeln",
+            "status": "erlaubt",
+            "reason": "Veraltete Inhalte sollten vor Nutzung oder Veröffentlichung fachlich geprüft werden.",
+            "used_data": [
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Lernpfadstruktur für Kurs 'Onboarding IT-Support' vorbereiten",
+            "status": "erlaubt",
+            "reason": "Die Erstellung eines Kursstrukturvorschlags ist eine vorbereitende Aktion.",
+            "used_data": [
+              "Course",
+              "Module"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Kurs 'Onboarding IT-Support' veröffentlichen",
+            "status": "freigabepflichtig",
+            "reason": "Die Veröffentlichung eines Kurses hat organisatorische Auswirkungen und benötigt menschliche Freigabe.",
+            "used_data": [
+              "Course",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Zielgruppe identifizieren: Neue Werkstudenten IT-Support",
+            "status": "erlaubt",
+            "reason": "Die Zielgruppe ergibt sich aus der simulierten Gruppenzuordnung.",
+            "used_data": [
+              "Group",
+              "User"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Lernende aus Zielgruppe 'Neue Werkstudenten IT-Support' automatisch einschreiben",
+            "status": "freigabepflichtig",
+            "reason": "Automatische Einschreibungen verändern den Kursstatus für Nutzerinnen und Nutzer und benötigen Freigabe.",
+            "used_data": [
+              "User",
+              "Group",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Personenbezogene Fortschrittsdaten an Teamleiter senden",
+            "status": "blockiert",
+            "reason": "Teamleiter dürfen laut Berechtigungsregeln nur aggregierte Fortschrittsinformationen erhalten.",
+            "used_data": [
+              "PermissionRule",
+              "User",
+              "Group"
+            ],
+            "uncertainties": []
+          }
+        ],
+        "open_questions": [
+          "Gibt es bereits einen bestehenden Lernpfad, der angepasst werden soll?",
+          "Welche spezifischen Themen oder Inhalte sollen im Lernpfad enthalten sein?",
+          "Sind weitere Rollen oder Berechtigungen zu berücksichtigen?"
+        ]
+      },
+      "validation": {
+        "raw_use_case_id": "use_case_1",
+        "validated_use_case_id": "use_case_1",
+        "classification_changed": false,
+        "classification_scores": {
+          "use_case_1": 4,
+          "use_case_2": 0,
+          "use_case_3": 1
+        },
+        "raw_agents": [
+          "Course Agent",
+          "Content Agent",
+          "Policy/Permission Agent"
+        ],
+        "agents_added_by_validator": [
+          "Analytics/Metrics Agent",
+          "Enrollment Agent"
+        ],
+        "effective_agents": [
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Course Agent",
+          "Enrollment Agent",
+          "Policy/Permission Agent"
+        ]
+      },
+      "total_duration_ms": 3545.9375,
+      "load_duration_ms": 111.4638,
+      "prompt_tokens": 912,
+      "output_tokens": 253,
+      "output_tokens_per_second": 74.78777122391222,
+      "response_model": "qwen3:14b",
+      "response_created_at": "2026-08-04T20:36:27.4355528Z"
+    },
+    {
+      "case_id": "development_use_case_1_v3",
+      "dataset": "development",
+      "expected_use_case_id": "use_case_1",
+      "variant_index": 3,
+      "prompt": "Für das IT-Support-Onboarding soll ein Lernpfad entstehen. Bestehende Datenschutz-, Ticket- und Security-Inhalte sollen weiterverwendet werden. Fehlendes und Überholtes muss auffallen, die Frist beträgt 14 Tage und das Management erhält nur aggregiertes Reporting.",
+      "expected_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Course Agent",
+        "Assignment Agent",
+        "Policy/Permission Agent"
+      ],
+      "expected_task_categories": [
+        "course_structure",
+        "content_review",
+        "deadline",
+        "reporting",
+        "governance"
+      ],
+      "expected_privacy_categories": [
+        "aggregation",
+        "no_personal_data"
+      ],
+      "expected_governance_controls": [
+        "aggregated_progress_allowed",
+        "personal_progress_blocked",
+        "course_publication_requires_approval"
+      ],
+      "repetition": 1,
+      "seed": 42,
+      "temperature": 0.0,
+      "success": true,
+      "analysis": {
+        "use_case_id": "use_case_1",
+        "intent": "Lernpfad für IT-Support-Onboarding erstellen",
+        "tasks": [
+          "Lernpfadstruktur für IT-Support-Onboarding definieren",
+          "Bestehende Inhalte zu Datenschutz, Ticket- und Security-Themen in den Lernpfad integrieren",
+          "Identifizieren von fehlenden und veralteten Inhalten im Lernpfad",
+          "Frist für das Onboarding auf 14 Tage setzen",
+          "Aggregiertes Reporting an das Management übermitteln"
+        ],
+        "agents": [
+          "Course Agent",
+          "Content Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Analytics/Metrics Agent"
+        ],
+        "privacy_requirements": [
+          "Nur aggregiertes Reporting an das Management übermitteln",
+          "Keine individuellen Daten im Reporting verwenden"
+        ],
+        "open_questions": [
+          "Welche Zielgruppe ist für den Lernpfad vorgesehen?",
+          "Gibt es spezifische Anforderungen an die Struktur des Lernpfads?",
+          "Sind weitere Agentenrollen wie der Policy/Permission Agent erforderlich, um Freigaben oder Rollenrechte zu definieren?"
+        ],
+        "confidence": 0.9
+      },
+      "raw_use_case_id": "use_case_1",
+      "validated_use_case_id": "use_case_1",
+      "classification_changed": 0,
+      "classification_scores": {
+        "use_case_1": 4,
+        "use_case_2": 0,
+        "use_case_3": 0
+      },
+      "raw_classification_correct": 1,
+      "validated_classification_correct": 1,
+      "raw_task_coverage": 1.0,
+      "raw_task_categories_hit": [
+        "course_structure",
+        "content_review",
+        "deadline",
+        "reporting",
+        "governance"
+      ],
+      "raw_task_categories_missing": [],
+      "plan_task_coverage": 1.0,
+      "plan_task_categories_hit": [
+        "course_structure",
+        "content_review",
+        "deadline",
+        "reporting",
+        "governance"
+      ],
+      "plan_task_categories_missing": [],
+      "raw_privacy_coverage": 1.0,
+      "raw_privacy_categories_hit": [
+        "aggregation",
+        "no_personal_data"
+      ],
+      "raw_privacy_categories_missing": [],
+      "plan_privacy_coverage": 1.0,
+      "plan_privacy_categories_hit": [
+        "aggregation",
+        "no_personal_data"
+      ],
+      "plan_privacy_categories_missing": [],
+      "governance_action_coverage": 1.0,
+      "governance_controls_hit": [
+        "aggregated_progress_allowed",
+        "personal_progress_blocked",
+        "course_publication_requires_approval"
+      ],
+      "governance_controls_missing": [],
+      "raw_agents": [
+        "Course Agent",
+        "Content Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Analytics/Metrics Agent"
+      ],
+      "effective_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Course Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Policy/Permission Agent"
+      ],
+      "agents_added_by_validator": [
+        "Policy/Permission Agent"
+      ],
+      "agents_added_count": 1,
+      "raw_agent_precision": 0.8,
+      "raw_agent_recall": 0.8,
+      "raw_agent_f1": 0.8000000000000002,
+      "raw_agents_missing": [
+        "Policy/Permission Agent"
+      ],
+      "raw_agents_extra": [
+        "Notification Agent"
+      ],
+      "validated_agent_precision": 0.8333333333333334,
+      "validated_agent_recall": 1.0,
+      "validated_agent_f1": 0.9090909090909091,
+      "validated_agents_missing": [],
+      "validated_agents_extra": [
+        "Notification Agent"
+      ],
+      "action_plan": {
+        "use_case_id": "use_case_1",
+        "title": "Onboarding-Lernpfad",
+        "user_request": "Für das IT-Support-Onboarding soll ein Lernpfad entstehen. Bestehende Datenschutz-, Ticket- und Security-Inhalte sollen weiterverwendet werden. Fehlendes und Überholtes muss auffallen, die Frist beträgt 14 Tage und das Management erhält nur aggregiertes Reporting.",
+        "tasks": [
+          "Lernpfadstruktur für IT-Support-Onboarding definieren",
+          "Bestehende Inhalte zu Datenschutz, Ticket- und Security-Themen in den Lernpfad integrieren",
+          "Identifizieren von fehlenden und veralteten Inhalten im Lernpfad",
+          "Frist für das Onboarding auf 14 Tage setzen",
+          "Aggregiertes Reporting an das Management übermitteln",
+          "Governance-Anforderung berücksichtigen: Nur aggregiertes Reporting an das Management übermitteln",
+          "Governance-Anforderung berücksichtigen: Keine individuellen Daten im Reporting verwenden",
+          "Deterministische Agentenvalidierung ergänzte: Policy/Permission Agent"
+        ],
+        "involved_agents": [
+          "Orchestrator Agent",
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Course Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ],
+        "actions": [
+          {
+            "action": "Aggregierte Fortschrittsübersicht vorbereiten",
+            "status": "erlaubt",
+            "reason": "Aggregierte Fortschrittsdaten sind für Teamleiter geeigneter als personenbezogene Detaildaten.",
+            "used_data": [
+              "User",
+              "Group",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Fehlende Inhalte markieren: Eskalationsprozess",
+            "status": "erlaubt",
+            "reason": "Fehlende Inhalte müssen vor Veröffentlichung oder Kursanpassung sichtbar gemacht werden.",
+            "used_data": [
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Veraltete Inhalte zur Aktualisierung markieren: Kommunikationsregeln",
+            "status": "erlaubt",
+            "reason": "Veraltete Inhalte sollten vor Nutzung oder Veröffentlichung fachlich geprüft werden.",
+            "used_data": [
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Lernpfadstruktur für Kurs 'Onboarding IT-Support' vorbereiten",
+            "status": "erlaubt",
+            "reason": "Die Erstellung eines Kursstrukturvorschlags ist eine vorbereitende Aktion.",
+            "used_data": [
+              "Course",
+              "Module"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Kurs 'Onboarding IT-Support' veröffentlichen",
+            "status": "freigabepflichtig",
+            "reason": "Die Veröffentlichung eines Kurses hat organisatorische Auswirkungen und benötigt menschliche Freigabe.",
+            "used_data": [
+              "Course",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Bearbeitungsfrist von 14 Tagen vorschlagen",
+            "status": "erlaubt",
+            "reason": "Die Frist wird nur als Vorschlag vorbereitet und nicht automatisch angewendet.",
+            "used_data": [
+              "Course",
+              "Group"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Benachrichtigung für neue Werkstudentinnen und Werkstudenten vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Der Versand von Nachrichten an Lernende soll vorab freigegeben werden.",
+            "used_data": [
+              "User",
+              "Group",
+              "ActionPlan"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Aggregierte Fortschrittsinformation für Teamleiter vorbereiten",
+            "status": "erlaubt",
+            "reason": "Aggregierte Informationen vermeiden unnötige personenbezogene Offenlegung.",
+            "used_data": [
+              "PermissionRule",
+              "ActionPlan"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Personenbezogene Fortschrittsdaten an Teamleiter senden",
+            "status": "blockiert",
+            "reason": "Teamleiter dürfen laut Berechtigungsregeln nur aggregierte Fortschrittsinformationen erhalten.",
+            "used_data": [
+              "PermissionRule",
+              "User",
+              "Group"
+            ],
+            "uncertainties": []
+          }
+        ],
+        "open_questions": [
+          "Welche Zielgruppe ist für den Lernpfad vorgesehen?",
+          "Gibt es spezifische Anforderungen an die Struktur des Lernpfads?",
+          "Sind weitere Agentenrollen wie der Policy/Permission Agent erforderlich, um Freigaben oder Rollenrechte zu definieren?"
+        ]
+      },
+      "validation": {
+        "raw_use_case_id": "use_case_1",
+        "validated_use_case_id": "use_case_1",
+        "classification_changed": false,
+        "classification_scores": {
+          "use_case_1": 4,
+          "use_case_2": 0,
+          "use_case_3": 0
+        },
+        "raw_agents": [
+          "Course Agent",
+          "Content Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Analytics/Metrics Agent"
+        ],
+        "agents_added_by_validator": [
+          "Policy/Permission Agent"
+        ],
+        "effective_agents": [
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Course Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ]
+      },
+      "total_duration_ms": 4110.5144,
+      "load_duration_ms": 109.5648,
+      "prompt_tokens": 916,
+      "output_tokens": 297,
+      "output_tokens_per_second": 75.22769676095373,
+      "response_model": "qwen3:14b",
+      "response_created_at": "2026-08-04T20:36:33.5979409Z"
+    },
+    {
+      "case_id": "development_use_case_1_v4",
+      "dataset": "development",
+      "expected_use_case_id": "use_case_1",
+      "variant_index": 4,
+      "prompt": "Plane das LMS-Onboarding für alle neuen Werkstudentinnen und Werkstudenten im IT-Support: passende Gruppe bestimmen, vorhandene Module nutzen, Content-Lücken markieren, Abschluss innerhalb von 14 Tagen vorsehen und Fortschritte gegenüber Teamleitern datensparsam zusammenfassen.",
+      "expected_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Course Agent",
+        "Enrollment Agent",
+        "Assignment Agent",
+        "Policy/Permission Agent"
+      ],
+      "expected_task_categories": [
+        "course_structure",
+        "content_review",
+        "target_group",
+        "deadline",
+        "reporting",
+        "governance"
+      ],
+      "expected_privacy_categories": [
+        "aggregation",
+        "no_personal_data"
+      ],
+      "expected_governance_controls": [
+        "aggregated_progress_allowed",
+        "personal_progress_blocked",
+        "course_publication_requires_approval",
+        "automatic_enrollment_requires_approval"
+      ],
+      "repetition": 1,
+      "seed": 42,
+      "temperature": 0.0,
+      "success": true,
+      "analysis": {
+        "use_case_id": "use_case_1",
+        "intent": "Onboarding neuer Werkstudierender im IT-Support; Lernpfad, Content-Status, Zielgruppe, Frist und Fortschrittsreporting.",
+        "tasks": [
+          "passende Gruppe bestimmen",
+          "vorhandene Module nutzen",
+          "Content-Lücken markieren",
+          "Abschluss innerhalb von 14 Tagen vorsehen",
+          "Fortschritte gegenüber Teamleitern datensparsam zusammenfassen"
+        ],
+        "agents": [
+          "Enrollment Agent",
+          "Course Agent",
+          "Content Agent",
+          "Assignment Agent",
+          "Notification Agent"
+        ],
+        "privacy_requirements": [
+          "datensparsame Zusammenfassung von Fortschritten",
+          "keine individuellen Daten an Teamleiter weitergeben"
+        ],
+        "open_questions": [
+          "Welche spezifischen Module sollen genutzt werden?",
+          "Welche Kriterien definieren die passende Gruppe?",
+          "Welche Art der Fortschrittszusammenfassung ist gewünscht (z. B. aggregiert, anonymisiert)?"
+        ],
+        "confidence": 0.95
+      },
+      "raw_use_case_id": "use_case_1",
+      "validated_use_case_id": "use_case_1",
+      "classification_changed": 0,
+      "classification_scores": {
+        "use_case_1": 5,
+        "use_case_2": 0,
+        "use_case_3": 1
+      },
+      "raw_classification_correct": 1,
+      "validated_classification_correct": 1,
+      "raw_task_coverage": 0.8333333333333334,
+      "raw_task_categories_hit": [
+        "content_review",
+        "target_group",
+        "deadline",
+        "reporting",
+        "governance"
+      ],
+      "raw_task_categories_missing": [
+        "course_structure"
+      ],
+      "plan_task_coverage": 1.0,
+      "plan_task_categories_hit": [
+        "course_structure",
+        "content_review",
+        "target_group",
+        "deadline",
+        "reporting",
+        "governance"
+      ],
+      "plan_task_categories_missing": [],
+      "raw_privacy_coverage": 1.0,
+      "raw_privacy_categories_hit": [
+        "aggregation",
+        "no_personal_data"
+      ],
+      "raw_privacy_categories_missing": [],
+      "plan_privacy_coverage": 1.0,
+      "plan_privacy_categories_hit": [
+        "aggregation",
+        "no_personal_data"
+      ],
+      "plan_privacy_categories_missing": [],
+      "governance_action_coverage": 1.0,
+      "governance_controls_hit": [
+        "aggregated_progress_allowed",
+        "personal_progress_blocked",
+        "course_publication_requires_approval",
+        "automatic_enrollment_requires_approval"
+      ],
+      "governance_controls_missing": [],
+      "raw_agents": [
+        "Enrollment Agent",
+        "Course Agent",
+        "Content Agent",
+        "Assignment Agent",
+        "Notification Agent"
+      ],
+      "effective_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Course Agent",
+        "Enrollment Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Policy/Permission Agent"
+      ],
+      "agents_added_by_validator": [
+        "Analytics/Metrics Agent",
+        "Policy/Permission Agent"
+      ],
+      "agents_added_count": 2,
+      "raw_agent_precision": 0.8,
+      "raw_agent_recall": 0.6666666666666666,
+      "raw_agent_f1": 0.7272727272727272,
+      "raw_agents_missing": [
+        "Analytics/Metrics Agent",
+        "Policy/Permission Agent"
+      ],
+      "raw_agents_extra": [
+        "Notification Agent"
+      ],
+      "validated_agent_precision": 0.8571428571428571,
+      "validated_agent_recall": 1.0,
+      "validated_agent_f1": 0.923076923076923,
+      "validated_agents_missing": [],
+      "validated_agents_extra": [
+        "Notification Agent"
+      ],
+      "action_plan": {
+        "use_case_id": "use_case_1",
+        "title": "Onboarding-Lernpfad",
+        "user_request": "Plane das LMS-Onboarding für alle neuen Werkstudentinnen und Werkstudenten im IT-Support: passende Gruppe bestimmen, vorhandene Module nutzen, Content-Lücken markieren, Abschluss innerhalb von 14 Tagen vorsehen und Fortschritte gegenüber Teamleitern datensparsam zusammenfassen.",
+        "tasks": [
+          "passende Gruppe bestimmen",
+          "vorhandene Module nutzen",
+          "Content-Lücken markieren",
+          "Abschluss innerhalb von 14 Tagen vorsehen",
+          "Fortschritte gegenüber Teamleitern datensparsam zusammenfassen",
+          "Governance-Anforderung berücksichtigen: datensparsame Zusammenfassung von Fortschritten",
+          "Governance-Anforderung berücksichtigen: keine individuellen Daten an Teamleiter weitergeben",
+          "Deterministische Agentenvalidierung ergänzte: Analytics/Metrics Agent, Policy/Permission Agent"
+        ],
+        "involved_agents": [
+          "Orchestrator Agent",
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Course Agent",
+          "Enrollment Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ],
+        "actions": [
+          {
+            "action": "Aggregierte Fortschrittsübersicht vorbereiten",
+            "status": "erlaubt",
+            "reason": "Aggregierte Fortschrittsdaten sind für Teamleiter geeigneter als personenbezogene Detaildaten.",
+            "used_data": [
+              "User",
+              "Group",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Fehlende Inhalte markieren: Eskalationsprozess",
+            "status": "erlaubt",
+            "reason": "Fehlende Inhalte müssen vor Veröffentlichung oder Kursanpassung sichtbar gemacht werden.",
+            "used_data": [
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Veraltete Inhalte zur Aktualisierung markieren: Kommunikationsregeln",
+            "status": "erlaubt",
+            "reason": "Veraltete Inhalte sollten vor Nutzung oder Veröffentlichung fachlich geprüft werden.",
+            "used_data": [
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Lernpfadstruktur für Kurs 'Onboarding IT-Support' vorbereiten",
+            "status": "erlaubt",
+            "reason": "Die Erstellung eines Kursstrukturvorschlags ist eine vorbereitende Aktion.",
+            "used_data": [
+              "Course",
+              "Module"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Kurs 'Onboarding IT-Support' veröffentlichen",
+            "status": "freigabepflichtig",
+            "reason": "Die Veröffentlichung eines Kurses hat organisatorische Auswirkungen und benötigt menschliche Freigabe.",
+            "used_data": [
+              "Course",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Zielgruppe identifizieren: Neue Werkstudenten IT-Support",
+            "status": "erlaubt",
+            "reason": "Die Zielgruppe ergibt sich aus der simulierten Gruppenzuordnung.",
+            "used_data": [
+              "Group",
+              "User"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Lernende aus Zielgruppe 'Neue Werkstudenten IT-Support' automatisch einschreiben",
+            "status": "freigabepflichtig",
+            "reason": "Automatische Einschreibungen verändern den Kursstatus für Nutzerinnen und Nutzer und benötigen Freigabe.",
+            "used_data": [
+              "User",
+              "Group",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Bearbeitungsfrist von 14 Tagen vorschlagen",
+            "status": "erlaubt",
+            "reason": "Die Frist wird nur als Vorschlag vorbereitet und nicht automatisch angewendet.",
+            "used_data": [
+              "Course",
+              "Group"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Benachrichtigung für neue Werkstudentinnen und Werkstudenten vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Der Versand von Nachrichten an Lernende soll vorab freigegeben werden.",
+            "used_data": [
+              "User",
+              "Group",
+              "ActionPlan"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Aggregierte Fortschrittsinformation für Teamleiter vorbereiten",
+            "status": "erlaubt",
+            "reason": "Aggregierte Informationen vermeiden unnötige personenbezogene Offenlegung.",
+            "used_data": [
+              "PermissionRule",
+              "ActionPlan"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Personenbezogene Fortschrittsdaten an Teamleiter senden",
+            "status": "blockiert",
+            "reason": "Teamleiter dürfen laut Berechtigungsregeln nur aggregierte Fortschrittsinformationen erhalten.",
+            "used_data": [
+              "PermissionRule",
+              "User",
+              "Group"
+            ],
+            "uncertainties": []
+          }
+        ],
+        "open_questions": [
+          "Welche spezifischen Module sollen genutzt werden?",
+          "Welche Kriterien definieren die passende Gruppe?",
+          "Welche Art der Fortschrittszusammenfassung ist gewünscht (z. B. aggregiert, anonymisiert)?"
+        ]
+      },
+      "validation": {
+        "raw_use_case_id": "use_case_1",
+        "validated_use_case_id": "use_case_1",
+        "classification_changed": false,
+        "classification_scores": {
+          "use_case_1": 5,
+          "use_case_2": 0,
+          "use_case_3": 1
+        },
+        "raw_agents": [
+          "Enrollment Agent",
+          "Course Agent",
+          "Content Agent",
+          "Assignment Agent",
+          "Notification Agent"
+        ],
+        "agents_added_by_validator": [
+          "Analytics/Metrics Agent",
+          "Policy/Permission Agent"
+        ],
+        "effective_agents": [
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Course Agent",
+          "Enrollment Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ]
+      },
+      "total_duration_ms": 3846.9121,
+      "load_duration_ms": 109.4628,
+      "prompt_tokens": 914,
+      "output_tokens": 277,
+      "output_tokens_per_second": 75.18466384855365,
+      "response_model": "qwen3:14b",
+      "response_created_at": "2026-08-04T20:36:39.5008835Z"
+    },
+    {
+      "case_id": "development_use_case_1_v5",
+      "dataset": "development",
+      "expected_use_case_id": "use_case_1",
+      "variant_index": 5,
+      "prompt": "Erzeuge einen freigabefähigen Vorschlag für den Onboarding-Lernpfad der neuen IT-Support-Werkstudierenden. Prüfe Module und Aktualität, ordne die Zielgruppe zu, lege eine 14-Tage-Frist nahe und verhindere personenbezogene Fortschrittsberichte an Teamleiter.",
+      "expected_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Course Agent",
+        "Enrollment Agent",
+        "Assignment Agent",
+        "Policy/Permission Agent"
+      ],
+      "expected_task_categories": [
+        "course_structure",
+        "content_review",
+        "target_group",
+        "deadline",
+        "reporting",
+        "governance"
+      ],
+      "expected_privacy_categories": [
+        "no_personal_data",
+        "permissions"
+      ],
+      "expected_governance_controls": [
+        "aggregated_progress_allowed",
+        "personal_progress_blocked",
+        "course_publication_requires_approval",
+        "automatic_enrollment_requires_approval"
+      ],
+      "repetition": 1,
+      "seed": 42,
+      "temperature": 0.0,
+      "success": true,
+      "analysis": {
+        "use_case_id": "use_case_1",
+        "intent": "Erstellung eines freigabefähigen Onboarding-Lernpfad-Vorschlags für IT-Support-Werkstudierende mit Frist und Datenschutzanforderungen",
+        "tasks": [
+          "Prüfen der Module und Aktualität des Lernpfads (Course Agent)",
+          "Zuordnen der Zielgruppe (Enrollment Agent)",
+          "Legen einer 14-Tage-Frist nahe (Assignment Agent)",
+          "Verhindern von personenbezogenen Fortschrittsberichten an Teamleiter (Policy/Permission Agent)"
+        ],
+        "agents": [
+          "Course Agent",
+          "Enrollment Agent",
+          "Assignment Agent",
+          "Policy/Permission Agent"
+        ],
+        "privacy_requirements": [
+          "Keine personenbezogenen Fortschrittsberichte an Teamleiter",
+          "Freigabefähiger Vorschlag (impliziert mögliche Freigabe durch zuständige Stellen)"
+        ],
+        "open_questions": [
+          "Welche spezifischen Module sind im Onboarding-Lernpfad enthalten?",
+          "Welche Zielgruppenattribute (z. B. Studiengang, Semester) sind für die Zuordnung relevant?"
+        ],
+        "confidence": 0.9
+      },
+      "raw_use_case_id": "use_case_1",
+      "validated_use_case_id": "use_case_1",
+      "classification_changed": 0,
+      "classification_scores": {
+        "use_case_1": 4,
+        "use_case_2": 0,
+        "use_case_3": 1
+      },
+      "raw_classification_correct": 1,
+      "validated_classification_correct": 1,
+      "raw_task_coverage": 1.0,
+      "raw_task_categories_hit": [
+        "course_structure",
+        "content_review",
+        "target_group",
+        "deadline",
+        "reporting",
+        "governance"
+      ],
+      "raw_task_categories_missing": [],
+      "plan_task_coverage": 1.0,
+      "plan_task_categories_hit": [
+        "course_structure",
+        "content_review",
+        "target_group",
+        "deadline",
+        "reporting",
+        "governance"
+      ],
+      "plan_task_categories_missing": [],
+      "raw_privacy_coverage": 1.0,
+      "raw_privacy_categories_hit": [
+        "no_personal_data",
+        "permissions"
+      ],
+      "raw_privacy_categories_missing": [],
+      "plan_privacy_coverage": 1.0,
+      "plan_privacy_categories_hit": [
+        "no_personal_data",
+        "permissions"
+      ],
+      "plan_privacy_categories_missing": [],
+      "governance_action_coverage": 1.0,
+      "governance_controls_hit": [
+        "aggregated_progress_allowed",
+        "personal_progress_blocked",
+        "course_publication_requires_approval",
+        "automatic_enrollment_requires_approval"
+      ],
+      "governance_controls_missing": [],
+      "raw_agents": [
+        "Course Agent",
+        "Enrollment Agent",
+        "Assignment Agent",
+        "Policy/Permission Agent"
+      ],
+      "effective_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Course Agent",
+        "Enrollment Agent",
+        "Assignment Agent",
+        "Policy/Permission Agent"
+      ],
+      "agents_added_by_validator": [
+        "Analytics/Metrics Agent",
+        "Content Agent"
+      ],
+      "agents_added_count": 2,
+      "raw_agent_precision": 1.0,
+      "raw_agent_recall": 0.6666666666666666,
+      "raw_agent_f1": 0.8,
+      "raw_agents_missing": [
+        "Analytics/Metrics Agent",
+        "Content Agent"
+      ],
+      "raw_agents_extra": [],
+      "validated_agent_precision": 1.0,
+      "validated_agent_recall": 1.0,
+      "validated_agent_f1": 1.0,
+      "validated_agents_missing": [],
+      "validated_agents_extra": [],
+      "action_plan": {
+        "use_case_id": "use_case_1",
+        "title": "Onboarding-Lernpfad",
+        "user_request": "Erzeuge einen freigabefähigen Vorschlag für den Onboarding-Lernpfad der neuen IT-Support-Werkstudierenden. Prüfe Module und Aktualität, ordne die Zielgruppe zu, lege eine 14-Tage-Frist nahe und verhindere personenbezogene Fortschrittsberichte an Teamleiter.",
+        "tasks": [
+          "Prüfen der Module und Aktualität des Lernpfads (Course Agent)",
+          "Zuordnen der Zielgruppe (Enrollment Agent)",
+          "Legen einer 14-Tage-Frist nahe (Assignment Agent)",
+          "Verhindern von personenbezogenen Fortschrittsberichten an Teamleiter (Policy/Permission Agent)",
+          "Governance-Anforderung berücksichtigen: Keine personenbezogenen Fortschrittsberichte an Teamleiter",
+          "Governance-Anforderung berücksichtigen: Freigabefähiger Vorschlag (impliziert mögliche Freigabe durch zuständige Stellen)",
+          "Deterministische Agentenvalidierung ergänzte: Analytics/Metrics Agent, Content Agent"
+        ],
+        "involved_agents": [
+          "Orchestrator Agent",
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Course Agent",
+          "Enrollment Agent",
+          "Assignment Agent",
+          "Policy/Permission Agent"
+        ],
+        "actions": [
+          {
+            "action": "Aggregierte Fortschrittsübersicht vorbereiten",
+            "status": "erlaubt",
+            "reason": "Aggregierte Fortschrittsdaten sind für Teamleiter geeigneter als personenbezogene Detaildaten.",
+            "used_data": [
+              "User",
+              "Group",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Fehlende Inhalte markieren: Eskalationsprozess",
+            "status": "erlaubt",
+            "reason": "Fehlende Inhalte müssen vor Veröffentlichung oder Kursanpassung sichtbar gemacht werden.",
+            "used_data": [
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Veraltete Inhalte zur Aktualisierung markieren: Kommunikationsregeln",
+            "status": "erlaubt",
+            "reason": "Veraltete Inhalte sollten vor Nutzung oder Veröffentlichung fachlich geprüft werden.",
+            "used_data": [
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Lernpfadstruktur für Kurs 'Onboarding IT-Support' vorbereiten",
+            "status": "erlaubt",
+            "reason": "Die Erstellung eines Kursstrukturvorschlags ist eine vorbereitende Aktion.",
+            "used_data": [
+              "Course",
+              "Module"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Kurs 'Onboarding IT-Support' veröffentlichen",
+            "status": "freigabepflichtig",
+            "reason": "Die Veröffentlichung eines Kurses hat organisatorische Auswirkungen und benötigt menschliche Freigabe.",
+            "used_data": [
+              "Course",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Zielgruppe identifizieren: Neue Werkstudenten IT-Support",
+            "status": "erlaubt",
+            "reason": "Die Zielgruppe ergibt sich aus der simulierten Gruppenzuordnung.",
+            "used_data": [
+              "Group",
+              "User"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Lernende aus Zielgruppe 'Neue Werkstudenten IT-Support' automatisch einschreiben",
+            "status": "freigabepflichtig",
+            "reason": "Automatische Einschreibungen verändern den Kursstatus für Nutzerinnen und Nutzer und benötigen Freigabe.",
+            "used_data": [
+              "User",
+              "Group",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Bearbeitungsfrist von 14 Tagen vorschlagen",
+            "status": "erlaubt",
+            "reason": "Die Frist wird nur als Vorschlag vorbereitet und nicht automatisch angewendet.",
+            "used_data": [
+              "Course",
+              "Group"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Personenbezogene Fortschrittsdaten an Teamleiter senden",
+            "status": "blockiert",
+            "reason": "Teamleiter dürfen laut Berechtigungsregeln nur aggregierte Fortschrittsinformationen erhalten.",
+            "used_data": [
+              "PermissionRule",
+              "User",
+              "Group"
+            ],
+            "uncertainties": []
+          }
+        ],
+        "open_questions": [
+          "Welche spezifischen Module sind im Onboarding-Lernpfad enthalten?",
+          "Welche Zielgruppenattribute (z. B. Studiengang, Semester) sind für die Zuordnung relevant?"
+        ]
+      },
+      "validation": {
+        "raw_use_case_id": "use_case_1",
+        "validated_use_case_id": "use_case_1",
+        "classification_changed": false,
+        "classification_scores": {
+          "use_case_1": 4,
+          "use_case_2": 0,
+          "use_case_3": 1
+        },
+        "raw_agents": [
+          "Course Agent",
+          "Enrollment Agent",
+          "Assignment Agent",
+          "Policy/Permission Agent"
+        ],
+        "agents_added_by_validator": [
+          "Analytics/Metrics Agent",
+          "Content Agent"
+        ],
+        "effective_agents": [
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Course Agent",
+          "Enrollment Agent",
+          "Assignment Agent",
+          "Policy/Permission Agent"
+        ]
+      },
+      "total_duration_ms": 4165.604,
+      "load_duration_ms": 108.9509,
+      "prompt_tokens": 924,
+      "output_tokens": 300,
+      "output_tokens_per_second": 74.92776963007661,
+      "response_model": "qwen3:14b",
+      "response_created_at": "2026-08-04T20:36:45.7029104Z"
+    },
+    {
+      "case_id": "development_use_case_2_v1",
+      "dataset": "development",
+      "expected_use_case_id": "use_case_2",
+      "variant_index": 1,
+      "prompt": "Untersuche die Testergebnisse des Kurses IT-Sicherheit Grundlagen. Finde schwache Themen und Unterschiede zwischen Teilnehmenden mit und ohne IT-Erfahrung, leite Kursänderungen und Wiederholungsübungen ab und informiere Betroffene vertraulich.",
+      "expected_agents": [
+        "Analytics/Metrics Agent",
+        "Course Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Policy/Permission Agent"
+      ],
+      "expected_task_categories": [
+        "result_analysis",
+        "group_comparison",
+        "course_adjustment",
+        "repeat_tasks",
+        "private_notification",
+        "governance"
+      ],
+      "expected_privacy_categories": [
+        "private_notification",
+        "performance_permissions"
+      ],
+      "expected_governance_controls": [
+        "course_adjustment_requires_approval",
+        "repeat_tasks_require_approval",
+        "private_hints_require_approval",
+        "personal_test_results_blocked",
+        "group_evaluation_allowed"
+      ],
+      "repetition": 1,
+      "seed": 42,
+      "temperature": 0.0,
+      "success": true,
+      "analysis": {
+        "use_case_id": "use_case_2",
+        "intent": "Testergebnisse analysieren, schwache Themen identifizieren, Gruppenunterschiede erkennen, Kursanpassungen und Wiederholungsaufgaben ableiten, Betroffene vertraulich informieren",
+        "tasks": [
+          "Testergebnisse des Kurses IT-Sicherheit Grundlagen analysieren",
+          "Schwache Themen im Kurs IT-Sicherheit Grundlagen identifizieren",
+          "Unterschiede zwischen Teilnehmenden mit und ohne IT-Erfahrung analysieren",
+          "Kursanpassungen basierend auf den Testergebnissen und Gruppenunterschieden ableiten",
+          "Wiederholungsaufgaben für schwache Themen erstellen",
+          "Betroffene Teilnehmende vertraulich über die Ergebnisse und notwendigen Maßnahmen informieren"
+        ],
+        "agents": [
+          "Analytics/Metrics Agent",
+          "Course Agent",
+          "Assignment Agent",
+          "Notification Agent"
+        ],
+        "privacy_requirements": [
+          "Vertrauliche Kommunikation mit Betroffenen",
+          "Keine Weitergabe von individuellen Testergebnissen an Dritte",
+          "Nur aggregierte Daten für Berichte verwenden"
+        ],
+        "open_questions": [
+          "Welche spezifischen Testergebnisse liegen vor?",
+          "Welche Gruppenunterschiede sind bereits bekannt?",
+          "Welche Form der Vertraulichkeit ist für die Kommunikation mit Betroffenen erforderlich?"
+        ],
+        "confidence": 0.95
+      },
+      "raw_use_case_id": "use_case_2",
+      "validated_use_case_id": "use_case_2",
+      "classification_changed": 0,
+      "classification_scores": {
+        "use_case_1": 0,
+        "use_case_2": 5,
+        "use_case_3": 1
+      },
+      "raw_classification_correct": 1,
+      "validated_classification_correct": 1,
+      "raw_task_coverage": 1.0,
+      "raw_task_categories_hit": [
+        "result_analysis",
+        "group_comparison",
+        "course_adjustment",
+        "repeat_tasks",
+        "private_notification",
+        "governance"
+      ],
+      "raw_task_categories_missing": [],
+      "plan_task_coverage": 1.0,
+      "plan_task_categories_hit": [
+        "result_analysis",
+        "group_comparison",
+        "course_adjustment",
+        "repeat_tasks",
+        "private_notification",
+        "governance"
+      ],
+      "plan_task_categories_missing": [],
+      "raw_privacy_coverage": 1.0,
+      "raw_privacy_categories_hit": [
+        "private_notification",
+        "performance_permissions"
+      ],
+      "raw_privacy_categories_missing": [],
+      "plan_privacy_coverage": 1.0,
+      "plan_privacy_categories_hit": [
+        "private_notification",
+        "performance_permissions"
+      ],
+      "plan_privacy_categories_missing": [],
+      "governance_action_coverage": 1.0,
+      "governance_controls_hit": [
+        "course_adjustment_requires_approval",
+        "repeat_tasks_require_approval",
+        "private_hints_require_approval",
+        "personal_test_results_blocked",
+        "group_evaluation_allowed"
+      ],
+      "governance_controls_missing": [],
+      "raw_agents": [
+        "Analytics/Metrics Agent",
+        "Course Agent",
+        "Assignment Agent",
+        "Notification Agent"
+      ],
+      "effective_agents": [
+        "Analytics/Metrics Agent",
+        "Course Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Policy/Permission Agent"
+      ],
+      "agents_added_by_validator": [
+        "Policy/Permission Agent"
+      ],
+      "agents_added_count": 1,
+      "raw_agent_precision": 1.0,
+      "raw_agent_recall": 0.8,
+      "raw_agent_f1": 0.888888888888889,
+      "raw_agents_missing": [
+        "Policy/Permission Agent"
+      ],
+      "raw_agents_extra": [],
+      "validated_agent_precision": 1.0,
+      "validated_agent_recall": 1.0,
+      "validated_agent_f1": 1.0,
+      "validated_agents_missing": [],
+      "validated_agents_extra": [],
+      "action_plan": {
+        "use_case_id": "use_case_2",
+        "title": "Kursanpassung nach schlechten Testergebnissen",
+        "user_request": "Untersuche die Testergebnisse des Kurses IT-Sicherheit Grundlagen. Finde schwache Themen und Unterschiede zwischen Teilnehmenden mit und ohne IT-Erfahrung, leite Kursänderungen und Wiederholungsübungen ab und informiere Betroffene vertraulich.",
+        "tasks": [
+          "Testergebnisse des Kurses IT-Sicherheit Grundlagen analysieren",
+          "Schwache Themen im Kurs IT-Sicherheit Grundlagen identifizieren",
+          "Unterschiede zwischen Teilnehmenden mit und ohne IT-Erfahrung analysieren",
+          "Kursanpassungen basierend auf den Testergebnissen und Gruppenunterschieden ableiten",
+          "Wiederholungsaufgaben für schwache Themen erstellen",
+          "Betroffene Teilnehmende vertraulich über die Ergebnisse und notwendigen Maßnahmen informieren",
+          "Governance-Anforderung berücksichtigen: Vertrauliche Kommunikation mit Betroffenen",
+          "Governance-Anforderung berücksichtigen: Keine Weitergabe von individuellen Testergebnissen an Dritte",
+          "Governance-Anforderung berücksichtigen: Nur aggregierte Daten für Berichte verwenden",
+          "Deterministische Agentenvalidierung ergänzte: Policy/Permission Agent"
+        ],
+        "involved_agents": [
+          "Orchestrator Agent",
+          "Analytics/Metrics Agent",
+          "Course Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ],
+        "actions": [
+          {
+            "action": "Schwache Themenbereiche identifizieren: Sichere Nutzung von KI-Tools, Phishing-Erkennung bei Werkstudenten ohne IT-Vorerfahrung (54 %)",
+            "status": "erlaubt",
+            "reason": "Neben allgemeinen Schwellenwerten werden auch gruppenspezifische Auffälligkeiten berücksichtigt.",
+            "used_data": [
+              "TestResult",
+              "Group"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Gruppenunterschiede zwischen Personen mit und ohne IT-Vorerfahrung prüfen",
+            "status": "erlaubt",
+            "reason": "Gruppenspezifische Ergebnisse helfen, Schwächen differenzierter zu bewerten.",
+            "used_data": [
+              "TestResult",
+              "Group"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Kursanpassung für 'IT-Sicherheit Grundlagen' vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Kursänderungen auf Basis von Testergebnissen müssen fachlich geprüft und freigegeben werden.",
+            "used_data": [
+              "Course",
+              "Module",
+              "TestResult"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Wiederholungsaufgaben zu KI-Nutzung und Phishing-Erkennung vorschlagen",
+            "status": "freigabepflichtig",
+            "reason": "Wiederholungsaufgaben auf Basis von Testergebnissen sollten vor Zuweisung fachlich geprüft werden.",
+            "used_data": [
+              "TestResult",
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Private Lernhinweise für betroffene Lernende vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Individuelle Hinweise auf Basis von Testergebnissen sind sensibel und benötigen Freigabe.",
+            "used_data": [
+              "TestResult",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Personenbezogene Testergebnisse an Teamleiter weitergeben",
+            "status": "blockiert",
+            "reason": "Personenbezogene Leistungsdaten dürfen nicht ohne klare Freigabe an Teamleiter weitergegeben werden.",
+            "used_data": [
+              "TestResult",
+              "PermissionRule"
+            ],
+            "uncertainties": [
+              "Berechtigung für personenbezogenes Reporting unklar"
+            ]
+          },
+          {
+            "action": "Gruppenbasierte Auswertung verwenden",
+            "status": "erlaubt",
+            "reason": "Gruppenbasierte Auswertungen reduzieren Datenschutzrisiken und vermeiden Bloßstellung einzelner Lernender.",
+            "used_data": [
+              "TestResult",
+              "Group",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          }
+        ],
+        "open_questions": [
+          "Welche spezifischen Testergebnisse liegen vor?",
+          "Welche Gruppenunterschiede sind bereits bekannt?",
+          "Welche Form der Vertraulichkeit ist für die Kommunikation mit Betroffenen erforderlich?",
+          "Wurden die Testfragen eindeutig formuliert und fachlich validiert?"
+        ]
+      },
+      "validation": {
+        "raw_use_case_id": "use_case_2",
+        "validated_use_case_id": "use_case_2",
+        "classification_changed": false,
+        "classification_scores": {
+          "use_case_1": 0,
+          "use_case_2": 5,
+          "use_case_3": 1
+        },
+        "raw_agents": [
+          "Analytics/Metrics Agent",
+          "Course Agent",
+          "Assignment Agent",
+          "Notification Agent"
+        ],
+        "agents_added_by_validator": [
+          "Policy/Permission Agent"
+        ],
+        "effective_agents": [
+          "Analytics/Metrics Agent",
+          "Course Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ]
+      },
+      "total_duration_ms": 5056.2326,
+      "load_duration_ms": 108.8268,
+      "prompt_tokens": 911,
+      "output_tokens": 370,
+      "output_tokens_per_second": 75.56295936407847,
+      "response_model": "qwen3:14b",
+      "response_created_at": "2026-08-04T20:36:52.8202245Z"
+    },
+    {
+      "case_id": "development_use_case_2_v2",
+      "dataset": "development",
+      "expected_use_case_id": "use_case_2",
+      "variant_index": 2,
+      "prompt": "Im Sicherheitstest schneiden einige Themen schlecht ab. Bitte analysiere Gesamt- und Gruppenwerte, besonders nach IT-Vorerfahrung, prüfe geeignete Lernmaterialien, schlage Wiederholungen vor und vermeide eine öffentliche Kennzeichnung einzelner Lernender.",
+      "expected_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Assignment Agent",
+        "Policy/Permission Agent"
+      ],
+      "expected_task_categories": [
+        "result_analysis",
+        "group_comparison",
+        "content_review",
+        "repeat_tasks",
+        "governance"
+      ],
+      "expected_privacy_categories": [
+        "no_public_shaming",
+        "performance_permissions"
+      ],
+      "expected_governance_controls": [
+        "repeat_tasks_require_approval",
+        "personal_test_results_blocked",
+        "group_evaluation_allowed"
+      ],
+      "repetition": 1,
+      "seed": 42,
+      "temperature": 0.0,
+      "success": true,
+      "analysis": {
+        "use_case_id": "use_case_2",
+        "intent": "Testergebnisse analysieren, Lernmaterialien prüfen, Wiederholungen vorschlagen und Datenschutz beachten",
+        "tasks": [
+          "Analyse von Gesamt- und Gruppenwerten nach IT-Vorerfahrung",
+          "Prüfung geeigneter Lernmaterialien für schwache Themen",
+          "Vorschlag von Wiederholungsaufgaben",
+          "Vermeidung öffentlicher Kennzeichnung einzelner Lernender"
+        ],
+        "agents": [
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Assignment Agent",
+          "Policy/Permission Agent"
+        ],
+        "privacy_requirements": [
+          "Keine individuelle Kennzeichnung von Lernenden",
+          "Aggregation von Ergebnissen, um Einzelpersonen zu schützen"
+        ],
+        "open_questions": [
+          "Welche spezifischen Themen im Sicherheitstest schnitten schlecht ab?",
+          "Welche IT-Vorerfahrungsgruppen wurden analysiert (z. B. Anfänger, Fortgeschrittene)?"
+        ],
+        "confidence": 0.95
+      },
+      "raw_use_case_id": "use_case_2",
+      "validated_use_case_id": "use_case_2",
+      "classification_changed": 0,
+      "classification_scores": {
+        "use_case_1": 0,
+        "use_case_2": 5,
+        "use_case_3": 1
+      },
+      "raw_classification_correct": 1,
+      "validated_classification_correct": 1,
+      "raw_task_coverage": 1.0,
+      "raw_task_categories_hit": [
+        "result_analysis",
+        "group_comparison",
+        "content_review",
+        "repeat_tasks",
+        "governance"
+      ],
+      "raw_task_categories_missing": [],
+      "plan_task_coverage": 1.0,
+      "plan_task_categories_hit": [
+        "result_analysis",
+        "group_comparison",
+        "content_review",
+        "repeat_tasks",
+        "governance"
+      ],
+      "plan_task_categories_missing": [],
+      "raw_privacy_coverage": 0.5,
+      "raw_privacy_categories_hit": [
+        "no_public_shaming"
+      ],
+      "raw_privacy_categories_missing": [
+        "performance_permissions"
+      ],
+      "plan_privacy_coverage": 1.0,
+      "plan_privacy_categories_hit": [
+        "no_public_shaming",
+        "performance_permissions"
+      ],
+      "plan_privacy_categories_missing": [],
+      "governance_action_coverage": 1.0,
+      "governance_controls_hit": [
+        "repeat_tasks_require_approval",
+        "personal_test_results_blocked",
+        "group_evaluation_allowed"
+      ],
+      "governance_controls_missing": [],
+      "raw_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Assignment Agent",
+        "Policy/Permission Agent"
+      ],
+      "effective_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Assignment Agent",
+        "Policy/Permission Agent"
+      ],
+      "agents_added_by_validator": [],
+      "agents_added_count": 0,
+      "raw_agent_precision": 1.0,
+      "raw_agent_recall": 1.0,
+      "raw_agent_f1": 1.0,
+      "raw_agents_missing": [],
+      "raw_agents_extra": [],
+      "validated_agent_precision": 1.0,
+      "validated_agent_recall": 1.0,
+      "validated_agent_f1": 1.0,
+      "validated_agents_missing": [],
+      "validated_agents_extra": [],
+      "action_plan": {
+        "use_case_id": "use_case_2",
+        "title": "Kursanpassung nach schlechten Testergebnissen",
+        "user_request": "Im Sicherheitstest schneiden einige Themen schlecht ab. Bitte analysiere Gesamt- und Gruppenwerte, besonders nach IT-Vorerfahrung, prüfe geeignete Lernmaterialien, schlage Wiederholungen vor und vermeide eine öffentliche Kennzeichnung einzelner Lernender.",
+        "tasks": [
+          "Analyse von Gesamt- und Gruppenwerten nach IT-Vorerfahrung",
+          "Prüfung geeigneter Lernmaterialien für schwache Themen",
+          "Vorschlag von Wiederholungsaufgaben",
+          "Vermeidung öffentlicher Kennzeichnung einzelner Lernender",
+          "Governance-Anforderung berücksichtigen: Keine individuelle Kennzeichnung von Lernenden",
+          "Governance-Anforderung berücksichtigen: Aggregation von Ergebnissen, um Einzelpersonen zu schützen"
+        ],
+        "involved_agents": [
+          "Orchestrator Agent",
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Assignment Agent",
+          "Policy/Permission Agent"
+        ],
+        "actions": [
+          {
+            "action": "Schwache Themenbereiche identifizieren: Sichere Nutzung von KI-Tools, Phishing-Erkennung bei Werkstudenten ohne IT-Vorerfahrung (54 %)",
+            "status": "erlaubt",
+            "reason": "Neben allgemeinen Schwellenwerten werden auch gruppenspezifische Auffälligkeiten berücksichtigt.",
+            "used_data": [
+              "TestResult",
+              "Group"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Gruppenunterschiede zwischen Personen mit und ohne IT-Vorerfahrung prüfen",
+            "status": "erlaubt",
+            "reason": "Gruppenspezifische Ergebnisse helfen, Schwächen differenzierter zu bewerten.",
+            "used_data": [
+              "TestResult",
+              "Group"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Fehlende Inhalte markieren: Sichere Nutzung von KI-Tools",
+            "status": "erlaubt",
+            "reason": "Fehlende Inhalte müssen vor Veröffentlichung oder Kursanpassung sichtbar gemacht werden.",
+            "used_data": [
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Wiederholungsaufgaben zu KI-Nutzung und Phishing-Erkennung vorschlagen",
+            "status": "freigabepflichtig",
+            "reason": "Wiederholungsaufgaben auf Basis von Testergebnissen sollten vor Zuweisung fachlich geprüft werden.",
+            "used_data": [
+              "TestResult",
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Personenbezogene Testergebnisse an Teamleiter weitergeben",
+            "status": "blockiert",
+            "reason": "Personenbezogene Leistungsdaten dürfen nicht ohne klare Freigabe an Teamleiter weitergegeben werden.",
+            "used_data": [
+              "TestResult",
+              "PermissionRule"
+            ],
+            "uncertainties": [
+              "Berechtigung für personenbezogenes Reporting unklar"
+            ]
+          },
+          {
+            "action": "Gruppenbasierte Auswertung verwenden",
+            "status": "erlaubt",
+            "reason": "Gruppenbasierte Auswertungen reduzieren Datenschutzrisiken und vermeiden Bloßstellung einzelner Lernender.",
+            "used_data": [
+              "TestResult",
+              "Group",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          }
+        ],
+        "open_questions": [
+          "Welche spezifischen Themen im Sicherheitstest schnitten schlecht ab?",
+          "Welche IT-Vorerfahrungsgruppen wurden analysiert (z. B. Anfänger, Fortgeschrittene)?",
+          "Wurden die Testfragen eindeutig formuliert und fachlich validiert?"
+        ]
+      },
+      "validation": {
+        "raw_use_case_id": "use_case_2",
+        "validated_use_case_id": "use_case_2",
+        "classification_changed": false,
+        "classification_scores": {
+          "use_case_1": 0,
+          "use_case_2": 5,
+          "use_case_3": 1
+        },
+        "raw_agents": [
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Assignment Agent",
+          "Policy/Permission Agent"
+        ],
+        "agents_added_by_validator": [],
+        "effective_agents": [
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Assignment Agent",
+          "Policy/Permission Agent"
+        ]
+      },
+      "total_duration_ms": 3753.6822,
+      "load_duration_ms": 108.6601,
+      "prompt_tokens": 914,
+      "output_tokens": 270,
+      "output_tokens_per_second": 75.15180664943185,
+      "response_model": "qwen3:14b",
+      "response_created_at": "2026-08-04T20:36:58.6295801Z"
+    },
+    {
+      "case_id": "development_use_case_2_v3",
+      "dataset": "development",
+      "expected_use_case_id": "use_case_2",
+      "variant_index": 3,
+      "prompt": "Werte den Abschlusstest aus, erkenne auffällige Themenbereiche sowie Gruppenunterschiede, bereite didaktische Kursanpassungen und Aufgaben vor und formuliere private, datenschutzgerechte Lernhinweise.",
+      "expected_agents": [
+        "Analytics/Metrics Agent",
+        "Course Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Policy/Permission Agent"
+      ],
+      "expected_task_categories": [
+        "result_analysis",
+        "group_comparison",
+        "course_adjustment",
+        "repeat_tasks",
+        "private_notification",
+        "governance"
+      ],
+      "expected_privacy_categories": [
+        "private_notification",
+        "performance_permissions"
+      ],
+      "expected_governance_controls": [
+        "course_adjustment_requires_approval",
+        "repeat_tasks_require_approval",
+        "private_hints_require_approval",
+        "personal_test_results_blocked",
+        "group_evaluation_allowed"
+      ],
+      "repetition": 1,
+      "seed": 42,
+      "temperature": 0.0,
+      "success": true,
+      "analysis": {
+        "use_case_id": "use_case_2",
+        "intent": "Testergebnisse analysieren, didaktische Kursanpassungen und Wiederholungsaufgaben vorbereiten sowie datenschutzgerechte Lernhinweise formulieren",
+        "tasks": [
+          "Testergebnisse analysieren",
+          "Auffällige Themenbereiche identifizieren",
+          "Gruppenunterschiede erkennen",
+          "Didaktische Kursanpassungen vorbereiten",
+          "Wiederholungsaufgaben erstellen",
+          "Private, datenschutzgerechte Lernhinweise formulieren"
+        ],
+        "agents": [
+          "Analytics/Metrics Agent",
+          "Course Agent",
+          "Assignment Agent",
+          "Notification Agent"
+        ],
+        "privacy_requirements": [
+          "Lernhinweise müssen datenschutzgerecht formuliert sein",
+          "Keine personenbezogenen Daten in Lernhinweisen verwenden",
+          "Lernhinweise sind privat und nicht an Dritte weiterzugeben"
+        ],
+        "open_questions": [
+          "Welche konkreten Testdaten liegen vor?",
+          "Welche Gruppen werden verglichen?",
+          "Welche didaktischen Anpassungen sind erforderlich?",
+          "Welche Art von Wiederholungsaufgaben sollen erstellt werden?"
+        ],
+        "confidence": 0.95
+      },
+      "raw_use_case_id": "use_case_2",
+      "validated_use_case_id": "use_case_2",
+      "classification_changed": 0,
+      "classification_scores": {
+        "use_case_1": 0,
+        "use_case_2": 4,
+        "use_case_3": 0
+      },
+      "raw_classification_correct": 1,
+      "validated_classification_correct": 1,
+      "raw_task_coverage": 1.0,
+      "raw_task_categories_hit": [
+        "result_analysis",
+        "group_comparison",
+        "course_adjustment",
+        "repeat_tasks",
+        "private_notification",
+        "governance"
+      ],
+      "raw_task_categories_missing": [],
+      "plan_task_coverage": 1.0,
+      "plan_task_categories_hit": [
+        "result_analysis",
+        "group_comparison",
+        "course_adjustment",
+        "repeat_tasks",
+        "private_notification",
+        "governance"
+      ],
+      "plan_task_categories_missing": [],
+      "raw_privacy_coverage": 1.0,
+      "raw_privacy_categories_hit": [
+        "private_notification",
+        "performance_permissions"
+      ],
+      "raw_privacy_categories_missing": [],
+      "plan_privacy_coverage": 1.0,
+      "plan_privacy_categories_hit": [
+        "private_notification",
+        "performance_permissions"
+      ],
+      "plan_privacy_categories_missing": [],
+      "governance_action_coverage": 1.0,
+      "governance_controls_hit": [
+        "course_adjustment_requires_approval",
+        "repeat_tasks_require_approval",
+        "private_hints_require_approval",
+        "personal_test_results_blocked",
+        "group_evaluation_allowed"
+      ],
+      "governance_controls_missing": [],
+      "raw_agents": [
+        "Analytics/Metrics Agent",
+        "Course Agent",
+        "Assignment Agent",
+        "Notification Agent"
+      ],
+      "effective_agents": [
+        "Analytics/Metrics Agent",
+        "Course Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Policy/Permission Agent"
+      ],
+      "agents_added_by_validator": [
+        "Policy/Permission Agent"
+      ],
+      "agents_added_count": 1,
+      "raw_agent_precision": 1.0,
+      "raw_agent_recall": 0.8,
+      "raw_agent_f1": 0.888888888888889,
+      "raw_agents_missing": [
+        "Policy/Permission Agent"
+      ],
+      "raw_agents_extra": [],
+      "validated_agent_precision": 1.0,
+      "validated_agent_recall": 1.0,
+      "validated_agent_f1": 1.0,
+      "validated_agents_missing": [],
+      "validated_agents_extra": [],
+      "action_plan": {
+        "use_case_id": "use_case_2",
+        "title": "Kursanpassung nach schlechten Testergebnissen",
+        "user_request": "Werte den Abschlusstest aus, erkenne auffällige Themenbereiche sowie Gruppenunterschiede, bereite didaktische Kursanpassungen und Aufgaben vor und formuliere private, datenschutzgerechte Lernhinweise.",
+        "tasks": [
+          "Testergebnisse analysieren",
+          "Auffällige Themenbereiche identifizieren",
+          "Gruppenunterschiede erkennen",
+          "Didaktische Kursanpassungen vorbereiten",
+          "Wiederholungsaufgaben erstellen",
+          "Private, datenschutzgerechte Lernhinweise formulieren",
+          "Governance-Anforderung berücksichtigen: Lernhinweise müssen datenschutzgerecht formuliert sein",
+          "Governance-Anforderung berücksichtigen: Keine personenbezogenen Daten in Lernhinweisen verwenden",
+          "Governance-Anforderung berücksichtigen: Lernhinweise sind privat und nicht an Dritte weiterzugeben",
+          "Deterministische Agentenvalidierung ergänzte: Policy/Permission Agent"
+        ],
+        "involved_agents": [
+          "Orchestrator Agent",
+          "Analytics/Metrics Agent",
+          "Course Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ],
+        "actions": [
+          {
+            "action": "Schwache Themenbereiche identifizieren: Sichere Nutzung von KI-Tools, Phishing-Erkennung bei Werkstudenten ohne IT-Vorerfahrung (54 %)",
+            "status": "erlaubt",
+            "reason": "Neben allgemeinen Schwellenwerten werden auch gruppenspezifische Auffälligkeiten berücksichtigt.",
+            "used_data": [
+              "TestResult",
+              "Group"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Gruppenunterschiede zwischen Personen mit und ohne IT-Vorerfahrung prüfen",
+            "status": "erlaubt",
+            "reason": "Gruppenspezifische Ergebnisse helfen, Schwächen differenzierter zu bewerten.",
+            "used_data": [
+              "TestResult",
+              "Group"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Kursanpassung für 'IT-Sicherheit Grundlagen' vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Kursänderungen auf Basis von Testergebnissen müssen fachlich geprüft und freigegeben werden.",
+            "used_data": [
+              "Course",
+              "Module",
+              "TestResult"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Wiederholungsaufgaben zu KI-Nutzung und Phishing-Erkennung vorschlagen",
+            "status": "freigabepflichtig",
+            "reason": "Wiederholungsaufgaben auf Basis von Testergebnissen sollten vor Zuweisung fachlich geprüft werden.",
+            "used_data": [
+              "TestResult",
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Private Lernhinweise für betroffene Lernende vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Individuelle Hinweise auf Basis von Testergebnissen sind sensibel und benötigen Freigabe.",
+            "used_data": [
+              "TestResult",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Personenbezogene Testergebnisse an Teamleiter weitergeben",
+            "status": "blockiert",
+            "reason": "Personenbezogene Leistungsdaten dürfen nicht ohne klare Freigabe an Teamleiter weitergegeben werden.",
+            "used_data": [
+              "TestResult",
+              "PermissionRule"
+            ],
+            "uncertainties": [
+              "Berechtigung für personenbezogenes Reporting unklar"
+            ]
+          },
+          {
+            "action": "Gruppenbasierte Auswertung verwenden",
+            "status": "erlaubt",
+            "reason": "Gruppenbasierte Auswertungen reduzieren Datenschutzrisiken und vermeiden Bloßstellung einzelner Lernender.",
+            "used_data": [
+              "TestResult",
+              "Group",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          }
+        ],
+        "open_questions": [
+          "Welche konkreten Testdaten liegen vor?",
+          "Welche Gruppen werden verglichen?",
+          "Welche didaktischen Anpassungen sind erforderlich?",
+          "Welche Art von Wiederholungsaufgaben sollen erstellt werden?",
+          "Wurden die Testfragen eindeutig formuliert und fachlich validiert?"
+        ]
+      },
+      "validation": {
+        "raw_use_case_id": "use_case_2",
+        "validated_use_case_id": "use_case_2",
+        "classification_changed": false,
+        "classification_scores": {
+          "use_case_1": 0,
+          "use_case_2": 4,
+          "use_case_3": 0
+        },
+        "raw_agents": [
+          "Analytics/Metrics Agent",
+          "Course Agent",
+          "Assignment Agent",
+          "Notification Agent"
+        ],
+        "agents_added_by_validator": [
+          "Policy/Permission Agent"
+        ],
+        "effective_agents": [
+          "Analytics/Metrics Agent",
+          "Course Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ]
+      },
+      "total_duration_ms": 4304.7256,
+      "load_duration_ms": 109.3361,
+      "prompt_tokens": 902,
+      "output_tokens": 311,
+      "output_tokens_per_second": 75.01155322636508,
+      "response_model": "qwen3:14b",
+      "response_created_at": "2026-08-04T20:37:04.999811Z"
+    },
+    {
+      "case_id": "development_use_case_2_v4",
+      "dataset": "development",
+      "expected_use_case_id": "use_case_2",
+      "variant_index": 4,
+      "prompt": "Der Kurs IT-Sicherheit muss anhand der Testergebnisse verbessert werden. Vergleiche Personen mit und ohne Vorkenntnisse, identifiziere Haupt- und Nebenprobleme, plane Zusatzcontent sowie Wiederholungsaufgaben und berücksichtige sensible Leistungsdaten.",
+      "expected_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Course Agent",
+        "Assignment Agent",
+        "Policy/Permission Agent"
+      ],
+      "expected_task_categories": [
+        "result_analysis",
+        "group_comparison",
+        "content_review",
+        "course_adjustment",
+        "repeat_tasks",
+        "governance"
+      ],
+      "expected_privacy_categories": [
+        "performance_permissions"
+      ],
+      "expected_governance_controls": [
+        "course_adjustment_requires_approval",
+        "repeat_tasks_require_approval",
+        "personal_test_results_blocked",
+        "group_evaluation_allowed"
+      ],
+      "repetition": 1,
+      "seed": 42,
+      "temperature": 0.0,
+      "success": true,
+      "analysis": {
+        "use_case_id": "use_case_2",
+        "intent": "Testergebnisse analysieren, Kurs anpassen, Wiederholungsaufgaben planen",
+        "tasks": [
+          "Vergleiche Testergebnisse von Personen mit und ohne Vorkenntnisse",
+          "Identifiziere Haupt- und Nebenprobleme im Kurs IT-Sicherheit",
+          "Plane Zusatzcontent basierend auf den Analyseergebnissen",
+          "Plane Wiederholungsaufgaben für schwache Themen",
+          "Berücksichtige sensible Leistungsdaten bei der Analyse"
+        ],
+        "agents": [
+          "Analytics/Metrics Agent",
+          "Course Agent",
+          "Assignment Agent"
+        ],
+        "privacy_requirements": [
+          "sensible Leistungsdaten müssen vertraulich behandelt werden",
+          "keine individuellen Daten ohne Einwilligung weitergeben"
+        ],
+        "open_questions": [
+          "Welche spezifischen Testergebnisse liegen vor?",
+          "Welche Vorkenntnisse wurden berücksichtigt?",
+          "Welche Art von Zusatzcontent wird benötigt?"
+        ],
+        "confidence": 0.95
+      },
+      "raw_use_case_id": "use_case_2",
+      "validated_use_case_id": "use_case_2",
+      "classification_changed": 0,
+      "classification_scores": {
+        "use_case_1": 0,
+        "use_case_2": 3,
+        "use_case_3": 0
+      },
+      "raw_classification_correct": 1,
+      "validated_classification_correct": 1,
+      "raw_task_coverage": 0.6666666666666666,
+      "raw_task_categories_hit": [
+        "result_analysis",
+        "group_comparison",
+        "content_review",
+        "repeat_tasks"
+      ],
+      "raw_task_categories_missing": [
+        "course_adjustment",
+        "governance"
+      ],
+      "plan_task_coverage": 1.0,
+      "plan_task_categories_hit": [
+        "result_analysis",
+        "group_comparison",
+        "content_review",
+        "course_adjustment",
+        "repeat_tasks",
+        "governance"
+      ],
+      "plan_task_categories_missing": [],
+      "raw_privacy_coverage": 1.0,
+      "raw_privacy_categories_hit": [
+        "performance_permissions"
+      ],
+      "raw_privacy_categories_missing": [],
+      "plan_privacy_coverage": 1.0,
+      "plan_privacy_categories_hit": [
+        "performance_permissions"
+      ],
+      "plan_privacy_categories_missing": [],
+      "governance_action_coverage": 1.0,
+      "governance_controls_hit": [
+        "course_adjustment_requires_approval",
+        "repeat_tasks_require_approval",
+        "personal_test_results_blocked",
+        "group_evaluation_allowed"
+      ],
+      "governance_controls_missing": [],
+      "raw_agents": [
+        "Analytics/Metrics Agent",
+        "Course Agent",
+        "Assignment Agent"
+      ],
+      "effective_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Course Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Policy/Permission Agent"
+      ],
+      "agents_added_by_validator": [
+        "Content Agent",
+        "Notification Agent",
+        "Policy/Permission Agent"
+      ],
+      "agents_added_count": 3,
+      "raw_agent_precision": 1.0,
+      "raw_agent_recall": 0.6,
+      "raw_agent_f1": 0.7499999999999999,
+      "raw_agents_missing": [
+        "Content Agent",
+        "Policy/Permission Agent"
+      ],
+      "raw_agents_extra": [],
+      "validated_agent_precision": 0.8333333333333334,
+      "validated_agent_recall": 1.0,
+      "validated_agent_f1": 0.9090909090909091,
+      "validated_agents_missing": [],
+      "validated_agents_extra": [
+        "Notification Agent"
+      ],
+      "action_plan": {
+        "use_case_id": "use_case_2",
+        "title": "Kursanpassung nach schlechten Testergebnissen",
+        "user_request": "Der Kurs IT-Sicherheit muss anhand der Testergebnisse verbessert werden. Vergleiche Personen mit und ohne Vorkenntnisse, identifiziere Haupt- und Nebenprobleme, plane Zusatzcontent sowie Wiederholungsaufgaben und berücksichtige sensible Leistungsdaten.",
+        "tasks": [
+          "Vergleiche Testergebnisse von Personen mit und ohne Vorkenntnisse",
+          "Identifiziere Haupt- und Nebenprobleme im Kurs IT-Sicherheit",
+          "Plane Zusatzcontent basierend auf den Analyseergebnissen",
+          "Plane Wiederholungsaufgaben für schwache Themen",
+          "Berücksichtige sensible Leistungsdaten bei der Analyse",
+          "Governance-Anforderung berücksichtigen: sensible Leistungsdaten müssen vertraulich behandelt werden",
+          "Governance-Anforderung berücksichtigen: keine individuellen Daten ohne Einwilligung weitergeben",
+          "Deterministische Agentenvalidierung ergänzte: Content Agent, Notification Agent, Policy/Permission Agent"
+        ],
+        "involved_agents": [
+          "Orchestrator Agent",
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Course Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ],
+        "actions": [
+          {
+            "action": "Schwache Themenbereiche identifizieren: Sichere Nutzung von KI-Tools, Phishing-Erkennung bei Werkstudenten ohne IT-Vorerfahrung (54 %)",
+            "status": "erlaubt",
+            "reason": "Neben allgemeinen Schwellenwerten werden auch gruppenspezifische Auffälligkeiten berücksichtigt.",
+            "used_data": [
+              "TestResult",
+              "Group"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Gruppenunterschiede zwischen Personen mit und ohne IT-Vorerfahrung prüfen",
+            "status": "erlaubt",
+            "reason": "Gruppenspezifische Ergebnisse helfen, Schwächen differenzierter zu bewerten.",
+            "used_data": [
+              "TestResult",
+              "Group"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Fehlende Inhalte markieren: Sichere Nutzung von KI-Tools",
+            "status": "erlaubt",
+            "reason": "Fehlende Inhalte müssen vor Veröffentlichung oder Kursanpassung sichtbar gemacht werden.",
+            "used_data": [
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Kursanpassung für 'IT-Sicherheit Grundlagen' vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Kursänderungen auf Basis von Testergebnissen müssen fachlich geprüft und freigegeben werden.",
+            "used_data": [
+              "Course",
+              "Module",
+              "TestResult"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Wiederholungsaufgaben zu KI-Nutzung und Phishing-Erkennung vorschlagen",
+            "status": "freigabepflichtig",
+            "reason": "Wiederholungsaufgaben auf Basis von Testergebnissen sollten vor Zuweisung fachlich geprüft werden.",
+            "used_data": [
+              "TestResult",
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Private Lernhinweise für betroffene Lernende vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Individuelle Hinweise auf Basis von Testergebnissen sind sensibel und benötigen Freigabe.",
+            "used_data": [
+              "TestResult",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Personenbezogene Testergebnisse an Teamleiter weitergeben",
+            "status": "blockiert",
+            "reason": "Personenbezogene Leistungsdaten dürfen nicht ohne klare Freigabe an Teamleiter weitergegeben werden.",
+            "used_data": [
+              "TestResult",
+              "PermissionRule"
+            ],
+            "uncertainties": [
+              "Berechtigung für personenbezogenes Reporting unklar"
+            ]
+          },
+          {
+            "action": "Gruppenbasierte Auswertung verwenden",
+            "status": "erlaubt",
+            "reason": "Gruppenbasierte Auswertungen reduzieren Datenschutzrisiken und vermeiden Bloßstellung einzelner Lernender.",
+            "used_data": [
+              "TestResult",
+              "Group",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          }
+        ],
+        "open_questions": [
+          "Welche spezifischen Testergebnisse liegen vor?",
+          "Welche Vorkenntnisse wurden berücksichtigt?",
+          "Welche Art von Zusatzcontent wird benötigt?",
+          "Wurden die Testfragen eindeutig formuliert und fachlich validiert?"
+        ]
+      },
+      "validation": {
+        "raw_use_case_id": "use_case_2",
+        "validated_use_case_id": "use_case_2",
+        "classification_changed": false,
+        "classification_scores": {
+          "use_case_1": 0,
+          "use_case_2": 3,
+          "use_case_3": 0
+        },
+        "raw_agents": [
+          "Analytics/Metrics Agent",
+          "Course Agent",
+          "Assignment Agent"
+        ],
+        "agents_added_by_validator": [
+          "Content Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ],
+        "effective_agents": [
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Course Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ]
+      },
+      "total_duration_ms": 3855.5135,
+      "load_duration_ms": 109.987,
+      "prompt_tokens": 915,
+      "output_tokens": 277,
+      "output_tokens_per_second": 74.95381681341289,
+      "response_model": "qwen3:14b",
+      "response_created_at": "2026-08-04T20:37:10.8978138Z"
+    },
+    {
+      "case_id": "development_use_case_2_v5",
+      "dataset": "development",
+      "expected_use_case_id": "use_case_2",
+      "variant_index": 5,
+      "prompt": "Erstelle einen kontrollierbaren Maßnahmenplan aus den Sicherheitstestdaten: schwache Inhalte und Gruppen erkennen, vorhandenen Content prüfen, Änderungen und Übungen vorschlagen und Benachrichtigungen nur datenschutzkonform vorbereiten.",
+      "expected_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Course Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Policy/Permission Agent"
+      ],
+      "expected_task_categories": [
+        "result_analysis",
+        "group_comparison",
+        "content_review",
+        "course_adjustment",
+        "repeat_tasks",
+        "private_notification",
+        "governance"
+      ],
+      "expected_privacy_categories": [
+        "private_notification",
+        "performance_permissions"
+      ],
+      "expected_governance_controls": [
+        "course_adjustment_requires_approval",
+        "repeat_tasks_require_approval",
+        "private_hints_require_approval",
+        "personal_test_results_blocked",
+        "group_evaluation_allowed"
+      ],
+      "repetition": 1,
+      "seed": 42,
+      "temperature": 0.0,
+      "success": true,
+      "analysis": {
+        "use_case_id": "use_case_2",
+        "intent": "Erstellung eines kontrollierbaren Maßnahmenplans basierend auf Sicherheitstestdaten",
+        "tasks": [
+          "schwache Inhalte und Gruppen erkennen",
+          "vorhandenen Content prüfen",
+          "Änderungen und Übungen vorschlagen",
+          "Benachrichtigungen datenschutzkonform vorbereiten"
+        ],
+        "agents": [
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Course Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ],
+        "privacy_requirements": [
+          "Benachrichtigungen müssen datenschutzkonform vorbereitet werden"
+        ],
+        "open_questions": [
+          "Welche spezifischen Sicherheitstestdaten liegen vor?",
+          "Welche Gruppen werden analysiert?",
+          "Welche Art von Benachrichtigungen sind erforderlich?"
+        ],
+        "confidence": 0.9
+      },
+      "raw_use_case_id": "use_case_2",
+      "validated_use_case_id": "use_case_2",
+      "classification_changed": 0,
+      "classification_scores": {
+        "use_case_1": 0,
+        "use_case_2": 3,
+        "use_case_3": 1
+      },
+      "raw_classification_correct": 1,
+      "validated_classification_correct": 1,
+      "raw_task_coverage": 0.7142857142857143,
+      "raw_task_categories_hit": [
+        "result_analysis",
+        "group_comparison",
+        "content_review",
+        "repeat_tasks",
+        "governance"
+      ],
+      "raw_task_categories_missing": [
+        "course_adjustment",
+        "private_notification"
+      ],
+      "plan_task_coverage": 1.0,
+      "plan_task_categories_hit": [
+        "result_analysis",
+        "group_comparison",
+        "content_review",
+        "course_adjustment",
+        "repeat_tasks",
+        "private_notification",
+        "governance"
+      ],
+      "plan_task_categories_missing": [],
+      "raw_privacy_coverage": 0.5,
+      "raw_privacy_categories_hit": [
+        "performance_permissions"
+      ],
+      "raw_privacy_categories_missing": [
+        "private_notification"
+      ],
+      "plan_privacy_coverage": 1.0,
+      "plan_privacy_categories_hit": [
+        "private_notification",
+        "performance_permissions"
+      ],
+      "plan_privacy_categories_missing": [],
+      "governance_action_coverage": 1.0,
+      "governance_controls_hit": [
+        "course_adjustment_requires_approval",
+        "repeat_tasks_require_approval",
+        "private_hints_require_approval",
+        "personal_test_results_blocked",
+        "group_evaluation_allowed"
+      ],
+      "governance_controls_missing": [],
+      "raw_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Course Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Policy/Permission Agent"
+      ],
+      "effective_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Course Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Policy/Permission Agent"
+      ],
+      "agents_added_by_validator": [],
+      "agents_added_count": 0,
+      "raw_agent_precision": 1.0,
+      "raw_agent_recall": 1.0,
+      "raw_agent_f1": 1.0,
+      "raw_agents_missing": [],
+      "raw_agents_extra": [],
+      "validated_agent_precision": 1.0,
+      "validated_agent_recall": 1.0,
+      "validated_agent_f1": 1.0,
+      "validated_agents_missing": [],
+      "validated_agents_extra": [],
+      "action_plan": {
+        "use_case_id": "use_case_2",
+        "title": "Kursanpassung nach schlechten Testergebnissen",
+        "user_request": "Erstelle einen kontrollierbaren Maßnahmenplan aus den Sicherheitstestdaten: schwache Inhalte und Gruppen erkennen, vorhandenen Content prüfen, Änderungen und Übungen vorschlagen und Benachrichtigungen nur datenschutzkonform vorbereiten.",
+        "tasks": [
+          "schwache Inhalte und Gruppen erkennen",
+          "vorhandenen Content prüfen",
+          "Änderungen und Übungen vorschlagen",
+          "Benachrichtigungen datenschutzkonform vorbereiten",
+          "Governance-Anforderung berücksichtigen: Benachrichtigungen müssen datenschutzkonform vorbereitet werden"
+        ],
+        "involved_agents": [
+          "Orchestrator Agent",
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Course Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ],
+        "actions": [
+          {
+            "action": "Schwache Themenbereiche identifizieren: Sichere Nutzung von KI-Tools, Phishing-Erkennung bei Werkstudenten ohne IT-Vorerfahrung (54 %)",
+            "status": "erlaubt",
+            "reason": "Neben allgemeinen Schwellenwerten werden auch gruppenspezifische Auffälligkeiten berücksichtigt.",
+            "used_data": [
+              "TestResult",
+              "Group"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Gruppenunterschiede zwischen Personen mit und ohne IT-Vorerfahrung prüfen",
+            "status": "erlaubt",
+            "reason": "Gruppenspezifische Ergebnisse helfen, Schwächen differenzierter zu bewerten.",
+            "used_data": [
+              "TestResult",
+              "Group"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Fehlende Inhalte markieren: Sichere Nutzung von KI-Tools",
+            "status": "erlaubt",
+            "reason": "Fehlende Inhalte müssen vor Veröffentlichung oder Kursanpassung sichtbar gemacht werden.",
+            "used_data": [
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Kursanpassung für 'IT-Sicherheit Grundlagen' vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Kursänderungen auf Basis von Testergebnissen müssen fachlich geprüft und freigegeben werden.",
+            "used_data": [
+              "Course",
+              "Module",
+              "TestResult"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Wiederholungsaufgaben zu KI-Nutzung und Phishing-Erkennung vorschlagen",
+            "status": "freigabepflichtig",
+            "reason": "Wiederholungsaufgaben auf Basis von Testergebnissen sollten vor Zuweisung fachlich geprüft werden.",
+            "used_data": [
+              "TestResult",
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Private Lernhinweise für betroffene Lernende vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Individuelle Hinweise auf Basis von Testergebnissen sind sensibel und benötigen Freigabe.",
+            "used_data": [
+              "TestResult",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Personenbezogene Testergebnisse an Teamleiter weitergeben",
+            "status": "blockiert",
+            "reason": "Personenbezogene Leistungsdaten dürfen nicht ohne klare Freigabe an Teamleiter weitergegeben werden.",
+            "used_data": [
+              "TestResult",
+              "PermissionRule"
+            ],
+            "uncertainties": [
+              "Berechtigung für personenbezogenes Reporting unklar"
+            ]
+          },
+          {
+            "action": "Gruppenbasierte Auswertung verwenden",
+            "status": "erlaubt",
+            "reason": "Gruppenbasierte Auswertungen reduzieren Datenschutzrisiken und vermeiden Bloßstellung einzelner Lernender.",
+            "used_data": [
+              "TestResult",
+              "Group",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          }
+        ],
+        "open_questions": [
+          "Welche spezifischen Sicherheitstestdaten liegen vor?",
+          "Welche Gruppen werden analysiert?",
+          "Welche Art von Benachrichtigungen sind erforderlich?",
+          "Wurden die Testfragen eindeutig formuliert und fachlich validiert?"
+        ]
+      },
+      "validation": {
+        "raw_use_case_id": "use_case_2",
+        "validated_use_case_id": "use_case_2",
+        "classification_changed": false,
+        "classification_scores": {
+          "use_case_1": 0,
+          "use_case_2": 3,
+          "use_case_3": 1
+        },
+        "raw_agents": [
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Course Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ],
+        "agents_added_by_validator": [],
+        "effective_agents": [
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Course Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ]
+      },
+      "total_duration_ms": 3310.5627,
+      "load_duration_ms": 111.6668,
+      "prompt_tokens": 910,
+      "output_tokens": 235,
+      "output_tokens_per_second": 74.55240796346615,
+      "response_model": "qwen3:14b",
+      "response_created_at": "2026-08-04T20:37:16.2658153Z"
+    },
+    {
+      "case_id": "development_use_case_3_v1",
+      "dataset": "development",
+      "expected_use_case_id": "use_case_3",
+      "variant_index": 1,
+      "prompt": "Bereite eine verpflichtende Schulung zu Datenschutz und sicherer KI-Nutzung für alle Beschäftigten mit Kundendatenzugriff vor. Plane rollenbasierte Zuweisung, 14 Tage Frist, Erinnerungen und einen datensparsamen Bericht an HR und Compliance.",
+      "expected_agents": [
+        "Analytics/Metrics Agent",
+        "Course Agent",
+        "Enrollment Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Policy/Permission Agent"
+      ],
+      "expected_task_categories": [
+        "target_assignment",
+        "course_setup",
+        "deadline",
+        "reminders",
+        "reporting",
+        "governance"
+      ],
+      "expected_privacy_categories": [
+        "data_minimization",
+        "report_restriction",
+        "role_permissions"
+      ],
+      "expected_governance_controls": [
+        "course_draft_requires_approval",
+        "role_assignment_requires_approval",
+        "reminders_require_approval",
+        "personal_performance_data_blocked",
+        "aggregated_compliance_report_allowed"
+      ],
+      "repetition": 1,
+      "seed": 42,
+      "temperature": 0.0,
+      "success": true,
+      "analysis": {
+        "use_case_id": "use_case_3",
+        "intent": "Vorbereitung einer verpflichtenden Schulung mit rollenbasierter Zuweisung, Frist, Erinnerungen und Berichterstattung",
+        "tasks": [
+          "Erstellen eines Lernpfads zur verpflichtenden Schulung zu Datenschutz und sicherer KI-Nutzung",
+          "Rollenbasierte Zuweisung der Schulung an Beschäftigte mit Kundendatenzugriff",
+          "Einrichten einer Frist von 14 Tagen für die Schulungserledigung",
+          "Einrichten von Erinnerungen für nicht abgeschlossene Schulungen",
+          "Erstellung eines datensparsamen Berichts an HR und Compliance"
+        ],
+        "agents": [
+          "Enrollment Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Analytics/Metrics Agent",
+          "Policy/Permission Agent"
+        ],
+        "privacy_requirements": [
+          "Der Bericht an HR und Compliance muss datensparend sein",
+          "Nur erforderliche Angaben sind im Bericht zu enthalten",
+          "Keine individuellen personenbezogenen Daten sind im Bericht zu verwenden"
+        ],
+        "open_questions": [
+          "Welche spezifischen Rollen sind für die Zuweisung der Schulung relevant?",
+          "Welche konkreten Datenschutz- und KI-Nutzungsregeln sind in der Schulung zu behandeln?"
+        ],
+        "confidence": 0.95
+      },
+      "raw_use_case_id": "use_case_3",
+      "validated_use_case_id": "use_case_3",
+      "classification_changed": 0,
+      "classification_scores": {
+        "use_case_1": 1,
+        "use_case_2": 0,
+        "use_case_3": 3
+      },
+      "raw_classification_correct": 1,
+      "validated_classification_correct": 1,
+      "raw_task_coverage": 1.0,
+      "raw_task_categories_hit": [
+        "target_assignment",
+        "course_setup",
+        "deadline",
+        "reminders",
+        "reporting",
+        "governance"
+      ],
+      "raw_task_categories_missing": [],
+      "plan_task_coverage": 1.0,
+      "plan_task_categories_hit": [
+        "target_assignment",
+        "course_setup",
+        "deadline",
+        "reminders",
+        "reporting",
+        "governance"
+      ],
+      "plan_task_categories_missing": [],
+      "raw_privacy_coverage": 1.0,
+      "raw_privacy_categories_hit": [
+        "data_minimization",
+        "report_restriction",
+        "role_permissions"
+      ],
+      "raw_privacy_categories_missing": [],
+      "plan_privacy_coverage": 1.0,
+      "plan_privacy_categories_hit": [
+        "data_minimization",
+        "report_restriction",
+        "role_permissions"
+      ],
+      "plan_privacy_categories_missing": [],
+      "governance_action_coverage": 1.0,
+      "governance_controls_hit": [
+        "course_draft_requires_approval",
+        "role_assignment_requires_approval",
+        "reminders_require_approval",
+        "personal_performance_data_blocked",
+        "aggregated_compliance_report_allowed"
+      ],
+      "governance_controls_missing": [],
+      "raw_agents": [
+        "Enrollment Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Analytics/Metrics Agent",
+        "Policy/Permission Agent"
+      ],
+      "effective_agents": [
+        "Analytics/Metrics Agent",
+        "Course Agent",
+        "Enrollment Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Policy/Permission Agent"
+      ],
+      "agents_added_by_validator": [
+        "Course Agent"
+      ],
+      "agents_added_count": 1,
+      "raw_agent_precision": 1.0,
+      "raw_agent_recall": 0.8333333333333334,
+      "raw_agent_f1": 0.9090909090909091,
+      "raw_agents_missing": [
+        "Course Agent"
+      ],
+      "raw_agents_extra": [],
+      "validated_agent_precision": 1.0,
+      "validated_agent_recall": 1.0,
+      "validated_agent_f1": 1.0,
+      "validated_agents_missing": [],
+      "validated_agents_extra": [],
+      "action_plan": {
+        "use_case_id": "use_case_3",
+        "title": "Compliance-Pflichtschulung",
+        "user_request": "Bereite eine verpflichtende Schulung zu Datenschutz und sicherer KI-Nutzung für alle Beschäftigten mit Kundendatenzugriff vor. Plane rollenbasierte Zuweisung, 14 Tage Frist, Erinnerungen und einen datensparsamen Bericht an HR und Compliance.",
+        "tasks": [
+          "Erstellen eines Lernpfads zur verpflichtenden Schulung zu Datenschutz und sicherer KI-Nutzung",
+          "Rollenbasierte Zuweisung der Schulung an Beschäftigte mit Kundendatenzugriff",
+          "Einrichten einer Frist von 14 Tagen für die Schulungserledigung",
+          "Einrichten von Erinnerungen für nicht abgeschlossene Schulungen",
+          "Erstellung eines datensparsamen Berichts an HR und Compliance",
+          "Governance-Anforderung berücksichtigen: Der Bericht an HR und Compliance muss datensparend sein",
+          "Governance-Anforderung berücksichtigen: Nur erforderliche Angaben sind im Bericht zu enthalten",
+          "Governance-Anforderung berücksichtigen: Keine individuellen personenbezogenen Daten sind im Bericht zu verwenden",
+          "Deterministische Agentenvalidierung ergänzte: Course Agent"
+        ],
+        "involved_agents": [
+          "Orchestrator Agent",
+          "Analytics/Metrics Agent",
+          "Course Agent",
+          "Enrollment Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ],
+        "actions": [
+          {
+            "action": "Aggregierten Bericht für HR und Compliance vorbereiten",
+            "status": "erlaubt",
+            "reason": "Aggregierte Teilnahmequoten erfüllen Nachweisanforderungen ohne unnötige personenbezogene Leistungsdaten.",
+            "used_data": [
+              "User",
+              "ComplianceRequirement",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Pflichtschulung 'Datenschutz und sichere KI-Nutzung' als Kursentwurf vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Eine Pflichtschulung betrifft Zielgruppen, Fristen und Nachweispflichten und benötigt Freigabe.",
+            "used_data": [
+              "Course",
+              "Module",
+              "ComplianceRequirement"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Zielgruppe für Pflichtschulung bestimmen: 3 Personen mit Kundendatenzugriff",
+            "status": "erlaubt",
+            "reason": "Die Zielgruppe wird anhand des Merkmals Kundendatenzugriff bestimmt und nicht pauschal aus einer Gruppe abgeleitet.",
+            "used_data": [
+              "User",
+              "AccessAttribute",
+              "ComplianceRequirement"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Pflichtschulung rollenbasiert zuweisen",
+            "status": "freigabepflichtig",
+            "reason": "Die Zuweisung einer Pflichtschulung hat organisatorische Auswirkungen und benötigt Freigabe.",
+            "used_data": [
+              "User",
+              "Role",
+              "PermissionRule",
+              "ComplianceRequirement"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Frist von 14 Tagen für Pflichtschulung vorschlagen",
+            "status": "erlaubt",
+            "reason": "Die Frist wird aus der Pflichtschulungslogik übernommen und als Vorschlag vorbereitet.",
+            "used_data": [
+              "ComplianceRequirement"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Erinnerungslogik für säumige Teilnehmende vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Erinnerungen und Eskalationen können personenbezogene Informationen offenlegen und benötigen Freigabe.",
+            "used_data": [
+              "ComplianceRequirement",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Datenschutzfreundliche Erinnerungstexte für säumige Teilnehmende vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Erinnerungen zu Pflichtschulungen können personenbezogene Teilnahmeinformationen betreffen.",
+            "used_data": [
+              "User",
+              "ComplianceRequirement",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Personenbezogene Leistungsdaten an HR oder Teamleiter senden",
+            "status": "blockiert",
+            "reason": "HR und Teamleiter dürfen keine unnötigen personenbezogenen Leistungsdaten erhalten.",
+            "used_data": [
+              "User",
+              "Role",
+              "PermissionRule",
+              "ReportRequest"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Eskalation an Teamleiter oder HR vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Eskalationen können sensible Teilnahmeinformationen offenlegen und benötigen menschliche Freigabe.",
+            "used_data": [
+              "ComplianceRequirement",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          }
+        ],
+        "open_questions": [
+          "Welche spezifischen Rollen sind für die Zuweisung der Schulung relevant?",
+          "Welche konkreten Datenschutz- und KI-Nutzungsregeln sind in der Schulung zu behandeln?"
+        ]
+      },
+      "validation": {
+        "raw_use_case_id": "use_case_3",
+        "validated_use_case_id": "use_case_3",
+        "classification_changed": false,
+        "classification_scores": {
+          "use_case_1": 1,
+          "use_case_2": 0,
+          "use_case_3": 3
+        },
+        "raw_agents": [
+          "Enrollment Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Analytics/Metrics Agent",
+          "Policy/Permission Agent"
+        ],
+        "agents_added_by_validator": [
+          "Course Agent"
+        ],
+        "effective_agents": [
+          "Analytics/Metrics Agent",
+          "Course Agent",
+          "Enrollment Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ]
+      },
+      "total_duration_ms": 4685.2063,
+      "load_duration_ms": 110.0618,
+      "prompt_tokens": 913,
+      "output_tokens": 338,
+      "output_tokens_per_second": 74.72129839972624,
+      "response_model": "qwen3:14b",
+      "response_created_at": "2026-08-04T20:37:23.0097216Z"
+    },
+    {
+      "case_id": "development_use_case_3_v2",
+      "dataset": "development",
+      "expected_use_case_id": "use_case_3",
+      "variant_index": 2,
+      "prompt": "Alle Personen, die Kundendaten bearbeiten, sollen eine Compliance-Schulung absolvieren. Bitte prüfe Zielgruppe und Inhalte, setze zwei Wochen Zeit, bereite Mahnungen für offene Abschlüsse vor und vermeide unnötige personenbezogene Angaben im Reporting.",
+      "expected_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Course Agent",
+        "Enrollment Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Policy/Permission Agent"
+      ],
+      "expected_task_categories": [
+        "target_assignment",
+        "content_review",
+        "course_setup",
+        "deadline",
+        "reminders",
+        "reporting",
+        "governance"
+      ],
+      "expected_privacy_categories": [
+        "data_minimization",
+        "report_restriction",
+        "role_permissions"
+      ],
+      "expected_governance_controls": [
+        "course_draft_requires_approval",
+        "role_assignment_requires_approval",
+        "reminders_require_approval",
+        "personal_performance_data_blocked",
+        "aggregated_compliance_report_allowed"
+      ],
+      "repetition": 1,
+      "seed": 42,
+      "temperature": 0.0,
+      "success": true,
+      "analysis": {
+        "use_case_id": "use_case_3",
+        "intent": "Compliance-Pflichtschulung; Kundendatenzugriff, rollenbasierte Zuweisung, Frist, Erinnerungen und HR-/Compliance-Bericht.",
+        "tasks": [
+          "Zielgruppe prüfen (Personen mit Zugriff auf Kundendaten)",
+          "Inhalte der Compliance-Schulung prüfen",
+          "Frist für die Schulung setzen (zwei Wochen)",
+          "Mahnungen für offene Abschlüsse vorbereiten",
+          "Reporting erstellen, das unnötige personenbezogene Angaben vermeidet"
+        ],
+        "agents": [
+          "Enrollment Agent",
+          "Course Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Analytics/Metrics Agent",
+          "Policy/Permission Agent"
+        ],
+        "privacy_requirements": [
+          "Reporting darf keine unnötigen personenbezogenen Angaben enthalten"
+        ],
+        "open_questions": [
+          "Welche spezifischen Inhalte der Compliance-Schulung sind erforderlich?",
+          "Welche Rolle oder Rollen haben Zugriff auf Kundendaten?",
+          "Sollen die Mahnungen per E-Mail, Benachrichtigung oder anderen Kanälen erfolgen?"
+        ],
+        "confidence": 0.95
+      },
+      "raw_use_case_id": "use_case_3",
+      "validated_use_case_id": "use_case_3",
+      "classification_changed": 0,
+      "classification_scores": {
+        "use_case_1": 0,
+        "use_case_2": 0,
+        "use_case_3": 6
+      },
+      "raw_classification_correct": 1,
+      "validated_classification_correct": 1,
+      "raw_task_coverage": 1.0,
+      "raw_task_categories_hit": [
+        "target_assignment",
+        "content_review",
+        "course_setup",
+        "deadline",
+        "reminders",
+        "reporting",
+        "governance"
+      ],
+      "raw_task_categories_missing": [],
+      "plan_task_coverage": 1.0,
+      "plan_task_categories_hit": [
+        "target_assignment",
+        "content_review",
+        "course_setup",
+        "deadline",
+        "reminders",
+        "reporting",
+        "governance"
+      ],
+      "plan_task_categories_missing": [],
+      "raw_privacy_coverage": 1.0,
+      "raw_privacy_categories_hit": [
+        "data_minimization",
+        "report_restriction",
+        "role_permissions"
+      ],
+      "raw_privacy_categories_missing": [],
+      "plan_privacy_coverage": 1.0,
+      "plan_privacy_categories_hit": [
+        "data_minimization",
+        "report_restriction",
+        "role_permissions"
+      ],
+      "plan_privacy_categories_missing": [],
+      "governance_action_coverage": 1.0,
+      "governance_controls_hit": [
+        "course_draft_requires_approval",
+        "role_assignment_requires_approval",
+        "reminders_require_approval",
+        "personal_performance_data_blocked",
+        "aggregated_compliance_report_allowed"
+      ],
+      "governance_controls_missing": [],
+      "raw_agents": [
+        "Enrollment Agent",
+        "Course Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Analytics/Metrics Agent",
+        "Policy/Permission Agent"
+      ],
+      "effective_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Course Agent",
+        "Enrollment Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Policy/Permission Agent"
+      ],
+      "agents_added_by_validator": [
+        "Content Agent"
+      ],
+      "agents_added_count": 1,
+      "raw_agent_precision": 1.0,
+      "raw_agent_recall": 0.8571428571428571,
+      "raw_agent_f1": 0.923076923076923,
+      "raw_agents_missing": [
+        "Content Agent"
+      ],
+      "raw_agents_extra": [],
+      "validated_agent_precision": 1.0,
+      "validated_agent_recall": 1.0,
+      "validated_agent_f1": 1.0,
+      "validated_agents_missing": [],
+      "validated_agents_extra": [],
+      "action_plan": {
+        "use_case_id": "use_case_3",
+        "title": "Compliance-Pflichtschulung",
+        "user_request": "Alle Personen, die Kundendaten bearbeiten, sollen eine Compliance-Schulung absolvieren. Bitte prüfe Zielgruppe und Inhalte, setze zwei Wochen Zeit, bereite Mahnungen für offene Abschlüsse vor und vermeide unnötige personenbezogene Angaben im Reporting.",
+        "tasks": [
+          "Zielgruppe prüfen (Personen mit Zugriff auf Kundendaten)",
+          "Inhalte der Compliance-Schulung prüfen",
+          "Frist für die Schulung setzen (zwei Wochen)",
+          "Mahnungen für offene Abschlüsse vorbereiten",
+          "Reporting erstellen, das unnötige personenbezogene Angaben vermeidet",
+          "Governance-Anforderung berücksichtigen: Reporting darf keine unnötigen personenbezogenen Angaben enthalten",
+          "Deterministische Agentenvalidierung ergänzte: Content Agent"
+        ],
+        "involved_agents": [
+          "Orchestrator Agent",
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Course Agent",
+          "Enrollment Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ],
+        "actions": [
+          {
+            "action": "Aggregierten Bericht für HR und Compliance vorbereiten",
+            "status": "erlaubt",
+            "reason": "Aggregierte Teilnahmequoten erfüllen Nachweisanforderungen ohne unnötige personenbezogene Leistungsdaten.",
+            "used_data": [
+              "User",
+              "ComplianceRequirement",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Fehlende Inhalte markieren: Sichere Nutzung generativer KI",
+            "status": "erlaubt",
+            "reason": "Fehlende Inhalte müssen vor Veröffentlichung oder Kursanpassung sichtbar gemacht werden.",
+            "used_data": [
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Veraltete Inhalte zur Aktualisierung markieren: Interne KI-Richtlinie",
+            "status": "erlaubt",
+            "reason": "Veraltete Inhalte sollten vor Nutzung oder Veröffentlichung fachlich geprüft werden.",
+            "used_data": [
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Pflichtschulung 'Datenschutz und sichere KI-Nutzung' als Kursentwurf vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Eine Pflichtschulung betrifft Zielgruppen, Fristen und Nachweispflichten und benötigt Freigabe.",
+            "used_data": [
+              "Course",
+              "Module",
+              "ComplianceRequirement"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Zielgruppe für Pflichtschulung bestimmen: 3 Personen mit Kundendatenzugriff",
+            "status": "erlaubt",
+            "reason": "Die Zielgruppe wird anhand des Merkmals Kundendatenzugriff bestimmt und nicht pauschal aus einer Gruppe abgeleitet.",
+            "used_data": [
+              "User",
+              "AccessAttribute",
+              "ComplianceRequirement"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Pflichtschulung rollenbasiert zuweisen",
+            "status": "freigabepflichtig",
+            "reason": "Die Zuweisung einer Pflichtschulung hat organisatorische Auswirkungen und benötigt Freigabe.",
+            "used_data": [
+              "User",
+              "Role",
+              "PermissionRule",
+              "ComplianceRequirement"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Frist von 14 Tagen für Pflichtschulung vorschlagen",
+            "status": "erlaubt",
+            "reason": "Die Frist wird aus der Pflichtschulungslogik übernommen und als Vorschlag vorbereitet.",
+            "used_data": [
+              "ComplianceRequirement"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Erinnerungslogik für säumige Teilnehmende vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Erinnerungen und Eskalationen können personenbezogene Informationen offenlegen und benötigen Freigabe.",
+            "used_data": [
+              "ComplianceRequirement",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Datenschutzfreundliche Erinnerungstexte für säumige Teilnehmende vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Erinnerungen zu Pflichtschulungen können personenbezogene Teilnahmeinformationen betreffen.",
+            "used_data": [
+              "User",
+              "ComplianceRequirement",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Personenbezogene Leistungsdaten an HR oder Teamleiter senden",
+            "status": "blockiert",
+            "reason": "HR und Teamleiter dürfen keine unnötigen personenbezogenen Leistungsdaten erhalten.",
+            "used_data": [
+              "User",
+              "Role",
+              "PermissionRule",
+              "ReportRequest"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Eskalation an Teamleiter oder HR vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Eskalationen können sensible Teilnahmeinformationen offenlegen und benötigen menschliche Freigabe.",
+            "used_data": [
+              "ComplianceRequirement",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          }
+        ],
+        "open_questions": [
+          "Welche spezifischen Inhalte der Compliance-Schulung sind erforderlich?",
+          "Welche Rolle oder Rollen haben Zugriff auf Kundendaten?",
+          "Sollen die Mahnungen per E-Mail, Benachrichtigung oder anderen Kanälen erfolgen?"
+        ]
+      },
+      "validation": {
+        "raw_use_case_id": "use_case_3",
+        "validated_use_case_id": "use_case_3",
+        "classification_changed": false,
+        "classification_scores": {
+          "use_case_1": 0,
+          "use_case_2": 0,
+          "use_case_3": 6
+        },
+        "raw_agents": [
+          "Enrollment Agent",
+          "Course Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Analytics/Metrics Agent",
+          "Policy/Permission Agent"
+        ],
+        "agents_added_by_validator": [
+          "Content Agent"
+        ],
+        "effective_agents": [
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Course Agent",
+          "Enrollment Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ]
+      },
+      "total_duration_ms": 4236.6893,
+      "load_duration_ms": 110.229,
+      "prompt_tokens": 911,
+      "output_tokens": 307,
+      "output_tokens_per_second": 75.2606666673204,
+      "response_model": "qwen3:14b",
+      "response_created_at": "2026-08-04T20:37:29.2933613Z"
+    },
+    {
+      "case_id": "development_use_case_3_v3",
+      "dataset": "development",
+      "expected_use_case_id": "use_case_3",
+      "variant_index": 3,
+      "prompt": "Im LMS soll eine Datenschutz- und KI-Pflichtschulung eingerichtet werden. Bestimme die Pflicht anhand des Kundendatenzugriffs, kennzeichne fehlende oder veraltete Inhalte, plane Frist und Erinnerungen und begrenze HR-/Compliance-Berichte auf erforderliche Daten.",
+      "expected_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Course Agent",
+        "Enrollment Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Policy/Permission Agent"
+      ],
+      "expected_task_categories": [
+        "target_assignment",
+        "content_review",
+        "course_setup",
+        "deadline",
+        "reminders",
+        "reporting",
+        "governance"
+      ],
+      "expected_privacy_categories": [
+        "data_minimization",
+        "report_restriction",
+        "role_permissions"
+      ],
+      "expected_governance_controls": [
+        "course_draft_requires_approval",
+        "role_assignment_requires_approval",
+        "reminders_require_approval",
+        "personal_performance_data_blocked",
+        "aggregated_compliance_report_allowed"
+      ],
+      "repetition": 1,
+      "seed": 42,
+      "temperature": 0.0,
+      "success": true,
+      "analysis": {
+        "use_case_id": "use_case_3",
+        "intent": "Einrichtung einer Datenschutz- und KI-Pflichtschulung mit Frist, Erinnerungen und Berichterstattung",
+        "tasks": [
+          "Bestimmen der Pflicht anhand des Kundendatenzugriffs",
+          "Kennzeichnen fehlender oder veralteter Inhalte",
+          "Planen von Frist und Erinnerungen",
+          "Begrenzen von HR-/Compliance-Berichten auf erforderliche Daten"
+        ],
+        "agents": [
+          "Policy/Permission Agent",
+          "Content Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Analytics/Metrics Agent"
+        ],
+        "privacy_requirements": [
+          "Nur erforderliche Daten in HR-/Compliance-Berichten",
+          "Keine individuellen personenbezogenen Daten in Berichten",
+          "Rollenbasierte Zugriffsrechte auf Lerninhalte und Berichte",
+          "Daten nur für die Zwecke der Pflichtschulung verwenden"
+        ],
+        "open_questions": [
+          "Welche spezifischen Kundendaten sind für den Zugriff relevant?",
+          "Welche Rollen erhalten Zugriff auf die Schulung und welche auf die Berichte?",
+          "Welche Fristen gelten für die Teilnahme an der Schulung?",
+          "Sollen Erinnerungen per E-Mail, Push-Benachrichtigung oder anderen Kanälen gesendet werden?"
+        ],
+        "confidence": 0.95
+      },
+      "raw_use_case_id": "use_case_3",
+      "validated_use_case_id": "use_case_3",
+      "classification_changed": 0,
+      "classification_scores": {
+        "use_case_1": 0,
+        "use_case_2": 0,
+        "use_case_3": 5
+      },
+      "raw_classification_correct": 1,
+      "validated_classification_correct": 1,
+      "raw_task_coverage": 1.0,
+      "raw_task_categories_hit": [
+        "target_assignment",
+        "content_review",
+        "course_setup",
+        "deadline",
+        "reminders",
+        "reporting",
+        "governance"
+      ],
+      "raw_task_categories_missing": [],
+      "plan_task_coverage": 1.0,
+      "plan_task_categories_hit": [
+        "target_assignment",
+        "content_review",
+        "course_setup",
+        "deadline",
+        "reminders",
+        "reporting",
+        "governance"
+      ],
+      "plan_task_categories_missing": [],
+      "raw_privacy_coverage": 1.0,
+      "raw_privacy_categories_hit": [
+        "data_minimization",
+        "report_restriction",
+        "role_permissions"
+      ],
+      "raw_privacy_categories_missing": [],
+      "plan_privacy_coverage": 1.0,
+      "plan_privacy_categories_hit": [
+        "data_minimization",
+        "report_restriction",
+        "role_permissions"
+      ],
+      "plan_privacy_categories_missing": [],
+      "governance_action_coverage": 1.0,
+      "governance_controls_hit": [
+        "course_draft_requires_approval",
+        "role_assignment_requires_approval",
+        "reminders_require_approval",
+        "personal_performance_data_blocked",
+        "aggregated_compliance_report_allowed"
+      ],
+      "governance_controls_missing": [],
+      "raw_agents": [
+        "Policy/Permission Agent",
+        "Content Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Analytics/Metrics Agent"
+      ],
+      "effective_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Course Agent",
+        "Enrollment Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Policy/Permission Agent"
+      ],
+      "agents_added_by_validator": [
+        "Course Agent",
+        "Enrollment Agent"
+      ],
+      "agents_added_count": 2,
+      "raw_agent_precision": 1.0,
+      "raw_agent_recall": 0.7142857142857143,
+      "raw_agent_f1": 0.8333333333333333,
+      "raw_agents_missing": [
+        "Course Agent",
+        "Enrollment Agent"
+      ],
+      "raw_agents_extra": [],
+      "validated_agent_precision": 1.0,
+      "validated_agent_recall": 1.0,
+      "validated_agent_f1": 1.0,
+      "validated_agents_missing": [],
+      "validated_agents_extra": [],
+      "action_plan": {
+        "use_case_id": "use_case_3",
+        "title": "Compliance-Pflichtschulung",
+        "user_request": "Im LMS soll eine Datenschutz- und KI-Pflichtschulung eingerichtet werden. Bestimme die Pflicht anhand des Kundendatenzugriffs, kennzeichne fehlende oder veraltete Inhalte, plane Frist und Erinnerungen und begrenze HR-/Compliance-Berichte auf erforderliche Daten.",
+        "tasks": [
+          "Bestimmen der Pflicht anhand des Kundendatenzugriffs",
+          "Kennzeichnen fehlender oder veralteter Inhalte",
+          "Planen von Frist und Erinnerungen",
+          "Begrenzen von HR-/Compliance-Berichten auf erforderliche Daten",
+          "Governance-Anforderung berücksichtigen: Nur erforderliche Daten in HR-/Compliance-Berichten",
+          "Governance-Anforderung berücksichtigen: Keine individuellen personenbezogenen Daten in Berichten",
+          "Governance-Anforderung berücksichtigen: Rollenbasierte Zugriffsrechte auf Lerninhalte und Berichte",
+          "Governance-Anforderung berücksichtigen: Daten nur für die Zwecke der Pflichtschulung verwenden",
+          "Deterministische Agentenvalidierung ergänzte: Course Agent, Enrollment Agent"
+        ],
+        "involved_agents": [
+          "Orchestrator Agent",
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Course Agent",
+          "Enrollment Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ],
+        "actions": [
+          {
+            "action": "Aggregierten Bericht für HR und Compliance vorbereiten",
+            "status": "erlaubt",
+            "reason": "Aggregierte Teilnahmequoten erfüllen Nachweisanforderungen ohne unnötige personenbezogene Leistungsdaten.",
+            "used_data": [
+              "User",
+              "ComplianceRequirement",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Fehlende Inhalte markieren: Sichere Nutzung generativer KI",
+            "status": "erlaubt",
+            "reason": "Fehlende Inhalte müssen vor Veröffentlichung oder Kursanpassung sichtbar gemacht werden.",
+            "used_data": [
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Veraltete Inhalte zur Aktualisierung markieren: Interne KI-Richtlinie",
+            "status": "erlaubt",
+            "reason": "Veraltete Inhalte sollten vor Nutzung oder Veröffentlichung fachlich geprüft werden.",
+            "used_data": [
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Pflichtschulung 'Datenschutz und sichere KI-Nutzung' als Kursentwurf vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Eine Pflichtschulung betrifft Zielgruppen, Fristen und Nachweispflichten und benötigt Freigabe.",
+            "used_data": [
+              "Course",
+              "Module",
+              "ComplianceRequirement"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Zielgruppe für Pflichtschulung bestimmen: 3 Personen mit Kundendatenzugriff",
+            "status": "erlaubt",
+            "reason": "Die Zielgruppe wird anhand des Merkmals Kundendatenzugriff bestimmt und nicht pauschal aus einer Gruppe abgeleitet.",
+            "used_data": [
+              "User",
+              "AccessAttribute",
+              "ComplianceRequirement"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Pflichtschulung rollenbasiert zuweisen",
+            "status": "freigabepflichtig",
+            "reason": "Die Zuweisung einer Pflichtschulung hat organisatorische Auswirkungen und benötigt Freigabe.",
+            "used_data": [
+              "User",
+              "Role",
+              "PermissionRule",
+              "ComplianceRequirement"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Frist von 14 Tagen für Pflichtschulung vorschlagen",
+            "status": "erlaubt",
+            "reason": "Die Frist wird aus der Pflichtschulungslogik übernommen und als Vorschlag vorbereitet.",
+            "used_data": [
+              "ComplianceRequirement"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Erinnerungslogik für säumige Teilnehmende vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Erinnerungen und Eskalationen können personenbezogene Informationen offenlegen und benötigen Freigabe.",
+            "used_data": [
+              "ComplianceRequirement",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Datenschutzfreundliche Erinnerungstexte für säumige Teilnehmende vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Erinnerungen zu Pflichtschulungen können personenbezogene Teilnahmeinformationen betreffen.",
+            "used_data": [
+              "User",
+              "ComplianceRequirement",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Personenbezogene Leistungsdaten an HR oder Teamleiter senden",
+            "status": "blockiert",
+            "reason": "HR und Teamleiter dürfen keine unnötigen personenbezogenen Leistungsdaten erhalten.",
+            "used_data": [
+              "User",
+              "Role",
+              "PermissionRule",
+              "ReportRequest"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Eskalation an Teamleiter oder HR vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Eskalationen können sensible Teilnahmeinformationen offenlegen und benötigen menschliche Freigabe.",
+            "used_data": [
+              "ComplianceRequirement",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          }
+        ],
+        "open_questions": [
+          "Welche spezifischen Kundendaten sind für den Zugriff relevant?",
+          "Welche Rollen erhalten Zugriff auf die Schulung und welche auf die Berichte?",
+          "Welche Fristen gelten für die Teilnahme an der Schulung?",
+          "Sollen Erinnerungen per E-Mail, Push-Benachrichtigung oder anderen Kanälen gesendet werden?"
+        ]
+      },
+      "validation": {
+        "raw_use_case_id": "use_case_3",
+        "validated_use_case_id": "use_case_3",
+        "classification_changed": false,
+        "classification_scores": {
+          "use_case_1": 0,
+          "use_case_2": 0,
+          "use_case_3": 5
+        },
+        "raw_agents": [
+          "Policy/Permission Agent",
+          "Content Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Analytics/Metrics Agent"
+        ],
+        "agents_added_by_validator": [
+          "Course Agent",
+          "Enrollment Agent"
+        ],
+        "effective_agents": [
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Course Agent",
+          "Enrollment Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ]
+      },
+      "total_duration_ms": 4740.0034,
+      "load_duration_ms": 111.0816,
+      "prompt_tokens": 919,
+      "output_tokens": 344,
+      "output_tokens_per_second": 75.16777819561933,
+      "response_model": "qwen3:14b",
+      "response_created_at": "2026-08-04T20:37:36.077996Z"
+    },
+    {
+      "case_id": "development_use_case_3_v4",
+      "dataset": "development",
+      "expected_use_case_id": "use_case_3",
+      "variant_index": 4,
+      "prompt": "Entwirf einen freigabefähigen Aktionsplan für die Compliance-Schulung von Mitarbeitenden mit Kundendatenzugriff: rollenbasiert zuweisen, 14-Tage-Frist, säumige Teilnehmende erinnern und sensible Lerndetails nicht an HR oder Führungskräfte weitergeben.",
+      "expected_agents": [
+        "Analytics/Metrics Agent",
+        "Course Agent",
+        "Enrollment Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Policy/Permission Agent"
+      ],
+      "expected_task_categories": [
+        "target_assignment",
+        "course_setup",
+        "deadline",
+        "reminders",
+        "reporting",
+        "governance"
+      ],
+      "expected_privacy_categories": [
+        "report_restriction",
+        "role_permissions"
+      ],
+      "expected_governance_controls": [
+        "course_draft_requires_approval",
+        "role_assignment_requires_approval",
+        "reminders_require_approval",
+        "personal_performance_data_blocked",
+        "aggregated_compliance_report_allowed"
+      ],
+      "repetition": 1,
+      "seed": 42,
+      "temperature": 0.0,
+      "success": true,
+      "analysis": {
+        "use_case_id": "use_case_3",
+        "intent": "Entwurf eines freigabefähigen Aktionsplans für Compliance-Schulung",
+        "tasks": [
+          "rollenbasierte Zuweisung von Mitarbeitenden mit Kundendatenzugriff",
+          "Einrichtung einer 14-Tage-Frist für die Teilnahme",
+          "Erinnerung an säumige Teilnehmende",
+          "Verhindern der Weitergabe sensibler Lerndetails an HR oder Führungskräfte"
+        ],
+        "agents": [
+          "Enrollment Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ],
+        "privacy_requirements": [
+          "sensible Lerndetails nicht an HR oder Führungskräfte weitergeben"
+        ],
+        "open_questions": [
+          "Welche spezifischen Rollen sind für die rollenbasierte Zuweisung relevant?",
+          "Welche Art von Erinnerungen (z. B. E-Mail, In-App-Benachrichtigung) sollen verwendet werden?",
+          "Welche Daten gelten als 'sensible Lerndetails' und wie sollen sie geschützt werden?"
+        ],
+        "confidence": 0.95
+      },
+      "raw_use_case_id": "use_case_3",
+      "validated_use_case_id": "use_case_3",
+      "classification_changed": 0,
+      "classification_scores": {
+        "use_case_1": 0,
+        "use_case_2": 0,
+        "use_case_3": 4
+      },
+      "raw_classification_correct": 1,
+      "validated_classification_correct": 1,
+      "raw_task_coverage": 0.8333333333333334,
+      "raw_task_categories_hit": [
+        "target_assignment",
+        "deadline",
+        "reminders",
+        "reporting",
+        "governance"
+      ],
+      "raw_task_categories_missing": [
+        "course_setup"
+      ],
+      "plan_task_coverage": 1.0,
+      "plan_task_categories_hit": [
+        "target_assignment",
+        "course_setup",
+        "deadline",
+        "reminders",
+        "reporting",
+        "governance"
+      ],
+      "plan_task_categories_missing": [],
+      "raw_privacy_coverage": 1.0,
+      "raw_privacy_categories_hit": [
+        "report_restriction",
+        "role_permissions"
+      ],
+      "raw_privacy_categories_missing": [],
+      "plan_privacy_coverage": 1.0,
+      "plan_privacy_categories_hit": [
+        "report_restriction",
+        "role_permissions"
+      ],
+      "plan_privacy_categories_missing": [],
+      "governance_action_coverage": 1.0,
+      "governance_controls_hit": [
+        "course_draft_requires_approval",
+        "role_assignment_requires_approval",
+        "reminders_require_approval",
+        "personal_performance_data_blocked",
+        "aggregated_compliance_report_allowed"
+      ],
+      "governance_controls_missing": [],
+      "raw_agents": [
+        "Enrollment Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Policy/Permission Agent"
+      ],
+      "effective_agents": [
+        "Analytics/Metrics Agent",
+        "Course Agent",
+        "Enrollment Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Policy/Permission Agent"
+      ],
+      "agents_added_by_validator": [
+        "Analytics/Metrics Agent",
+        "Course Agent"
+      ],
+      "agents_added_count": 2,
+      "raw_agent_precision": 1.0,
+      "raw_agent_recall": 0.6666666666666666,
+      "raw_agent_f1": 0.8,
+      "raw_agents_missing": [
+        "Analytics/Metrics Agent",
+        "Course Agent"
+      ],
+      "raw_agents_extra": [],
+      "validated_agent_precision": 1.0,
+      "validated_agent_recall": 1.0,
+      "validated_agent_f1": 1.0,
+      "validated_agents_missing": [],
+      "validated_agents_extra": [],
+      "action_plan": {
+        "use_case_id": "use_case_3",
+        "title": "Compliance-Pflichtschulung",
+        "user_request": "Entwirf einen freigabefähigen Aktionsplan für die Compliance-Schulung von Mitarbeitenden mit Kundendatenzugriff: rollenbasiert zuweisen, 14-Tage-Frist, säumige Teilnehmende erinnern und sensible Lerndetails nicht an HR oder Führungskräfte weitergeben.",
+        "tasks": [
+          "rollenbasierte Zuweisung von Mitarbeitenden mit Kundendatenzugriff",
+          "Einrichtung einer 14-Tage-Frist für die Teilnahme",
+          "Erinnerung an säumige Teilnehmende",
+          "Verhindern der Weitergabe sensibler Lerndetails an HR oder Führungskräfte",
+          "Governance-Anforderung berücksichtigen: sensible Lerndetails nicht an HR oder Führungskräfte weitergeben",
+          "Deterministische Agentenvalidierung ergänzte: Analytics/Metrics Agent, Course Agent"
+        ],
+        "involved_agents": [
+          "Orchestrator Agent",
+          "Analytics/Metrics Agent",
+          "Course Agent",
+          "Enrollment Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ],
+        "actions": [
+          {
+            "action": "Aggregierten Bericht für HR und Compliance vorbereiten",
+            "status": "erlaubt",
+            "reason": "Aggregierte Teilnahmequoten erfüllen Nachweisanforderungen ohne unnötige personenbezogene Leistungsdaten.",
+            "used_data": [
+              "User",
+              "ComplianceRequirement",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Pflichtschulung 'Datenschutz und sichere KI-Nutzung' als Kursentwurf vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Eine Pflichtschulung betrifft Zielgruppen, Fristen und Nachweispflichten und benötigt Freigabe.",
+            "used_data": [
+              "Course",
+              "Module",
+              "ComplianceRequirement"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Zielgruppe für Pflichtschulung bestimmen: 3 Personen mit Kundendatenzugriff",
+            "status": "erlaubt",
+            "reason": "Die Zielgruppe wird anhand des Merkmals Kundendatenzugriff bestimmt und nicht pauschal aus einer Gruppe abgeleitet.",
+            "used_data": [
+              "User",
+              "AccessAttribute",
+              "ComplianceRequirement"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Pflichtschulung rollenbasiert zuweisen",
+            "status": "freigabepflichtig",
+            "reason": "Die Zuweisung einer Pflichtschulung hat organisatorische Auswirkungen und benötigt Freigabe.",
+            "used_data": [
+              "User",
+              "Role",
+              "PermissionRule",
+              "ComplianceRequirement"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Frist von 14 Tagen für Pflichtschulung vorschlagen",
+            "status": "erlaubt",
+            "reason": "Die Frist wird aus der Pflichtschulungslogik übernommen und als Vorschlag vorbereitet.",
+            "used_data": [
+              "ComplianceRequirement"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Erinnerungslogik für säumige Teilnehmende vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Erinnerungen und Eskalationen können personenbezogene Informationen offenlegen und benötigen Freigabe.",
+            "used_data": [
+              "ComplianceRequirement",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Datenschutzfreundliche Erinnerungstexte für säumige Teilnehmende vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Erinnerungen zu Pflichtschulungen können personenbezogene Teilnahmeinformationen betreffen.",
+            "used_data": [
+              "User",
+              "ComplianceRequirement",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Personenbezogene Leistungsdaten an HR oder Teamleiter senden",
+            "status": "blockiert",
+            "reason": "HR und Teamleiter dürfen keine unnötigen personenbezogenen Leistungsdaten erhalten.",
+            "used_data": [
+              "User",
+              "Role",
+              "PermissionRule",
+              "ReportRequest"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Eskalation an Teamleiter oder HR vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Eskalationen können sensible Teilnahmeinformationen offenlegen und benötigen menschliche Freigabe.",
+            "used_data": [
+              "ComplianceRequirement",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          }
+        ],
+        "open_questions": [
+          "Welche spezifischen Rollen sind für die rollenbasierte Zuweisung relevant?",
+          "Welche Art von Erinnerungen (z. B. E-Mail, In-App-Benachrichtigung) sollen verwendet werden?",
+          "Welche Daten gelten als 'sensible Lerndetails' und wie sollen sie geschützt werden?"
+        ]
+      },
+      "validation": {
+        "raw_use_case_id": "use_case_3",
+        "validated_use_case_id": "use_case_3",
+        "classification_changed": false,
+        "classification_scores": {
+          "use_case_1": 0,
+          "use_case_2": 0,
+          "use_case_3": 4
+        },
+        "raw_agents": [
+          "Enrollment Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ],
+        "agents_added_by_validator": [
+          "Analytics/Metrics Agent",
+          "Course Agent"
+        ],
+        "effective_agents": [
+          "Analytics/Metrics Agent",
+          "Course Agent",
+          "Enrollment Agent",
+          "Assignment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ]
+      },
+      "total_duration_ms": 3905.2218,
+      "load_duration_ms": 122.1265,
+      "prompt_tokens": 920,
+      "output_tokens": 278,
+      "output_tokens_per_second": 74.52999188749081,
+      "response_model": "qwen3:14b",
+      "response_created_at": "2026-08-04T20:37:42.0523178Z"
+    },
+    {
+      "case_id": "development_use_case_3_v5",
+      "dataset": "development",
+      "expected_use_case_id": "use_case_3",
+      "variant_index": 5,
+      "prompt": "Organisiere die verbindliche Datenschutz- und GenAI-Schulung für die relevante Belegschaft. Nutze Zugriffsmerkmale statt pauschaler Gruppen, prüfe den Content, plane Erinnerungs- und Eskalationsschritte und erzeuge nur ein datensparsames Compliance-Reporting.",
+      "expected_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Course Agent",
+        "Enrollment Agent",
+        "Assignment Agent",
+        "Notification Agent",
+        "Policy/Permission Agent"
+      ],
+      "expected_task_categories": [
+        "target_assignment",
+        "content_review",
+        "course_setup",
+        "reminders",
+        "escalations",
+        "reporting",
+        "governance"
+      ],
+      "expected_privacy_categories": [
+        "data_minimization",
+        "report_restriction",
+        "role_permissions"
+      ],
+      "expected_governance_controls": [
+        "course_draft_requires_approval",
+        "role_assignment_requires_approval",
+        "reminders_require_approval",
+        "personal_performance_data_blocked",
+        "escalation_requires_approval",
+        "aggregated_compliance_report_allowed"
+      ],
+      "repetition": 1,
+      "seed": 42,
+      "temperature": 0.0,
+      "success": true,
+      "analysis": {
+        "use_case_id": "use_case_3",
+        "intent": "Compliance-Pflichtschulung mit rollenbasierter Zuweisung, Content-Prüfung, Erinnerungen, Eskalation und datensparsamem Reporting",
+        "tasks": [
+          "Zuweisung der Schulung an relevante Belegschaft basierend auf Zugriffsmerkmalen",
+          "Prüfung des vorhandenen Contents auf Aktualität und Relevanz",
+          "Planung von Erinnerungen und Eskalationsschritten für Nicht-Teilnehmer",
+          "Erzeugung eines datensparsamen Compliance-Reports"
+        ],
+        "agents": [
+          "Enrollment Agent",
+          "Content Agent",
+          "Notification Agent",
+          "Analytics/Metrics Agent",
+          "Policy/Permission Agent"
+        ],
+        "privacy_requirements": [
+          "Nur datensparsame Informationen im Reporting verwenden",
+          "Keine personenbezogenen Daten in der Aggregation",
+          "Rollenbasierte Zugriffssteuerung auf den Schulungsinhalt",
+          "Nur erforderliche Angaben für die Zuweisung der Schulung nutzen"
+        ],
+        "open_questions": [
+          "Welche spezifischen Zugriffsmerkmale sollen zur Zuweisung genutzt werden?",
+          "Welche Daten sind im Compliance-Reporting explizit erlaubt?",
+          "Welche Eskalationsstufen und -zeiten sind vorgesehen?"
+        ],
+        "confidence": 0.95
+      },
+      "raw_use_case_id": "use_case_3",
+      "validated_use_case_id": "use_case_3",
+      "classification_changed": 0,
+      "classification_scores": {
+        "use_case_1": 0,
+        "use_case_2": 0,
+        "use_case_3": 4
+      },
+      "raw_classification_correct": 1,
+      "validated_classification_correct": 1,
+      "raw_task_coverage": 1.0,
+      "raw_task_categories_hit": [
+        "target_assignment",
+        "content_review",
+        "course_setup",
+        "reminders",
+        "escalations",
+        "reporting",
+        "governance"
+      ],
+      "raw_task_categories_missing": [],
+      "plan_task_coverage": 1.0,
+      "plan_task_categories_hit": [
+        "target_assignment",
+        "content_review",
+        "course_setup",
+        "reminders",
+        "escalations",
+        "reporting",
+        "governance"
+      ],
+      "plan_task_categories_missing": [],
+      "raw_privacy_coverage": 1.0,
+      "raw_privacy_categories_hit": [
+        "data_minimization",
+        "report_restriction",
+        "role_permissions"
+      ],
+      "raw_privacy_categories_missing": [],
+      "plan_privacy_coverage": 1.0,
+      "plan_privacy_categories_hit": [
+        "data_minimization",
+        "report_restriction",
+        "role_permissions"
+      ],
+      "plan_privacy_categories_missing": [],
+      "governance_action_coverage": 1.0,
+      "governance_controls_hit": [
+        "course_draft_requires_approval",
+        "role_assignment_requires_approval",
+        "reminders_require_approval",
+        "personal_performance_data_blocked",
+        "escalation_requires_approval",
+        "aggregated_compliance_report_allowed"
+      ],
+      "governance_controls_missing": [],
+      "raw_agents": [
+        "Enrollment Agent",
+        "Content Agent",
+        "Notification Agent",
+        "Analytics/Metrics Agent",
+        "Policy/Permission Agent"
+      ],
+      "effective_agents": [
+        "Analytics/Metrics Agent",
+        "Content Agent",
+        "Course Agent",
+        "Enrollment Agent",
+        "Notification Agent",
+        "Policy/Permission Agent"
+      ],
+      "agents_added_by_validator": [
+        "Course Agent"
+      ],
+      "agents_added_count": 1,
+      "raw_agent_precision": 1.0,
+      "raw_agent_recall": 0.7142857142857143,
+      "raw_agent_f1": 0.8333333333333333,
+      "raw_agents_missing": [
+        "Assignment Agent",
+        "Course Agent"
+      ],
+      "raw_agents_extra": [],
+      "validated_agent_precision": 1.0,
+      "validated_agent_recall": 0.8571428571428571,
+      "validated_agent_f1": 0.923076923076923,
+      "validated_agents_missing": [
+        "Assignment Agent"
+      ],
+      "validated_agents_extra": [],
+      "action_plan": {
+        "use_case_id": "use_case_3",
+        "title": "Compliance-Pflichtschulung",
+        "user_request": "Organisiere die verbindliche Datenschutz- und GenAI-Schulung für die relevante Belegschaft. Nutze Zugriffsmerkmale statt pauschaler Gruppen, prüfe den Content, plane Erinnerungs- und Eskalationsschritte und erzeuge nur ein datensparsames Compliance-Reporting.",
+        "tasks": [
+          "Zuweisung der Schulung an relevante Belegschaft basierend auf Zugriffsmerkmalen",
+          "Prüfung des vorhandenen Contents auf Aktualität und Relevanz",
+          "Planung von Erinnerungen und Eskalationsschritten für Nicht-Teilnehmer",
+          "Erzeugung eines datensparsamen Compliance-Reports",
+          "Governance-Anforderung berücksichtigen: Nur datensparsame Informationen im Reporting verwenden",
+          "Governance-Anforderung berücksichtigen: Keine personenbezogenen Daten in der Aggregation",
+          "Governance-Anforderung berücksichtigen: Rollenbasierte Zugriffssteuerung auf den Schulungsinhalt",
+          "Governance-Anforderung berücksichtigen: Nur erforderliche Angaben für die Zuweisung der Schulung nutzen",
+          "Deterministische Agentenvalidierung ergänzte: Course Agent"
+        ],
+        "involved_agents": [
+          "Orchestrator Agent",
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Course Agent",
+          "Enrollment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ],
+        "actions": [
+          {
+            "action": "Aggregierten Bericht für HR und Compliance vorbereiten",
+            "status": "erlaubt",
+            "reason": "Aggregierte Teilnahmequoten erfüllen Nachweisanforderungen ohne unnötige personenbezogene Leistungsdaten.",
+            "used_data": [
+              "User",
+              "ComplianceRequirement",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Fehlende Inhalte markieren: Sichere Nutzung generativer KI",
+            "status": "erlaubt",
+            "reason": "Fehlende Inhalte müssen vor Veröffentlichung oder Kursanpassung sichtbar gemacht werden.",
+            "used_data": [
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Veraltete Inhalte zur Aktualisierung markieren: Interne KI-Richtlinie",
+            "status": "erlaubt",
+            "reason": "Veraltete Inhalte sollten vor Nutzung oder Veröffentlichung fachlich geprüft werden.",
+            "used_data": [
+              "Module",
+              "ContentItem"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Pflichtschulung 'Datenschutz und sichere KI-Nutzung' als Kursentwurf vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Eine Pflichtschulung betrifft Zielgruppen, Fristen und Nachweispflichten und benötigt Freigabe.",
+            "used_data": [
+              "Course",
+              "Module",
+              "ComplianceRequirement"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Zielgruppe für Pflichtschulung bestimmen: 3 Personen mit Kundendatenzugriff",
+            "status": "erlaubt",
+            "reason": "Die Zielgruppe wird anhand des Merkmals Kundendatenzugriff bestimmt und nicht pauschal aus einer Gruppe abgeleitet.",
+            "used_data": [
+              "User",
+              "AccessAttribute",
+              "ComplianceRequirement"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Pflichtschulung rollenbasiert zuweisen",
+            "status": "freigabepflichtig",
+            "reason": "Die Zuweisung einer Pflichtschulung hat organisatorische Auswirkungen und benötigt Freigabe.",
+            "used_data": [
+              "User",
+              "Role",
+              "PermissionRule",
+              "ComplianceRequirement"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Datenschutzfreundliche Erinnerungstexte für säumige Teilnehmende vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Erinnerungen zu Pflichtschulungen können personenbezogene Teilnahmeinformationen betreffen.",
+            "used_data": [
+              "User",
+              "ComplianceRequirement",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Personenbezogene Leistungsdaten an HR oder Teamleiter senden",
+            "status": "blockiert",
+            "reason": "HR und Teamleiter dürfen keine unnötigen personenbezogenen Leistungsdaten erhalten.",
+            "used_data": [
+              "User",
+              "Role",
+              "PermissionRule",
+              "ReportRequest"
+            ],
+            "uncertainties": []
+          },
+          {
+            "action": "Eskalation an Teamleiter oder HR vorbereiten",
+            "status": "freigabepflichtig",
+            "reason": "Eskalationen können sensible Teilnahmeinformationen offenlegen und benötigen menschliche Freigabe.",
+            "used_data": [
+              "ComplianceRequirement",
+              "PermissionRule"
+            ],
+            "uncertainties": []
+          }
+        ],
+        "open_questions": [
+          "Welche spezifischen Zugriffsmerkmale sollen zur Zuweisung genutzt werden?",
+          "Welche Daten sind im Compliance-Reporting explizit erlaubt?",
+          "Welche Eskalationsstufen und -zeiten sind vorgesehen?"
+        ]
+      },
+      "validation": {
+        "raw_use_case_id": "use_case_3",
+        "validated_use_case_id": "use_case_3",
+        "classification_changed": false,
+        "classification_scores": {
+          "use_case_1": 0,
+          "use_case_2": 0,
+          "use_case_3": 4
+        },
+        "raw_agents": [
+          "Enrollment Agent",
+          "Content Agent",
+          "Notification Agent",
+          "Analytics/Metrics Agent",
+          "Policy/Permission Agent"
+        ],
+        "agents_added_by_validator": [
+          "Course Agent"
+        ],
+        "effective_agents": [
+          "Analytics/Metrics Agent",
+          "Content Agent",
+          "Course Agent",
+          "Enrollment Agent",
+          "Notification Agent",
+          "Policy/Permission Agent"
+        ]
+      },
+      "total_duration_ms": 4669.6619,
+      "load_duration_ms": 109.3089,
+      "prompt_tokens": 916,
+      "output_tokens": 340,
+      "output_tokens_per_second": 75.43332005115268,
+      "response_model": "qwen3:14b",
+      "response_created_at": "2026-08-04T20:37:48.7809945Z"
+    }
+  ]
+}

@@ -1,0 +1,1323 @@
+{
+  "plan": {
+    "use_case_id": "use_case_1",
+    "title": "Onboarding-Lernpfad",
+    "user_request": "Bereite für alle neuen Werkstudentinnen und Werkstudenten im IT-Support einen Onboarding-Lernpfad vor. Nutze vorhandene Inhalte zu Datenschutz, Ticketsystem und IT-Sicherheitsbasics, markiere fehlende oder veraltete Inhalte, identifiziere die passende Zielgruppe, setze eine Bearbeitungsfrist von 14 Tagen und informiere Teamleiter nur aggregiert über den Fortschritt.",
+    "tasks": [
+      "Erstellen eines Lernpfads für neue Werkstudenten im IT-Support",
+      "Einbinden vorhandener Inhalte zu Datenschutz, Ticketsystem und IT-Sicherheitsbasics",
+      "Identifizieren und markieren von fehlenden oder veralteten Lerninhalten",
+      "Zielgruppe definieren: neue Werkstudentinnen und Werkstudenten im IT-Support",
+      "Setzen einer Bearbeitungsfrist von 14 Tagen",
+      "Aggregiertes Fortschrittsreporting an Teamleiter senden",
+      "Governance-Anforderung: Fortschrittsdaten nur aggregiert an Teamleiter weitergeben",
+      "Governance-Anforderung: Keine individuellen Daten der Werkstudenten an Teamleiter übermitteln"
+    ],
+    "involved_agents": [
+      "Orchestrator Agent (Qwen3)",
+      "Analytics/Metrics Agent (Qwen3)",
+      "Content Agent (Qwen3)",
+      "Course Agent (Qwen3)",
+      "Enrollment Agent (Qwen3)",
+      "Assignment Agent (Qwen3)",
+      "Notification Agent (Qwen3)",
+      "Policy/Permission Agent (Qwen3)",
+      "Deterministic Governance Controller"
+    ],
+    "actions": [
+      {
+        "action": "Lernpfadstruktur anpassen",
+        "status": "freigabepflichtig",
+        "reason": "Das Modul 'Eskalationsprozess' (M3) fehlt und muss hinzugefügt werden, um den Lernpfad für Werkstudenten im IT-Support abzuschließen. Deterministische Governance: personenwirksame/produktive Aktion => mindestens freigabepflichtig.",
+        "used_data": [
+          "read_modules",
+          "read_course"
+        ],
+        "uncertainties": []
+      },
+      {
+        "action": "Einbinden des vorhandenen Moduls M2 (Ticketsystem-Nutzung) in den Onboarding-Lernpfad",
+        "status": "freigabepflichtig",
+        "reason": "Modul ist relevant und aktuell für den IT-Support-Onboarding-Prozess. Deterministische Governance: personenwirksame/produktive Aktion => mindestens freigabepflichtig.",
+        "used_data": [
+          "read_modules",
+          "read_course"
+        ],
+        "uncertainties": []
+      },
+      {
+        "action": "Einbinden des vorhandenen Moduls M5 (IT-Sicherheitsbasics) in den Onboarding-Lernpfad",
+        "status": "freigabepflichtig",
+        "reason": "Modul ist relevant und aktuell für den IT-Support-Onboarding-Prozess. Deterministische Governance: personenwirksame/produktive Aktion => mindestens freigabepflichtig.",
+        "used_data": [
+          "read_modules",
+          "read_course"
+        ],
+        "uncertainties": []
+      },
+      {
+        "action": "Zielgruppe definieren: Neue Werkstudenten im IT-Support",
+        "status": "erlaubt",
+        "reason": "Gruppe G1 entspricht der Zielgruppe der Nutzeranfrage.",
+        "used_data": [
+          "read_groups",
+          "read_users",
+          "read_permission_rules",
+          "read_compliance_requirement",
+          "read_course"
+        ],
+        "uncertainties": []
+      },
+      {
+        "action": "Frist setzen",
+        "status": "freigabepflichtig",
+        "reason": "Die Nutzeranfrage verlangt explizit eine Bearbeitungsfrist von 14 Tagen für den Onboarding-Lernpfad. Deterministische Governance: personenwirksame/produktive Aktion => mindestens freigabepflichtig.",
+        "used_data": [
+          "read_course",
+          "read_modules",
+          "read_groups",
+          "read_permission_rules"
+        ],
+        "uncertainties": []
+      },
+      {
+        "action": "Aggregiertes Fortschrittsreporting an Teamleiter (Gruppe G2) planen",
+        "status": "freigabepflichtig",
+        "reason": "Es existiert eine Zielgruppe für den Onboarding-Lernpfad und eine definierte Empfängergruppe für aggregierte Berichte. Teamleiter haben gemäß read_permission_rules das Recht, aggregierte Fortschrittsdaten zu sehen. Konsolidiert aus Vorschlaegen von Analytics/Metrics Agent, Policy/Permission Agent. Deterministische Governance: personenwirksame/produktive Aktion => mindestens freigabepflichtig.",
+        "used_data": [
+          "read_groups",
+          "read_permission_rules"
+        ],
+        "uncertainties": [
+          "Keine Fortschrittsdaten vorhanden, um ein konkretes Reporting zu erstellen."
+        ]
+      },
+      {
+        "action": "Benachrichtigung an alle neuen Werkstudenten im IT-Support: 'Dein Onboarding-Lernpfad ist jetzt verfügbar. Bitte absolvier es innerhalb von 14 Tagen.'",
+        "status": "freigabepflichtig",
+        "reason": "Zielgruppe ist klar definiert, Frist ist gesetzt, und der Lernpfad ist bereit. Deterministische Governance: personenwirksame/produktive Aktion => mindestens freigabepflichtig.",
+        "used_data": [
+          "read_groups",
+          "read_users",
+          "read_modules",
+          "read_permission_rules",
+          "read_compliance_requirement",
+          "shared_context"
+        ],
+        "uncertainties": []
+      },
+      {
+        "action": "Einbinden des vorhandenen Moduls M1 (Datenschutzgrundlagen) in den Onboarding-Lernpfad",
+        "status": "freigabepflichtig",
+        "reason": "Modul ist relevant und aktuell für den IT-Support-Onboarding-Prozess. Deterministische Governance: personenwirksame/produktive Aktion => mindestens freigabepflichtig.",
+        "used_data": [
+          "read_modules",
+          "read_course"
+        ],
+        "uncertainties": []
+      },
+      {
+        "action": "Individuelle Fortschrittsdaten an Teamleiter uebermitteln",
+        "status": "blockiert",
+        "reason": "Teamleiter haben gemäß read_permission_rules kein Recht, individuelle Daten zu sehen. Die Anfrage erlaubt gegenueber Teamleitern nur aggregierte Fortschrittsinformationen. Konsolidiert aus Vorschlaegen von Policy/Permission Agent, Deterministic Governance Controller. Deterministische Governance: Explizite negative Datenschutzanforderung => blockiert.",
+        "used_data": [
+          "read_permission_rules",
+          "read_groups",
+          "privacy_requirements"
+        ],
+        "uncertainties": []
+      }
+    ],
+    "open_questions": [
+      "Gibt es bereits einen bestehenden Lernpfad, der angepasst werden soll?",
+      "Welche spezifischen Datenschutzanforderungen gelten für den IT-Support?",
+      "Analytics/Metrics Agent: Welche Kriterien sollen für das aggregierte Fortschrittsreporting genutzt werden?",
+      "Analytics/Metrics Agent: Sind weitere Datenquellen für die Berichterstattung vorhanden?",
+      "Content Agent: Soll das fehlende Modul M3 (Eskalationsprozess) als Vorschlag zur Ergänzung des Lernpfads markiert werden?",
+      "Content Agent: Soll das veraltete Modul M4 (Kommunikationsregeln) zur Aktualisierung vorgeschlagen werden?",
+      "Course Agent: Sind weitere Module für den Lernpfad erforderlich, um den Onboarding-Prozess abzuschließen?",
+      "Enrollment Agent: Sind die fehlenden Module (z. B. Eskalationsprozess) bereits in Entwicklung oder müssen sie erst erstellt werden?",
+      "Enrollment Agent: Soll der Lernpfad automatisch bei Neuanmeldung von Werkstudenten im IT-Support zugewiesen werden?",
+      "Assignment Agent: Sind die fehlenden oder veralteten Module (M3, M4) für den Onboarding-Lernpfad relevant?",
+      "Notification Agent: Sind die fehlenden Module (M3, M4) bereits in Bearbeitung oder sollen sie erstellt werden?",
+      "Notification Agent: Soll der Onboarding-Lernpfad automatisch nach Ablauf der Frist als nicht abgeschlossen markiert werden?"
+    ]
+  },
+  "analysis": {
+    "use_case_id": "use_case_1",
+    "intent": "Onboarding-Lernpfad für neue Werkstudenten im IT-Support erstellen",
+    "tasks": [
+      "Erstellen eines Lernpfads für neue Werkstudenten im IT-Support",
+      "Einbinden vorhandener Inhalte zu Datenschutz, Ticketsystem und IT-Sicherheitsbasics",
+      "Identifizieren und markieren von fehlenden oder veralteten Lerninhalten",
+      "Zielgruppe definieren: neue Werkstudentinnen und Werkstudenten im IT-Support",
+      "Setzen einer Bearbeitungsfrist von 14 Tagen",
+      "Aggregiertes Fortschrittsreporting an Teamleiter senden"
+    ],
+    "agents": [
+      "Course Agent",
+      "Content Agent",
+      "Enrollment Agent",
+      "Assignment Agent",
+      "Notification Agent"
+    ],
+    "privacy_requirements": [
+      "Fortschrittsdaten nur aggregiert an Teamleiter weitergeben",
+      "Keine individuellen Daten der Werkstudenten an Teamleiter übermitteln"
+    ],
+    "open_questions": [
+      "Gibt es bereits einen bestehenden Lernpfad, der angepasst werden soll?",
+      "Welche spezifischen Datenschutzanforderungen gelten für den IT-Support?"
+    ],
+    "confidence": 0.95
+  },
+  "validation": {
+    "raw_use_case_id": "use_case_1",
+    "validated_use_case_id": "use_case_1",
+    "classification_changed": false,
+    "classification_scores": {
+      "use_case_1": 5,
+      "use_case_2": 0,
+      "use_case_3": 1
+    },
+    "raw_agents": [
+      "Course Agent",
+      "Content Agent",
+      "Enrollment Agent",
+      "Assignment Agent",
+      "Notification Agent"
+    ],
+    "agents_added_by_validator": [
+      "Analytics/Metrics Agent",
+      "Policy/Permission Agent"
+    ],
+    "effective_agents": [
+      "Analytics/Metrics Agent",
+      "Content Agent",
+      "Course Agent",
+      "Enrollment Agent",
+      "Assignment Agent",
+      "Notification Agent",
+      "Policy/Permission Agent"
+    ],
+    "execution_order": [
+      "Analytics/Metrics Agent",
+      "Content Agent",
+      "Course Agent",
+      "Enrollment Agent",
+      "Assignment Agent",
+      "Notification Agent",
+      "Policy/Permission Agent"
+    ],
+    "specialist_implementation": "LLM-based Qwen3 specialist agents (v3.2 task-aligned/grounded buffer)",
+    "ownership_layer": "deterministic role-boundary validation",
+    "grounding_layer": "deterministic evidence checks for explicit numbers, IDs, named LMS entities and normalized used_data provenance",
+    "shared_context_layer": "all downstream specialists receive verified upstream tool outputs only",
+    "consolidation_layer": "deterministic canonical action merge",
+    "governance_layer": "deterministic status escalation plus explicit negative privacy controls as blocked actions"
+  },
+  "specialist_results": [
+    {
+      "agent_name": "Analytics/Metrics Agent",
+      "requested_tools": [
+        "read_test_results",
+        "read_groups",
+        "read_compliance_requirement"
+      ],
+      "plan_summary": "Um aggregiertes Fortschrittsreporting an Teamleiter zu erstellen, sind Testergebnisse, Gruppeninformationen und Compliance-Anforderungen erforderlich. Fehlende Daten zur Zielgruppe oder zur Fristsetzung erfordern weitere",
+      "observations": [
+        "Es existiert eine Zielgruppe 'Neue Werkstudenten IT-Support' (Gruppe G1), die für den Onboarding-Lernpfad relevant ist.",
+        "Die Gruppe 'Teamleiter' (Gruppe G2) ist als Empfänger für aggregiertes Fortschrittsreporting definiert.",
+        "Es liegen keine Testergebnisse oder Compliance-Anforderungen vor, die für die Analyse oder Berichterstattung relevant sind."
+      ],
+      "proposed_actions": [
+        {
+          "action": "Aggregiertes Fortschrittsreporting an Teamleiter (Gruppe G2) planen",
+          "requested_status": "erlaubt",
+          "reason": "Es existiert eine Zielgruppe für den Onboarding-Lernpfad und eine definierte Empfängergruppe für aggregierte Berichte.",
+          "used_data": [
+            "read_groups"
+          ],
+          "uncertainties": [
+            "Keine Fortschrittsdaten vorhanden, um ein konkretes Reporting zu erstellen."
+          ]
+        }
+      ],
+      "open_questions": [
+        "Welche Kriterien sollen für das aggregierte Fortschrittsreporting genutzt werden?",
+        "Sind weitere Datenquellen für die Berichterstattung vorhanden?"
+      ],
+      "confidence": 0.5,
+      "tool_call_metrics": {
+        "total_duration_ms": 1502.6341,
+        "prompt_tokens": 1019,
+        "output_tokens": 91
+      },
+      "action_call_metrics": {
+        "total_duration_ms": 4388.6263,
+        "prompt_tokens": 1186,
+        "output_tokens": 317
+      }
+    },
+    {
+      "agent_name": "Content Agent",
+      "requested_tools": [
+        "read_course",
+        "read_modules"
+      ],
+      "plan_summary": "Vorbereitung eines Onboarding-Lernpfads fuer Werkstudenten im IT-Support durch Einbindung vorhandener Module zu Datenschutz, Ticketsystem und IT-Sicherheitsbasics. Gleichzeitig werden fehlende oder veraltete Inhalte erui",
+      "observations": [
+        "Vorhandene Module zu Datenschutz (M1), Ticketsystem (M2) und IT-Sicherheitsbasics (M5) sind vorhanden und können in den Lernpfad integriert werden.",
+        "Modul M3 (Eskalationsprozess) fehlt und muss ergänzt werden.",
+        "Modul M4 (Kommunikationsregeln) ist veraltet und sollte aktualisiert werden."
+      ],
+      "proposed_actions": [
+        {
+          "action": "Einbinden des vorhandenen Moduls M1 (Datenschutzgrundlagen) in den Onboarding-Lernpfad",
+          "requested_status": "erlaubt",
+          "reason": "Modul ist relevant und aktuell für den IT-Support-Onboarding-Prozess.",
+          "used_data": [
+            "read_modules",
+            "read_course"
+          ],
+          "uncertainties": []
+        },
+        {
+          "action": "Einbinden des vorhandenen Moduls M2 (Ticketsystem-Nutzung) in den Onboarding-Lernpfad",
+          "requested_status": "erlaubt",
+          "reason": "Modul ist relevant und aktuell für den IT-Support-Onboarding-Prozess.",
+          "used_data": [
+            "read_modules",
+            "read_course"
+          ],
+          "uncertainties": []
+        },
+        {
+          "action": "Einbinden des vorhandenen Moduls M5 (IT-Sicherheitsbasics) in den Onboarding-Lernpfad",
+          "requested_status": "erlaubt",
+          "reason": "Modul ist relevant und aktuell für den IT-Support-Onboarding-Prozess.",
+          "used_data": [
+            "read_modules",
+            "read_course"
+          ],
+          "uncertainties": []
+        }
+      ],
+      "open_questions": [
+        "Soll das fehlende Modul M3 (Eskalationsprozess) als Vorschlag zur Ergänzung des Lernpfads markiert werden?",
+        "Soll das veraltete Modul M4 (Kommunikationsregeln) zur Aktualisierung vorgeschlagen werden?"
+      ],
+      "confidence": 0.95,
+      "tool_call_metrics": {
+        "total_duration_ms": 1433.2707,
+        "prompt_tokens": 1006,
+        "output_tokens": 80
+      },
+      "action_call_metrics": {
+        "total_duration_ms": 6710.104,
+        "prompt_tokens": 1517,
+        "output_tokens": 487
+      }
+    },
+    {
+      "agent_name": "Course Agent",
+      "requested_tools": [
+        "read_course",
+        "read_modules"
+      ],
+      "plan_summary": "Zur Vorbereitung des Onboarding-Lernpfads fuer Werkstudenten im IT-Support werden vorhandene Kurse zu Datenschutz, Ticketsystem und IT-Sicherheitsbasics analysiert. Fehlende oder veraltete Inhalte werden identifiziert, w",
+      "observations": [
+        "Der Onboarding-Lernpfad 'Onboarding IT-Support' (C-ONB-001) existiert bereits und ist für Werkstudenten im IT-Support konzipiert.",
+        "Die Module 'Datenschutzgrundlagen' (M1), 'Ticketsystem-Nutzung' (M2) und 'IT-Sicherheitsbasics' (M5) sind vorhanden und aktuell.",
+        "Das Modul 'Eskalationsprozess' (M3) fehlt und muss ergänzt werden, um den Lernpfad vollständig zu machen."
+      ],
+      "proposed_actions": [
+        {
+          "action": "Lernpfadstruktur anpassen",
+          "requested_status": "erlaubt",
+          "reason": "Das Modul 'Eskalationsprozess' (M3) fehlt und muss hinzugefügt werden, um den Lernpfad für Werkstudenten im IT-Support abzuschließen.",
+          "used_data": [
+            "read_modules",
+            "read_course"
+          ],
+          "uncertainties": []
+        },
+        {
+          "action": "Zielgruppe 'Neue Werkstudenten IT-Support' (G1) dem Lernpfad zuordnen",
+          "requested_status": "erlaubt",
+          "reason": "Die Zielgruppe 'Neue Werkstudenten IT-Support' (G1) ist bereits definiert und muss dem Lernpfad zugeordnet werden, um den Zugriff zu ermöglichen.",
+          "used_data": [
+            "read_groups",
+            "read_course"
+          ],
+          "uncertainties": []
+        },
+        {
+          "action": "Bearbeitungsfrist von 14 Tagen für den Lernpfad setzen",
+          "requested_status": "erlaubt",
+          "reason": "Eine Bearbeitungsfrist von 14 Tagen wurde explizit gefordert, um den Lernpfad für neue Werkstudenten strukturiert abzuschließen.",
+          "used_data": [
+            "user_request"
+          ],
+          "uncertainties": []
+        }
+      ],
+      "open_questions": [
+        "Soll der veraltete Modul 'Kommunikationsregeln' (M4) aktualisiert oder entfernt werden?",
+        "Sind weitere Module für den Lernpfad erforderlich, um den Onboarding-Prozess abzuschließen?"
+      ],
+      "confidence": 0.9,
+      "tool_call_metrics": {
+        "total_duration_ms": 1468.7891,
+        "prompt_tokens": 973,
+        "output_tokens": 86
+      },
+      "action_call_metrics": {
+        "total_duration_ms": 7844.821,
+        "prompt_tokens": 1776,
+        "output_tokens": 564
+      }
+    },
+    {
+      "agent_name": "Enrollment Agent",
+      "requested_tools": [
+        "read_groups",
+        "read_users",
+        "read_permission_rules",
+        "read_compliance_requirement"
+      ],
+      "plan_summary": "Zielgruppe 'neue Werkstudentinnen und Werkstudenten im IT-Support' wird definiert. Bestehende Inhalte zu Datenschutz, Ticketsystem und IT-Sicherheitsbasics werden geprüft. Fehlende oder veraltete Inhalte werden markiert.",
+      "observations": [
+        "Die Zielgruppe 'Neue Werkstudenten IT-Support' (Gruppe G1) besteht aus mindestens zwei Nutzern (U1, U2), die als Lernende eingerichtet sind und im Onboarding-Status 'neu' sind.",
+        "Die Gruppe 'Teamleiter' (G2) hat keine Berechtigung zur Einblicknahme in individuelle Fortschritte, aber sie darf aggregierte Fortschrittsdaten einsehen.",
+        "Es existieren vorhandene Module zu Datenschutz, Ticketsystem und IT-Sicherheitsbasics, jedoch fehlt ein Modul zu Eskalationsprozessen und ein Modul zu Kommunikationsregeln ist veraltet."
+      ],
+      "proposed_actions": [
+        {
+          "action": "Zielgruppe definieren: Neue Werkstudenten im IT-Support",
+          "requested_status": "erlaubt",
+          "reason": "Gruppe G1 entspricht der Zielgruppe der Nutzeranfrage.",
+          "used_data": [
+            "read_groups",
+            "read_users",
+            "read_permission_rules",
+            "read_compliance_requirement",
+            "verified_tool_outputs.read_groups",
+            "verified_tool_outputs.read_course"
+          ],
+          "uncertainties": []
+        },
+        {
+          "action": "Lernpfadvorschlag erstellen: Onboarding IT-Support",
+          "requested_status": "erlaubt",
+          "reason": "Vorhandene Module können genutzt werden, fehlende Module (z. B. Eskalationsprozess) können als Ergänzung identifiziert werden.",
+          "used_data": [
+            "read_modules",
+            "verified_tool_outputs.read_modules",
+            "verified_tool_outputs.read_course"
+          ],
+          "uncertainties": []
+        },
+        {
+          "action": "Aggregierte Fortschrittsdaten für Teamleiter einrichten",
+          "requested_status": "erlaubt",
+          "reason": "Teamleiter (Gruppe G2) dürfen aggregierte Fortschrittsdaten einsehen, individuelle Daten sind nicht erlaubt.",
+          "used_data": [
+            "read_permission_rules",
+            "verified_tool_outputs.read_permission_rules"
+          ],
+          "uncertainties": []
+        }
+      ],
+      "open_questions": [
+        "Sind die fehlenden Module (z. B. Eskalationsprozess) bereits in Entwicklung oder müssen sie erst erstellt werden?",
+        "Soll der Lernpfad automatisch bei Neuanmeldung von Werkstudenten im IT-Support zugewiesen werden?"
+      ],
+      "confidence": 0.9,
+      "tool_call_metrics": {
+        "total_duration_ms": 1680.7187,
+        "prompt_tokens": 990,
+        "output_tokens": 106
+      },
+      "action_call_metrics": {
+        "total_duration_ms": 8116.0068,
+        "prompt_tokens": 1899,
+        "output_tokens": 580
+      }
+    },
+    {
+      "agent_name": "Assignment Agent",
+      "requested_tools": [
+        "read_course",
+        "read_compliance_requirement"
+      ],
+      "plan_summary": "Um die Bearbeitungsfrist von 14 Tagen zu setzen, werden bestehende Kurse und Compliance-Anforderungen gelesen, um sicherzustellen, dass die Frist auf vorhandene Inhalte angewendet werden kann. Weitere Schritte wie Zielgr",
+      "observations": [
+        "Es existiert bereits ein Onboarding-Kurs (C-ONB-001) für Werkstudenten im IT-Support.",
+        "Der Kurs enthält nicht alle benötigten Module: M3 (Eskalationsprozess) fehlt, M4 (Kommunikationsregeln) ist veraltet.",
+        "Es gibt eine Zielgruppe 'Neue Werkstudenten IT-Support' (Gruppe G1), die für den Lernpfad relevant ist."
+      ],
+      "proposed_actions": [
+        {
+          "action": "Frist setzen",
+          "requested_status": "erlaubt",
+          "reason": "Die Nutzeranfrage verlangt explizit eine Bearbeitungsfrist von 14 Tagen für den Onboarding-Lernpfad.",
+          "used_data": [
+            "read_course",
+            "read_modules",
+            "read_groups",
+            "read_permission_rules"
+          ],
+          "uncertainties": []
+        }
+      ],
+      "open_questions": [
+        "Sind die fehlenden oder veralteten Module (M3, M4) für den Onboarding-Lernpfad relevant?",
+        "Soll der Lernpfad automatisch für neue Werkstudenten zugewiesen werden?"
+      ],
+      "confidence": 0.8,
+      "tool_call_metrics": {
+        "total_duration_ms": 1534.6885,
+        "prompt_tokens": 1057,
+        "output_tokens": 88
+      },
+      "action_call_metrics": {
+        "total_duration_ms": 4460.5498,
+        "prompt_tokens": 1901,
+        "output_tokens": 299
+      }
+    },
+    {
+      "agent_name": "Notification Agent",
+      "requested_tools": [
+        "read_groups",
+        "read_permission_rules",
+        "read_compliance_requirement"
+      ],
+      "plan_summary": "Zielgruppe der Werkstudenten im IT-Support identifizieren, vorhandene Lerninhalte prüfen und fehlende Inhalte markieren. Aggregierte Fortschrittsdaten für Teamleiter planen, ohne individuelle Daten zu offenbaren. Erinner",
+      "observations": [
+        "Zielgruppe 'Neue Werkstudenten IT-Support' ist identifiziert und bereit für Benachrichtigungen.",
+        "Es fehlen oder sind veraltete Module im Onboarding-Lernpfad (M3, M4).",
+        "Teamleiter haben nur aggregierten Zugriff auf Fortschrittsdaten, individuelle Daten sind nicht sichtbar."
+      ],
+      "proposed_actions": [
+        {
+          "action": "Benachrichtigung an alle neuen Werkstudenten im IT-Support: 'Dein Onboarding-Lernpfad ist jetzt verfügbar. Bitte absolvier es innerhalb von 14 Tagen.'",
+          "requested_status": "erlaubt",
+          "reason": "Zielgruppe ist klar definiert, Frist ist gesetzt, und der Lernpfad ist bereit.",
+          "used_data": [
+            "read_groups",
+            "read_users",
+            "read_modules",
+            "read_permission_rules",
+            "read_compliance_requirement",
+            "shared_context"
+          ],
+          "uncertainties": []
+        },
+        {
+          "action": "Erinnerung an neue Werkstudenten nach 7 Tagen: 'Du bist bei der Hälfte des Onboarding-Lernpfads angelangt. Bitte vervollständige den Kurs innerhalb der nächsten 7 Tage.'",
+          "requested_status": "erlaubt",
+          "reason": "Erinnerung zur Fristerinnerung und zur Motivation der Lernenden.",
+          "used_data": [
+            "read_groups",
+            "read_users",
+            "read_modules",
+            "read_permission_rules",
+            "read_compliance_requirement",
+            "shared_context"
+          ],
+          "uncertainties": []
+        },
+        {
+          "action": "Aggregierte Fortschrittsmeldung an Teamleiter: 'Der Onboarding-Lernpfad wird von 100 % der Zielgruppe bearbeitet. 20 % haben den Kurs abgeschlossen.'",
+          "requested_status": "erlaubt",
+          "reason": "Teamleiter erhalten nur aggregierte Daten gemäß Governance-Vorgaben.",
+          "used_data": [
+            "read_groups",
+            "read_users",
+            "read_permission_rules",
+            "read_compliance_requirement",
+            "shared_context"
+          ],
+          "uncertainties": []
+        }
+      ],
+      "open_questions": [
+        "Sind die fehlenden Module (M3, M4) bereits in Bearbeitung oder sollen sie erstellt werden?",
+        "Soll der Onboarding-Lernpfad automatisch nach Ablauf der Frist als nicht abgeschlossen markiert werden?"
+      ],
+      "confidence": 0.9,
+      "tool_call_metrics": {
+        "total_duration_ms": 1804.5218,
+        "prompt_tokens": 969,
+        "output_tokens": 104
+      },
+      "action_call_metrics": {
+        "total_duration_ms": 8296.9415,
+        "prompt_tokens": 1971,
+        "output_tokens": 591
+      }
+    },
+    {
+      "agent_name": "Policy/Permission Agent",
+      "requested_tools": [
+        "read_permission_rules",
+        "read_compliance_requirement",
+        "read_groups"
+      ],
+      "plan_summary": "Zur Vorbereitung des Onboarding-Lernpfads fuer Werkstudenten werden bestehende Inhalte zu Datenschutz, Ticketsystem und IT-Sicherheitsbasics eingebracht. Gleichzeitig werden Governance-Regeln fuer das aggregierte Fortsch",
+      "observations": [
+        "Die Zielgruppe 'Neue Werkstudenten IT-Support' (Gruppe G1) ist identifiziert und besteht aus Lernenden.",
+        "Es fehlen oder sind veraltete Inhalte vorhanden: Modul 'Eskalationsprozess' (M3) fehlt, Modul 'Kommunikationsregeln' (M4) ist veraltet.",
+        "Teamleiter (Gruppe G2) haben das Recht, aggregierte Fortschrittsdaten zu sehen, aber keine individuellen Daten der Werkstudenten."
+      ],
+      "proposed_actions": [
+        {
+          "action": "Governance: Aggregiertes Fortschrittsreporting an Teamleiter senden",
+          "requested_status": "erlaubt",
+          "reason": "Teamleiter haben gemäß read_permission_rules das Recht, aggregierte Fortschrittsdaten zu sehen.",
+          "used_data": [
+            "read_permission_rules",
+            "read_groups"
+          ],
+          "uncertainties": []
+        },
+        {
+          "action": "Governance: Keine individuellen Daten der Werkstudenten an Teamleiter übermitteln",
+          "requested_status": "erlaubt",
+          "reason": "Teamleiter haben gemäß read_permission_rules kein Recht, individuelle Daten zu sehen.",
+          "used_data": [
+            "read_permission_rules",
+            "read_groups"
+          ],
+          "uncertainties": []
+        },
+        {
+          "action": "Governance: Fehlende oder veraltete Inhalte identifizieren und markieren",
+          "requested_status": "erlaubt",
+          "reason": "Modul 'Eskalationsprozess' (M3) fehlt und Modul 'Kommunikationsregeln' (M4) ist veraltet.",
+          "used_data": [
+            "read_modules"
+          ],
+          "uncertainties": []
+        }
+      ],
+      "open_questions": [],
+      "confidence": 1.0,
+      "tool_call_metrics": {
+        "total_duration_ms": 4264.316,
+        "prompt_tokens": 1046,
+        "output_tokens": 95
+      },
+      "action_call_metrics": {
+        "total_duration_ms": 6529.6132,
+        "prompt_tokens": 2048,
+        "output_tokens": 453
+      }
+    }
+  ],
+  "ownership_decisions": [
+    {
+      "agent_name": "Analytics/Metrics Agent",
+      "action": "Aggregiertes Fortschrittsreporting an Teamleiter (Gruppe G2) planen",
+      "accepted": true,
+      "reason": "Rollenbezug plausibel"
+    },
+    {
+      "agent_name": "Content Agent",
+      "action": "Einbinden des vorhandenen Moduls M1 (Datenschutzgrundlagen) in den Onboarding-Lernpfad",
+      "accepted": true,
+      "reason": "Rollenbezug plausibel"
+    },
+    {
+      "agent_name": "Content Agent",
+      "action": "Einbinden des vorhandenen Moduls M2 (Ticketsystem-Nutzung) in den Onboarding-Lernpfad",
+      "accepted": true,
+      "reason": "Rollenbezug plausibel"
+    },
+    {
+      "agent_name": "Content Agent",
+      "action": "Einbinden des vorhandenen Moduls M5 (IT-Sicherheitsbasics) in den Onboarding-Lernpfad",
+      "accepted": true,
+      "reason": "Rollenbezug plausibel"
+    },
+    {
+      "agent_name": "Course Agent",
+      "action": "Lernpfadstruktur anpassen",
+      "accepted": true,
+      "reason": "Rollenbezug plausibel"
+    },
+    {
+      "agent_name": "Course Agent",
+      "action": "Zielgruppe 'Neue Werkstudenten IT-Support' (G1) dem Lernpfad zuordnen",
+      "accepted": false,
+      "reason": "klare Rollenueberschreitung: zielgruppe, zuordn"
+    },
+    {
+      "agent_name": "Course Agent",
+      "action": "Bearbeitungsfrist von 14 Tagen für den Lernpfad setzen",
+      "accepted": false,
+      "reason": "klare Rollenueberschreitung: frist"
+    },
+    {
+      "agent_name": "Enrollment Agent",
+      "action": "Zielgruppe definieren: Neue Werkstudenten im IT-Support",
+      "accepted": true,
+      "reason": "Rollenbezug plausibel"
+    },
+    {
+      "agent_name": "Enrollment Agent",
+      "action": "Lernpfadvorschlag erstellen: Onboarding IT-Support",
+      "accepted": false,
+      "reason": "kein hinreichend klarer Bezug zur eigenen Fachrolle"
+    },
+    {
+      "agent_name": "Enrollment Agent",
+      "action": "Aggregierte Fortschrittsdaten für Teamleiter einrichten",
+      "accepted": false,
+      "reason": "kein hinreichend klarer Bezug zur eigenen Fachrolle"
+    },
+    {
+      "agent_name": "Assignment Agent",
+      "action": "Frist setzen",
+      "accepted": true,
+      "reason": "Rollenbezug plausibel"
+    },
+    {
+      "agent_name": "Notification Agent",
+      "action": "Benachrichtigung an alle neuen Werkstudenten im IT-Support: 'Dein Onboarding-Lernpfad ist jetzt verfügbar. Bitte absolvier es innerhalb von 14 Tagen.'",
+      "accepted": true,
+      "reason": "Rollenbezug plausibel"
+    },
+    {
+      "agent_name": "Notification Agent",
+      "action": "Erinnerung an neue Werkstudenten nach 7 Tagen: 'Du bist bei der Hälfte des Onboarding-Lernpfads angelangt. Bitte vervollständige den Kurs innerhalb der nächsten 7 Tage.'",
+      "accepted": true,
+      "reason": "Rollenbezug plausibel"
+    },
+    {
+      "agent_name": "Notification Agent",
+      "action": "Aggregierte Fortschrittsmeldung an Teamleiter: 'Der Onboarding-Lernpfad wird von 100 % der Zielgruppe bearbeitet. 20 % haben den Kurs abgeschlossen.'",
+      "accepted": false,
+      "reason": "kein hinreichend klarer Bezug zur eigenen Fachrolle"
+    },
+    {
+      "agent_name": "Policy/Permission Agent",
+      "action": "Governance: Aggregiertes Fortschrittsreporting an Teamleiter senden",
+      "accepted": true,
+      "reason": "Rollenbezug plausibel"
+    },
+    {
+      "agent_name": "Policy/Permission Agent",
+      "action": "Governance: Keine individuellen Daten der Werkstudenten an Teamleiter übermitteln",
+      "accepted": true,
+      "reason": "Rollenbezug plausibel"
+    },
+    {
+      "agent_name": "Policy/Permission Agent",
+      "action": "Governance: Fehlende oder veraltete Inhalte identifizieren und markieren",
+      "accepted": false,
+      "reason": "Policy-Aktion ohne erkennbaren Governance-/Rechtebezug"
+    }
+  ],
+  "grounding_decisions": [
+    {
+      "agent_name": "Analytics/Metrics Agent",
+      "action": "Aggregiertes Fortschrittsreporting an Teamleiter (Gruppe G2) planen",
+      "accepted": true,
+      "reason": "Explizite Zahlen/IDs/Entitaeten sind durch Anfrage oder verifizierte Tool-Daten gedeckt.",
+      "unsupported_claims": [],
+      "evidence_sources": [
+        "user_request",
+        "tasks/privacy",
+        "tool:read_compliance_requirement",
+        "tool:read_groups",
+        "tool:read_test_results"
+      ]
+    },
+    {
+      "agent_name": "Content Agent",
+      "action": "Einbinden des vorhandenen Moduls M1 (Datenschutzgrundlagen) in den Onboarding-Lernpfad",
+      "accepted": true,
+      "reason": "Explizite Zahlen/IDs/Entitaeten sind durch Anfrage oder verifizierte Tool-Daten gedeckt.",
+      "unsupported_claims": [],
+      "evidence_sources": [
+        "user_request",
+        "tasks/privacy",
+        "tool:read_compliance_requirement",
+        "tool:read_course",
+        "tool:read_groups",
+        "tool:read_modules",
+        "tool:read_test_results"
+      ]
+    },
+    {
+      "agent_name": "Content Agent",
+      "action": "Einbinden des vorhandenen Moduls M2 (Ticketsystem-Nutzung) in den Onboarding-Lernpfad",
+      "accepted": true,
+      "reason": "Explizite Zahlen/IDs/Entitaeten sind durch Anfrage oder verifizierte Tool-Daten gedeckt.",
+      "unsupported_claims": [],
+      "evidence_sources": [
+        "user_request",
+        "tasks/privacy",
+        "tool:read_compliance_requirement",
+        "tool:read_course",
+        "tool:read_groups",
+        "tool:read_modules",
+        "tool:read_test_results"
+      ]
+    },
+    {
+      "agent_name": "Content Agent",
+      "action": "Einbinden des vorhandenen Moduls M5 (IT-Sicherheitsbasics) in den Onboarding-Lernpfad",
+      "accepted": true,
+      "reason": "Explizite Zahlen/IDs/Entitaeten sind durch Anfrage oder verifizierte Tool-Daten gedeckt.",
+      "unsupported_claims": [],
+      "evidence_sources": [
+        "user_request",
+        "tasks/privacy",
+        "tool:read_compliance_requirement",
+        "tool:read_course",
+        "tool:read_groups",
+        "tool:read_modules",
+        "tool:read_test_results"
+      ]
+    },
+    {
+      "agent_name": "Course Agent",
+      "action": "Lernpfadstruktur anpassen",
+      "accepted": true,
+      "reason": "Explizite Zahlen/IDs/Entitaeten sind durch Anfrage oder verifizierte Tool-Daten gedeckt.",
+      "unsupported_claims": [],
+      "evidence_sources": [
+        "user_request",
+        "tasks/privacy",
+        "tool:read_compliance_requirement",
+        "tool:read_course",
+        "tool:read_groups",
+        "tool:read_modules",
+        "tool:read_test_results"
+      ]
+    },
+    {
+      "agent_name": "Course Agent",
+      "action": "Zielgruppe 'Neue Werkstudenten IT-Support' (G1) dem Lernpfad zuordnen",
+      "accepted": true,
+      "reason": "Explizite Zahlen/IDs/Entitaeten sind durch Anfrage oder verifizierte Tool-Daten gedeckt.",
+      "unsupported_claims": [],
+      "evidence_sources": [
+        "user_request",
+        "tasks/privacy",
+        "tool:read_compliance_requirement",
+        "tool:read_course",
+        "tool:read_groups",
+        "tool:read_modules",
+        "tool:read_test_results"
+      ]
+    },
+    {
+      "agent_name": "Course Agent",
+      "action": "Bearbeitungsfrist von 14 Tagen für den Lernpfad setzen",
+      "accepted": true,
+      "reason": "Explizite Zahlen/IDs/Entitaeten sind durch Anfrage oder verifizierte Tool-Daten gedeckt.",
+      "unsupported_claims": [],
+      "evidence_sources": [
+        "user_request",
+        "tasks/privacy",
+        "tool:read_compliance_requirement",
+        "tool:read_course",
+        "tool:read_groups",
+        "tool:read_modules",
+        "tool:read_test_results"
+      ]
+    },
+    {
+      "agent_name": "Enrollment Agent",
+      "action": "Zielgruppe definieren: Neue Werkstudenten im IT-Support",
+      "accepted": true,
+      "reason": "Explizite Zahlen/IDs/Entitaeten sind durch Anfrage oder verifizierte Tool-Daten gedeckt.",
+      "unsupported_claims": [],
+      "evidence_sources": [
+        "user_request",
+        "tasks/privacy",
+        "tool:read_compliance_requirement",
+        "tool:read_course",
+        "tool:read_groups",
+        "tool:read_modules",
+        "tool:read_permission_rules",
+        "tool:read_test_results",
+        "tool:read_users"
+      ]
+    },
+    {
+      "agent_name": "Enrollment Agent",
+      "action": "Lernpfadvorschlag erstellen: Onboarding IT-Support",
+      "accepted": true,
+      "reason": "Explizite Zahlen/IDs/Entitaeten sind durch Anfrage oder verifizierte Tool-Daten gedeckt.",
+      "unsupported_claims": [],
+      "evidence_sources": [
+        "user_request",
+        "tasks/privacy",
+        "tool:read_compliance_requirement",
+        "tool:read_course",
+        "tool:read_groups",
+        "tool:read_modules",
+        "tool:read_permission_rules",
+        "tool:read_test_results",
+        "tool:read_users"
+      ]
+    },
+    {
+      "agent_name": "Enrollment Agent",
+      "action": "Aggregierte Fortschrittsdaten für Teamleiter einrichten",
+      "accepted": true,
+      "reason": "Explizite Zahlen/IDs/Entitaeten sind durch Anfrage oder verifizierte Tool-Daten gedeckt.",
+      "unsupported_claims": [],
+      "evidence_sources": [
+        "user_request",
+        "tasks/privacy",
+        "tool:read_compliance_requirement",
+        "tool:read_course",
+        "tool:read_groups",
+        "tool:read_modules",
+        "tool:read_permission_rules",
+        "tool:read_test_results",
+        "tool:read_users"
+      ]
+    },
+    {
+      "agent_name": "Assignment Agent",
+      "action": "Frist setzen",
+      "accepted": true,
+      "reason": "Explizite Zahlen/IDs/Entitaeten sind durch Anfrage oder verifizierte Tool-Daten gedeckt.",
+      "unsupported_claims": [],
+      "evidence_sources": [
+        "user_request",
+        "tasks/privacy",
+        "tool:read_compliance_requirement",
+        "tool:read_course",
+        "tool:read_groups",
+        "tool:read_modules",
+        "tool:read_permission_rules",
+        "tool:read_test_results",
+        "tool:read_users"
+      ]
+    },
+    {
+      "agent_name": "Notification Agent",
+      "action": "Benachrichtigung an alle neuen Werkstudenten im IT-Support: 'Dein Onboarding-Lernpfad ist jetzt verfügbar. Bitte absolvier es innerhalb von 14 Tagen.'",
+      "accepted": true,
+      "reason": "Explizite Zahlen/IDs/Entitaeten sind durch Anfrage oder verifizierte Tool-Daten gedeckt.",
+      "unsupported_claims": [],
+      "evidence_sources": [
+        "user_request",
+        "tasks/privacy",
+        "tool:read_compliance_requirement",
+        "tool:read_course",
+        "tool:read_groups",
+        "tool:read_modules",
+        "tool:read_permission_rules",
+        "tool:read_test_results",
+        "tool:read_users"
+      ]
+    },
+    {
+      "agent_name": "Notification Agent",
+      "action": "Erinnerung an neue Werkstudenten nach 7 Tagen: 'Du bist bei der Hälfte des Onboarding-Lernpfads angelangt. Bitte vervollständige den Kurs innerhalb der nächsten 7 Tage.'",
+      "accepted": false,
+      "reason": "Grounding fehlgeschlagen: unbelegte Zeit-/Fristangabe: 7 Tagen; unbelegte Zeit-/Fristangabe: 7 Tage",
+      "unsupported_claims": [
+        "unbelegte Zeit-/Fristangabe: 7 Tagen",
+        "unbelegte Zeit-/Fristangabe: 7 Tage"
+      ],
+      "evidence_sources": [
+        "user_request",
+        "tasks/privacy",
+        "tool:read_compliance_requirement",
+        "tool:read_course",
+        "tool:read_groups",
+        "tool:read_modules",
+        "tool:read_permission_rules",
+        "tool:read_test_results",
+        "tool:read_users"
+      ]
+    },
+    {
+      "agent_name": "Notification Agent",
+      "action": "Aggregierte Fortschrittsmeldung an Teamleiter: 'Der Onboarding-Lernpfad wird von 100 % der Zielgruppe bearbeitet. 20 % haben den Kurs abgeschlossen.'",
+      "accepted": false,
+      "reason": "Grounding fehlgeschlagen: unbelegter Prozent-/Kennzahlenwert: 100 %; unbelegter Prozent-/Kennzahlenwert: 20 %",
+      "unsupported_claims": [
+        "unbelegter Prozent-/Kennzahlenwert: 100 %",
+        "unbelegter Prozent-/Kennzahlenwert: 20 %"
+      ],
+      "evidence_sources": [
+        "user_request",
+        "tasks/privacy",
+        "tool:read_compliance_requirement",
+        "tool:read_course",
+        "tool:read_groups",
+        "tool:read_modules",
+        "tool:read_permission_rules",
+        "tool:read_test_results",
+        "tool:read_users"
+      ]
+    },
+    {
+      "agent_name": "Policy/Permission Agent",
+      "action": "Governance: Aggregiertes Fortschrittsreporting an Teamleiter senden",
+      "accepted": true,
+      "reason": "Explizite Zahlen/IDs/Entitaeten sind durch Anfrage oder verifizierte Tool-Daten gedeckt.",
+      "unsupported_claims": [],
+      "evidence_sources": [
+        "user_request",
+        "tasks/privacy",
+        "tool:read_compliance_requirement",
+        "tool:read_course",
+        "tool:read_groups",
+        "tool:read_modules",
+        "tool:read_permission_rules",
+        "tool:read_test_results",
+        "tool:read_users"
+      ]
+    },
+    {
+      "agent_name": "Policy/Permission Agent",
+      "action": "Governance: Keine individuellen Daten der Werkstudenten an Teamleiter übermitteln",
+      "accepted": true,
+      "reason": "Explizite Zahlen/IDs/Entitaeten sind durch Anfrage oder verifizierte Tool-Daten gedeckt.",
+      "unsupported_claims": [],
+      "evidence_sources": [
+        "user_request",
+        "tasks/privacy",
+        "tool:read_compliance_requirement",
+        "tool:read_course",
+        "tool:read_groups",
+        "tool:read_modules",
+        "tool:read_permission_rules",
+        "tool:read_test_results",
+        "tool:read_users"
+      ]
+    },
+    {
+      "agent_name": "Policy/Permission Agent",
+      "action": "Governance: Fehlende oder veraltete Inhalte identifizieren und markieren",
+      "accepted": true,
+      "reason": "Explizite Zahlen/IDs/Entitaeten sind durch Anfrage oder verifizierte Tool-Daten gedeckt.",
+      "unsupported_claims": [],
+      "evidence_sources": [
+        "user_request",
+        "tasks/privacy",
+        "tool:read_compliance_requirement",
+        "tool:read_course",
+        "tool:read_groups",
+        "tool:read_modules",
+        "tool:read_permission_rules",
+        "tool:read_test_results",
+        "tool:read_users"
+      ]
+    }
+  ],
+  "governance_decisions": [
+    {
+      "agent_name": "Analytics/Metrics Agent",
+      "action": "Aggregiertes Fortschrittsreporting an Teamleiter (Gruppe G2) planen",
+      "requested_status": "erlaubt",
+      "final_status": "erlaubt",
+      "changed": false,
+      "rule": "LLM-Status beibehalten; keine strengere deterministische Regel ausgeloest"
+    },
+    {
+      "agent_name": "Content Agent",
+      "action": "Einbinden des vorhandenen Moduls M1 (Datenschutzgrundlagen) in den Onboarding-Lernpfad",
+      "requested_status": "erlaubt",
+      "final_status": "freigabepflichtig",
+      "changed": true,
+      "rule": "personenwirksame/produktive Aktion => mindestens freigabepflichtig"
+    },
+    {
+      "agent_name": "Content Agent",
+      "action": "Einbinden des vorhandenen Moduls M2 (Ticketsystem-Nutzung) in den Onboarding-Lernpfad",
+      "requested_status": "erlaubt",
+      "final_status": "freigabepflichtig",
+      "changed": true,
+      "rule": "personenwirksame/produktive Aktion => mindestens freigabepflichtig"
+    },
+    {
+      "agent_name": "Content Agent",
+      "action": "Einbinden des vorhandenen Moduls M5 (IT-Sicherheitsbasics) in den Onboarding-Lernpfad",
+      "requested_status": "erlaubt",
+      "final_status": "freigabepflichtig",
+      "changed": true,
+      "rule": "personenwirksame/produktive Aktion => mindestens freigabepflichtig"
+    },
+    {
+      "agent_name": "Course Agent",
+      "action": "Lernpfadstruktur anpassen",
+      "requested_status": "erlaubt",
+      "final_status": "freigabepflichtig",
+      "changed": true,
+      "rule": "personenwirksame/produktive Aktion => mindestens freigabepflichtig"
+    },
+    {
+      "agent_name": "Enrollment Agent",
+      "action": "Zielgruppe definieren: Neue Werkstudenten im IT-Support",
+      "requested_status": "erlaubt",
+      "final_status": "erlaubt",
+      "changed": false,
+      "rule": "LLM-Status beibehalten; keine strengere deterministische Regel ausgeloest"
+    },
+    {
+      "agent_name": "Assignment Agent",
+      "action": "Frist setzen",
+      "requested_status": "erlaubt",
+      "final_status": "freigabepflichtig",
+      "changed": true,
+      "rule": "personenwirksame/produktive Aktion => mindestens freigabepflichtig"
+    },
+    {
+      "agent_name": "Notification Agent",
+      "action": "Benachrichtigung an alle neuen Werkstudenten im IT-Support: 'Dein Onboarding-Lernpfad ist jetzt verfügbar. Bitte absolvier es innerhalb von 14 Tagen.'",
+      "requested_status": "erlaubt",
+      "final_status": "freigabepflichtig",
+      "changed": true,
+      "rule": "personenwirksame/produktive Aktion => mindestens freigabepflichtig"
+    },
+    {
+      "agent_name": "Policy/Permission Agent",
+      "action": "Governance: Aggregiertes Fortschrittsreporting an Teamleiter senden",
+      "requested_status": "erlaubt",
+      "final_status": "freigabepflichtig",
+      "changed": true,
+      "rule": "personenwirksame/produktive Aktion => mindestens freigabepflichtig"
+    },
+    {
+      "agent_name": "Policy/Permission Agent",
+      "action": "Governance: Keine individuellen Daten der Werkstudenten an Teamleiter übermitteln",
+      "requested_status": "erlaubt",
+      "final_status": "erlaubt",
+      "changed": false,
+      "rule": "LLM-Status beibehalten; keine strengere deterministische Regel ausgeloest"
+    },
+    {
+      "agent_name": "Deterministic Governance Controller",
+      "action": "Individuelle Fortschrittsdaten an Teamleiter uebermitteln",
+      "requested_status": "blockiert",
+      "final_status": "blockiert",
+      "changed": false,
+      "rule": "Explizite negative Datenschutzanforderung => blockiert"
+    }
+  ],
+  "consolidation": {
+    "raw_specialist_action_count": 17,
+    "ownership_rejected_count": 6,
+    "grounding_rejected_count": 2,
+    "passed_ownership_and_grounding_count": 10,
+    "deterministic_privacy_control_count": 1,
+    "rejected_by_any_filter_count": 7,
+    "post_governance_proposal_count": 11,
+    "final_consolidated_action_count": 9,
+    "merged_or_removed_after_filters_count": 2,
+    "groups": [
+      {
+        "canonical_key": "course:path",
+        "status": "freigabepflichtig",
+        "source_agents": [
+          "Course Agent"
+        ],
+        "source_actions": [
+          "Lernpfadstruktur anpassen"
+        ]
+      },
+      {
+        "canonical_key": "content:include:m2",
+        "status": "freigabepflichtig",
+        "source_agents": [
+          "Content Agent"
+        ],
+        "source_actions": [
+          "Einbinden des vorhandenen Moduls M2 (Ticketsystem-Nutzung) in den Onboarding-Lernpfad"
+        ]
+      },
+      {
+        "canonical_key": "content:include:m5",
+        "status": "freigabepflichtig",
+        "source_agents": [
+          "Content Agent"
+        ],
+        "source_actions": [
+          "Einbinden des vorhandenen Moduls M5 (IT-Sicherheitsbasics) in den Onboarding-Lernpfad"
+        ]
+      },
+      {
+        "canonical_key": "enrollment:target_group",
+        "status": "erlaubt",
+        "source_agents": [
+          "Enrollment Agent"
+        ],
+        "source_actions": [
+          "Zielgruppe definieren: Neue Werkstudenten im IT-Support"
+        ]
+      },
+      {
+        "canonical_key": "assignment:deadline",
+        "status": "freigabepflichtig",
+        "source_agents": [
+          "Assignment Agent"
+        ],
+        "source_actions": [
+          "Frist setzen"
+        ]
+      },
+      {
+        "canonical_key": "analytics:aggregate_reporting",
+        "status": "freigabepflichtig",
+        "source_agents": [
+          "Analytics/Metrics Agent",
+          "Policy/Permission Agent"
+        ],
+        "source_actions": [
+          "Aggregiertes Fortschrittsreporting an Teamleiter (Gruppe G2) planen",
+          "Governance: Aggregiertes Fortschrittsreporting an Teamleiter senden"
+        ]
+      },
+      {
+        "canonical_key": "notification:message",
+        "status": "freigabepflichtig",
+        "source_agents": [
+          "Notification Agent"
+        ],
+        "source_actions": [
+          "Benachrichtigung an alle neuen Werkstudenten im IT-Support: 'Dein Onboarding-Lernpfad ist jetzt verfügbar. Bitte absolvier es innerhalb von 14 Tagen.'"
+        ]
+      },
+      {
+        "canonical_key": "policy:governance:m1",
+        "status": "freigabepflichtig",
+        "source_agents": [
+          "Content Agent"
+        ],
+        "source_actions": [
+          "Einbinden des vorhandenen Moduls M1 (Datenschutzgrundlagen) in den Onboarding-Lernpfad"
+        ]
+      },
+      {
+        "canonical_key": "privacy:block_individual_reporting",
+        "status": "blockiert",
+        "source_agents": [
+          "Policy/Permission Agent",
+          "Deterministic Governance Controller"
+        ],
+        "source_actions": [
+          "Governance: Keine individuellen Daten der Werkstudenten an Teamleiter übermitteln",
+          "Individuelle Fortschrittsdaten an Teamleiter uebermitteln"
+        ]
+      }
+    ]
+  },
+  "shared_context": {
+    "verified_tool_outputs": {
+      "read_test_results": {},
+      "read_groups": [
+        {
+          "group_id": "G1",
+          "name": "Neue Werkstudenten IT-Support",
+          "role": "Lernende"
+        },
+        {
+          "group_id": "G2",
+          "name": "Teamleiter",
+          "role": "Informationsrolle"
+        },
+        {
+          "group_id": "G3",
+          "name": "HR / Onboarding-Verantwortliche",
+          "role": "Freigaberolle"
+        }
+      ],
+      "read_compliance_requirement": {},
+      "read_course": {
+        "course_id": "C-ONB-001",
+        "title": "Onboarding IT-Support",
+        "description": "Onboarding-Kurs für neue Werkstudentinnen und Werkstudenten im IT-Support"
+      },
+      "read_modules": [
+        {
+          "module_id": "M1",
+          "title": "Datenschutzgrundlagen",
+          "topic": "Datenschutz / Compliance",
+          "status": "vorhanden"
+        },
+        {
+          "module_id": "M2",
+          "title": "Ticketsystem-Nutzung",
+          "topic": "IT-Support-Prozess",
+          "status": "vorhanden"
+        },
+        {
+          "module_id": "M3",
+          "title": "Eskalationsprozess",
+          "topic": "Incident- und Eskalationslogik",
+          "status": "fehlt"
+        },
+        {
+          "module_id": "M4",
+          "title": "Kommunikationsregeln",
+          "topic": "Interne Kommunikation",
+          "status": "veraltet"
+        },
+        {
+          "module_id": "M5",
+          "title": "IT-Sicherheitsbasics",
+          "topic": "IT-Sicherheit",
+          "status": "vorhanden"
+        }
+      ],
+      "read_users": [
+        {
+          "user_id": "U1",
+          "name": "Person A",
+          "group": "Neue Werkstudenten IT-Support",
+          "role": "Lernende",
+          "onboarding_status": "neu"
+        },
+        {
+          "user_id": "U2",
+          "name": "Person B",
+          "group": "Neue Werkstudenten IT-Support",
+          "role": "Lernende",
+          "onboarding_status": "neu"
+        },
+        {
+          "user_id": "U3",
+          "name": "Person C",
+          "group": "Teamleiter",
+          "role": "Teamleiter",
+          "onboarding_status": "nicht_relevant"
+        }
+      ],
+      "read_permission_rules": [
+        {
+          "role": "Teamleiter",
+          "can_view_individual_progress": false,
+          "can_view_aggregated_progress": true
+        },
+        {
+          "role": "HR",
+          "can_view_individual_progress": false,
+          "can_view_aggregated_progress": true
+        },
+        {
+          "role": "Kursverantwortlicher",
+          "can_approve_course_publication": true
+        }
+      ]
+    }
+  },
+  "orchestrator_metrics": {
+    "total_duration_ms": 4857.0646,
+    "prompt_tokens": 942,
+    "output_tokens": 311
+  }
+}

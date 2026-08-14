@@ -1,0 +1,187 @@
+C:\Users\Home\PycharmProjects\Bachlorarbeit\.venv\Scripts\python.exe C:\Users\Home\Downloads\agentic_lms_llm_multiagent_buffer_v3_2_3_jsonfix\run_llm_multiagent_demo.py --use-case use_case_1 --output outputs\multiagent_uc1_v323.json --show-rejections --show-grounding 
+[LLM] Analytics/Metrics Agent: Tool-Auswahl startet ...
+[LLM] Analytics/Metrics Agent: Tool-Auswahl fertig (1.50s)
+[LLM] Analytics/Metrics Agent: Aktionsplanung startet ...
+[LLM] Analytics/Metrics Agent: Aktionsplanung fertig (4.39s)
+[LLM] Content Agent: Tool-Auswahl startet ...
+[LLM] Content Agent: Tool-Auswahl fertig (1.43s)
+[LLM] Content Agent: Aktionsplanung startet ...
+[LLM] Content Agent: Aktionsplanung fertig (6.71s)
+[LLM] Course Agent: Tool-Auswahl startet ...
+[LLM] Course Agent: Tool-Auswahl fertig (1.47s)
+[LLM] Course Agent: Aktionsplanung startet ...
+[LLM] Course Agent: Aktionsplanung fertig (7.84s)
+[LLM] Enrollment Agent: Tool-Auswahl startet ...
+[LLM] Enrollment Agent: Tool-Auswahl fertig (1.68s)
+[LLM] Enrollment Agent: Aktionsplanung startet ...
+[LLM] Enrollment Agent: Aktionsplanung fertig (8.12s)
+[LLM] Assignment Agent: Tool-Auswahl startet ...
+[LLM] Assignment Agent: Tool-Auswahl fertig (1.53s)
+[LLM] Assignment Agent: Aktionsplanung startet ...
+[LLM] Assignment Agent: Aktionsplanung fertig (4.46s)
+[LLM] Notification Agent: Tool-Auswahl startet ...
+[LLM] Notification Agent: Tool-Auswahl fertig (1.80s)
+[LLM] Notification Agent: Aktionsplanung startet ...
+[LLM] Notification Agent: Aktionsplanung fertig (8.30s)
+[LLM] Policy/Permission Agent: Tool-Auswahl startet ...
+[LLM] Policy/Permission Agent: Tool-Auswahl fertig (4.26s)
+[LLM] Policy/Permission Agent: Aktionsplanung startet ...
+[LLM] Policy/Permission Agent: Aktionsplanung fertig (6.53s)
+
+================================================================================================
+EXPERIMENTELLER LLM-MULTI-AGENT-PUFFER v3.2
+Nicht Teil des eingefrorenen finalen v4-Holdout-Artefakts.
+================================================================================================
+Rohe Klassifikation:       use_case_1
+Validierte Klassifikation: use_case_1
+Rohe Agentenauswahl:       Course Agent, Content Agent, Enrollment Agent, Assignment Agent, Notification Agent
+Effektive Agenten:         Analytics/Metrics Agent, Content Agent, Course Agent, Enrollment Agent, Assignment Agent, Notification Agent, Policy/Permission Agent
+Ausfuehrungsreihenfolge:   Analytics/Metrics Agent, Content Agent, Course Agent, Enrollment Agent, Assignment Agent, Notification Agent, Policy/Permission Agent
+
+LLM-Fachagenten:
+- Analytics/Metrics Agent: Tools=['read_test_results', 'read_groups', 'read_compliance_requirement'], Roh-Aktionen=1, Confidence=0.50, LLM-Zeit~5.89s
+- Content Agent: Tools=['read_course', 'read_modules'], Roh-Aktionen=3, Confidence=0.95, LLM-Zeit~8.14s
+- Course Agent: Tools=['read_course', 'read_modules'], Roh-Aktionen=3, Confidence=0.90, LLM-Zeit~9.31s
+- Enrollment Agent: Tools=['read_groups', 'read_users', 'read_permission_rules', 'read_compliance_requirement'], Roh-Aktionen=3, Confidence=0.90, LLM-Zeit~9.80s
+- Assignment Agent: Tools=['read_course', 'read_compliance_requirement'], Roh-Aktionen=1, Confidence=0.80, LLM-Zeit~6.00s
+- Notification Agent: Tools=['read_groups', 'read_permission_rules', 'read_compliance_requirement'], Roh-Aktionen=3, Confidence=0.90, LLM-Zeit~10.10s
+- Policy/Permission Agent: Tools=['read_permission_rules', 'read_compliance_requirement', 'read_groups'], Roh-Aktionen=3, Confidence=1.00, LLM-Zeit~10.79s
+
+Filter/Konsolidierung:
+- Roh-Aktionsvorschlaege:         17
+- Ownership-Rejections:           6
+- Grounding-Rejections:           2
+- Beide Filter bestanden:         10
+- Deterministische Privacy-Controls:1
+- Finale konsolidierte Aktionen:  9
+
+Verworfene Rollenueberschreitungen:
+- Course Agent: Zielgruppe 'Neue Werkstudenten IT-Support' (G1) dem Lernpfad zuordnen
+  Grund: klare Rollenueberschreitung: zielgruppe, zuordn
+- Course Agent: Bearbeitungsfrist von 14 Tagen für den Lernpfad setzen
+  Grund: klare Rollenueberschreitung: frist
+- Enrollment Agent: Lernpfadvorschlag erstellen: Onboarding IT-Support
+  Grund: kein hinreichend klarer Bezug zur eigenen Fachrolle
+- Enrollment Agent: Aggregierte Fortschrittsdaten für Teamleiter einrichten
+  Grund: kein hinreichend klarer Bezug zur eigenen Fachrolle
+- Notification Agent: Aggregierte Fortschrittsmeldung an Teamleiter: 'Der Onboarding-Lernpfad wird von 100 % der Zielgruppe bearbeitet. 20 % haben den Kurs abgeschlossen.'
+  Grund: kein hinreichend klarer Bezug zur eigenen Fachrolle
+- Policy/Permission Agent: Governance: Fehlende oder veraltete Inhalte identifizieren und markieren
+  Grund: Policy-Aktion ohne erkennbaren Governance-/Rechtebezug
+
+Verworfene ungeerdete/unbelegte Vorschlaege:
+- Notification Agent: Erinnerung an neue Werkstudenten nach 7 Tagen: 'Du bist bei der Hälfte des Onboarding-Lernpfads angelangt. Bitte vervollständige den Kurs innerhalb der nächsten 7 Tage.'
+  Grund: Grounding fehlgeschlagen: unbelegte Zeit-/Fristangabe: 7 Tagen; unbelegte Zeit-/Fristangabe: 7 Tage
+- Notification Agent: Aggregierte Fortschrittsmeldung an Teamleiter: 'Der Onboarding-Lernpfad wird von 100 % der Zielgruppe bearbeitet. 20 % haben den Kurs abgeschlossen.'
+  Grund: Grounding fehlgeschlagen: unbelegter Prozent-/Kennzahlenwert: 100 %; unbelegter Prozent-/Kennzahlenwert: 20 %
+
+Finaler ActionPlan nach Ownership, Grounding, Konsolidierung und Governance v3.2:
+================================================================================
+Use Case: Onboarding-Lernpfad
+================================================================================
+
+Nutzeranfrage:
+Bereite für alle neuen Werkstudentinnen und Werkstudenten im IT-Support einen Onboarding-Lernpfad vor. Nutze vorhandene Inhalte zu Datenschutz, Ticketsystem und IT-Sicherheitsbasics, markiere fehlende oder veraltete Inhalte, identifiziere die passende Zielgruppe, setze eine Bearbeitungsfrist von 14 Tagen und informiere Teamleiter nur aggregiert über den Fortschritt.
+
+Erkannte Teilaufgaben:
+1. Erstellen eines Lernpfads für neue Werkstudenten im IT-Support
+2. Einbinden vorhandener Inhalte zu Datenschutz, Ticketsystem und IT-Sicherheitsbasics
+3. Identifizieren und markieren von fehlenden oder veralteten Lerninhalten
+4. Zielgruppe definieren: neue Werkstudentinnen und Werkstudenten im IT-Support
+5. Setzen einer Bearbeitungsfrist von 14 Tagen
+6. Aggregiertes Fortschrittsreporting an Teamleiter senden
+7. Governance-Anforderung: Fortschrittsdaten nur aggregiert an Teamleiter weitergeben
+8. Governance-Anforderung: Keine individuellen Daten der Werkstudenten an Teamleiter übermitteln
+
+Beteiligte Agenten:
+- Orchestrator Agent (Qwen3)
+- Analytics/Metrics Agent (Qwen3)
+- Content Agent (Qwen3)
+- Course Agent (Qwen3)
+- Enrollment Agent (Qwen3)
+- Assignment Agent (Qwen3)
+- Notification Agent (Qwen3)
+- Policy/Permission Agent (Qwen3)
+- Deterministic Governance Controller
+
+Vorgeschlagene Aktionen:
+
+1. Lernpfadstruktur anpassen
+   Status: freigabepflichtig
+   Begründung: Das Modul 'Eskalationsprozess' (M3) fehlt und muss hinzugefügt werden, um den Lernpfad für Werkstudenten im IT-Support abzuschließen. Deterministische Governance: personenwirksame/produktive Aktion => mindestens freigabepflichtig.
+   Verwendete Daten: read_modules, read_course
+
+2. Einbinden des vorhandenen Moduls M2 (Ticketsystem-Nutzung) in den Onboarding-Lernpfad
+   Status: freigabepflichtig
+   Begründung: Modul ist relevant und aktuell für den IT-Support-Onboarding-Prozess. Deterministische Governance: personenwirksame/produktive Aktion => mindestens freigabepflichtig.
+   Verwendete Daten: read_modules, read_course
+
+3. Einbinden des vorhandenen Moduls M5 (IT-Sicherheitsbasics) in den Onboarding-Lernpfad
+   Status: freigabepflichtig
+   Begründung: Modul ist relevant und aktuell für den IT-Support-Onboarding-Prozess. Deterministische Governance: personenwirksame/produktive Aktion => mindestens freigabepflichtig.
+   Verwendete Daten: read_modules, read_course
+
+4. Zielgruppe definieren: Neue Werkstudenten im IT-Support
+   Status: erlaubt
+   Begründung: Gruppe G1 entspricht der Zielgruppe der Nutzeranfrage.
+   Verwendete Daten: read_groups, read_users, read_permission_rules, read_compliance_requirement, read_course
+
+5. Frist setzen
+   Status: freigabepflichtig
+   Begründung: Die Nutzeranfrage verlangt explizit eine Bearbeitungsfrist von 14 Tagen für den Onboarding-Lernpfad. Deterministische Governance: personenwirksame/produktive Aktion => mindestens freigabepflichtig.
+   Verwendete Daten: read_course, read_modules, read_groups, read_permission_rules
+
+6. Aggregiertes Fortschrittsreporting an Teamleiter (Gruppe G2) planen
+   Status: freigabepflichtig
+   Begründung: Es existiert eine Zielgruppe für den Onboarding-Lernpfad und eine definierte Empfängergruppe für aggregierte Berichte. Teamleiter haben gemäß read_permission_rules das Recht, aggregierte Fortschrittsdaten zu sehen. Konsolidiert aus Vorschlaegen von Analytics/Metrics Agent, Policy/Permission Agent. Deterministische Governance: personenwirksame/produktive Aktion => mindestens freigabepflichtig.
+   Verwendete Daten: read_groups, read_permission_rules
+   Unsicherheiten: Keine Fortschrittsdaten vorhanden, um ein konkretes Reporting zu erstellen.
+
+7. Benachrichtigung an alle neuen Werkstudenten im IT-Support: 'Dein Onboarding-Lernpfad ist jetzt verfügbar. Bitte absolvier es innerhalb von 14 Tagen.'
+   Status: freigabepflichtig
+   Begründung: Zielgruppe ist klar definiert, Frist ist gesetzt, und der Lernpfad ist bereit. Deterministische Governance: personenwirksame/produktive Aktion => mindestens freigabepflichtig.
+   Verwendete Daten: read_groups, read_users, read_modules, read_permission_rules, read_compliance_requirement, shared_context
+
+8. Einbinden des vorhandenen Moduls M1 (Datenschutzgrundlagen) in den Onboarding-Lernpfad
+   Status: freigabepflichtig
+   Begründung: Modul ist relevant und aktuell für den IT-Support-Onboarding-Prozess. Deterministische Governance: personenwirksame/produktive Aktion => mindestens freigabepflichtig.
+   Verwendete Daten: read_modules, read_course
+
+9. Individuelle Fortschrittsdaten an Teamleiter uebermitteln
+   Status: blockiert
+   Begründung: Teamleiter haben gemäß read_permission_rules kein Recht, individuelle Daten zu sehen. Die Anfrage erlaubt gegenueber Teamleitern nur aggregierte Fortschrittsinformationen. Konsolidiert aus Vorschlaegen von Policy/Permission Agent, Deterministic Governance Controller. Deterministische Governance: Explizite negative Datenschutzanforderung => blockiert.
+   Verwendete Daten: read_permission_rules, read_groups, privacy_requirements
+
+Offene Rückfragen:
+- Gibt es bereits einen bestehenden Lernpfad, der angepasst werden soll?
+- Welche spezifischen Datenschutzanforderungen gelten für den IT-Support?
+- Analytics/Metrics Agent: Welche Kriterien sollen für das aggregierte Fortschrittsreporting genutzt werden?
+- Analytics/Metrics Agent: Sind weitere Datenquellen für die Berichterstattung vorhanden?
+- Content Agent: Soll das fehlende Modul M3 (Eskalationsprozess) als Vorschlag zur Ergänzung des Lernpfads markiert werden?
+- Content Agent: Soll das veraltete Modul M4 (Kommunikationsregeln) zur Aktualisierung vorgeschlagen werden?
+- Course Agent: Sind weitere Module für den Lernpfad erforderlich, um den Onboarding-Prozess abzuschließen?
+- Enrollment Agent: Sind die fehlenden Module (z. B. Eskalationsprozess) bereits in Entwicklung oder müssen sie erst erstellt werden?
+- Enrollment Agent: Soll der Lernpfad automatisch bei Neuanmeldung von Werkstudenten im IT-Support zugewiesen werden?
+- Assignment Agent: Sind die fehlenden oder veralteten Module (M3, M4) für den Onboarding-Lernpfad relevant?
+- Notification Agent: Sind die fehlenden Module (M3, M4) bereits in Bearbeitung oder sollen sie erstellt werden?
+- Notification Agent: Soll der Onboarding-Lernpfad automatisch nach Ablauf der Frist als nicht abgeschlossen markiert werden?
+
+Governance-Statuskorrekturen:
+- Content Agent: erlaubt -> freigabepflichtig: Einbinden des vorhandenen Moduls M1 (Datenschutzgrundlagen) in den Onboarding-Lernpfad
+  Regel: personenwirksame/produktive Aktion => mindestens freigabepflichtig
+- Content Agent: erlaubt -> freigabepflichtig: Einbinden des vorhandenen Moduls M2 (Ticketsystem-Nutzung) in den Onboarding-Lernpfad
+  Regel: personenwirksame/produktive Aktion => mindestens freigabepflichtig
+- Content Agent: erlaubt -> freigabepflichtig: Einbinden des vorhandenen Moduls M5 (IT-Sicherheitsbasics) in den Onboarding-Lernpfad
+  Regel: personenwirksame/produktive Aktion => mindestens freigabepflichtig
+- Course Agent: erlaubt -> freigabepflichtig: Lernpfadstruktur anpassen
+  Regel: personenwirksame/produktive Aktion => mindestens freigabepflichtig
+- Assignment Agent: erlaubt -> freigabepflichtig: Frist setzen
+  Regel: personenwirksame/produktive Aktion => mindestens freigabepflichtig
+- Notification Agent: erlaubt -> freigabepflichtig: Benachrichtigung an alle neuen Werkstudenten im IT-Support: 'Dein Onboarding-Lernpfad ist jetzt verfügbar. Bitte absolvier es innerhalb von 14 Tagen.'
+  Regel: personenwirksame/produktive Aktion => mindestens freigabepflichtig
+- Policy/Permission Agent: erlaubt -> freigabepflichtig: Governance: Aggregiertes Fortschrittsreporting an Teamleiter senden
+  Regel: personenwirksame/produktive Aktion => mindestens freigabepflichtig
+
+JSON gespeichert: outputs\multiagent_uc1_v323.json
+
+Process finished with exit code 0
